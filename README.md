@@ -1,4 +1,3 @@
 # projetptut
 
-Site web de volley
-projetptut.alwaysdata.net
+Site web de volley : projetptut.alwaysdata.net
