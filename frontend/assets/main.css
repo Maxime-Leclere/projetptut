@@ -18,3 +18,8 @@ footer {
     display: inline-flex;
     text-align: center;
 }
+
+.menu_item_footer {
+    display: inline-flex;
+    text-align: center;
+}
