@@ -12,7 +12,7 @@
             </li>
             <li class="item_footer">
                 <a href="contact.php" target="_blank">
-                    <svg id="icon_contact" viewBox="0 0 29 23" aria-hidden="true" role="img">
+                    <svg id="icon_contact" viewBox="0 0 29 25" aria-hidden="true" role="img">
                         <path class="path_footer" d="M26 21.714q0-0.714-0.5-1.214l-3.714-3.714q-0.5-0.5-1.214-0.5-0.75 0-1.286 0.571 0.054
                         0.054 0.339 0.33t0.384 0.384 0.268 0.339 0.232 0.455 0.063 0.491q0 0.714-0.5 1.214t-1.214
                         0.5q-0.268 0-0.491-0.063t-0.455-0.232-0.339-0.268-0.384-0.384-0.33-0.339q-0.589 0.554-0.589
