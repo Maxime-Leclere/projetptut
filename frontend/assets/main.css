@@ -19,6 +19,18 @@ footer {
     text-align: center;
 }
 
+li {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: none;
+}
+
 .menu_item_footer {
     display: inline-flex;
     text-align: center;
