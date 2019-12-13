@@ -27,6 +27,11 @@ footer {
     padding: 0;
 }
 
+.item_footer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 #icon_facebook {
     width: 16px;
     height: 30px;
