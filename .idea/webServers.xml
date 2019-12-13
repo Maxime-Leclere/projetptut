@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b4293b24-bdeb-4af5-8212-732ef284d656" name="always" url="http://ssh-projetptut.alwaysdata.net">
+        <fileTransfer host="ssh-projetptut.alwaysdata.net" port="22" rootFolder="/home/projetptut" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

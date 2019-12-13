@@ -8,7 +8,7 @@
         <?php include_once 'header.php' ?>
 
         <main class="custom_body">
-
+            <h1>Notre Boutique</h1>
         </main>
 
         <?php include_once 'footer.php' ?>
