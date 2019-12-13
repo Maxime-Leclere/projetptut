@@ -15,5 +15,6 @@
 
 footer {
     width: 100%;
-    align-self: center;
+    display: inline-block;
+    text-align: center;
 }
