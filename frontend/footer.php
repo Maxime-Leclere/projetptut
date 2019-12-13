@@ -12,7 +12,7 @@
             </li>
             <li class="item_footer">
                 <a href="contact.php" target="_blank">
-                    <svg id="icon_contact" >//viewBox="0 0 19 30" aria-hidden="true" role="img">
+                    <svg id="icon_contact" viewBox="0 0 29 23" aria-hidden="true" role="img">
                         <path class="path_footer" d="M26 21.714q0-0.714-0.5-1.214l-3.714-3.714q-0.5-0.5-1.214-0.5-0.75 0-1.286 0.571 0.054
                         0.054 0.339 0.33t0.384 0.384 0.268 0.339 0.232 0.455 0.063 0.491q0 0.714-0.5 1.214t-1.214
                         0.5q-0.268 0-0.491-0.063t-0.455-0.232-0.339-0.268-0.384-0.384-0.33-0.339q-0.589 0.554-0.589
@@ -32,7 +32,7 @@
             </li>
             <li class="item_footer">
                 <a href="https://twitter.com/AVBAixois" target="_blank">
-                    <svg id="icon_twitter" >//viewBox="0 0 19 30" aria-hidden="true" role="img">
+                    <svg id="icon_twitter" viewBox="0 0 30 30" aria-hidden="true" role="img">
                         <path class="path_footer" d="M28.929 7.286q-1.196 1.75-2.893 2.982 0.018 0.25 0.018 0.75 0 2.321-0.679 4.634t-2.063
                         4.437-3.295 3.759-4.607 2.607-5.768 0.973q-4.839 0-8.857-2.589 0.625 0.071 1.393 0.071 4.018 0
                         7.161-2.464-1.875-0.036-3.357-1.152t-2.036-2.848q0.589 0.089 1.089 0.089 0.768 0
