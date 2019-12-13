@@ -8,7 +8,7 @@
     height: 30px;
 }
 
-#icon_facebook {
+#icon_twitter {
     width: 29px;
     height: 23px;
 }
@@ -34,4 +34,5 @@ ol {
 .menu_item_footer {
     display: inline-flex;
     text-align: center;
+    padding: 0;
 }
