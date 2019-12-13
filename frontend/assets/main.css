@@ -17,6 +17,7 @@ a {
 
 footer {
     width: 100%;
+    display: inline-flex;
 }
 
 .content_footer {
