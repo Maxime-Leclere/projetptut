@@ -45,5 +45,5 @@
             </li>
         </ul>
     </div>
-    <br><p class="footer">IUT Informatique AMU site d'Aix-En-Provence - Projet Ptut</p>
+    <br><p class="text_footer">IUT Informatique AMU site d'Aix-En-Provence - Projet Ptut</p>
 </footer>
