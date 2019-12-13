@@ -23,6 +23,8 @@ footer {
 
 .content_footer {
     margin: auto;
+    display: inline-flex;
+    text-align: center;
 }
 
 .menu_item_footer {
