@@ -21,6 +21,10 @@ footer {
     align-items: center;
 }
 
+.content_footer {
+    margin: auto;
+}
+
 .menu_item_footer {
     display: inline-flex;
     text-align: center;
