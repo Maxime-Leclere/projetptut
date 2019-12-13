@@ -18,6 +18,7 @@ a {
 footer {
     width: 100%;
     display: inline-flex;
+    align-items: center;
 }
 
 .menu_item_footer {

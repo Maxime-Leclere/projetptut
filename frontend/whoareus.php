@@ -33,18 +33,18 @@
         </p><br>
         <ul>
             <li>
-                230 licenciés parmi lesquels une centaine de jeunes âgés de 6 à 16 ans ou encore une soixantaine de joueurs
-                évoluant dans la catégorie loisirs,
+                - 230 licenciés parmi lesquels une centaine de jeunes âgés de 6 à 16 ans ou encore une soixantaine de joueurs
+                évoluant dans la catégorie loisirs.<br>
             </li>
             <li>
-                une quinzaine d’équipes engagées dans différents championnats (une équipe en Nationale 3 masculine qui a
+                - une quinzaine d’équipes engagées dans différents championnats (une équipe en Nationale 3 masculine qui a
                 terminé son championnat sur le podium, une équipe de Pré Nationale masculine, des équipes de jeunes
                 inscrites dans divers championnats départementaux et régionaux, une équipe en Régionale féminine,
-                des équipes évoluant à un niveau loisir,…)
+                des équipes évoluant à un niveau loisir,…)<br>
             </li>
             <li>
-                des manifestations internes visant à ce que nos licenciés et leurs familles puissent vivre des moments de
-                partage et de convivialité.
+                - des manifestations internes visant à ce que nos licenciés et leurs familles puissent vivre des moments de
+                partage et de convivialité.<br>
             </li>
         </ul>
     </div>
