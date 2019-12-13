@@ -31,6 +31,10 @@ ol {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .menu_item_footer {
     display: inline-flex;
     text-align: center;
