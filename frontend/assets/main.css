@@ -12,3 +12,8 @@
     width: 29px;
     height: 23px;
 }
+
+footer {
+    width: 100%;
+    align-self: center;
+}
