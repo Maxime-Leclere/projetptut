@@ -66,8 +66,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/assets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="110">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -93,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+            <state relative-caret-position="720">
+              <caret line="48" column="96" selection-start-line="48" selection-start-column="96" selection-end-line="48" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -115,8 +115,8 @@
         <option value="$PROJECT_DIR$/frontend/header.php" />
         <option value="$PROJECT_DIR$/frontend/head.php" />
         <option value="&lt;b4293b24-bdeb-4af5-8212-732ef284d656&gt;/www/frontend/assets/main.css" />
-        <option value="$PROJECT_DIR$/frontend/footer.php" />
         <option value="$PROJECT_DIR$/frontend/whoareus.php" />
+        <option value="$PROJECT_DIR$/frontend/footer.php" />
         <option value="$PROJECT_DIR$/frontend/assets/main.css" />
       </list>
     </option>
@@ -211,12 +211,12 @@
       <workItem from="1576250295714" duration="232000" />
       <workItem from="1576250546021" duration="85000" />
       <workItem from="1576250658802" duration="66000" />
-      <workItem from="1576250747254" duration="4419000" />
+      <workItem from="1576250747254" duration="4695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16085000" />
+    <option name="totallyTimeSpent" value="16361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1682" height="995" extended-state="6" />
@@ -296,15 +296,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        <state relative-caret-position="720">
+          <caret line="48" column="96" selection-start-line="48" selection-start-column="96" selection-end-line="48" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="110">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

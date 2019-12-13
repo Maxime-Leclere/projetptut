@@ -17,14 +17,13 @@ a {
 
 footer {
     width: 100%;
-    display: inline-flex;
-    align-items: center;
 }
 
 .content_footer {
     margin: auto;
     display: inline-flex;
     text-align: center;
+    align-items: center;
 }
 
 .menu_item_footer {
