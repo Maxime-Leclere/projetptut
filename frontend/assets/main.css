@@ -15,6 +15,19 @@ a {
     color: black;
 }
 
+/*Partie Menu Bar*/
+
+.menu_bar {
+    background: blueviolet;
+}
+
+.item_header {
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+
+/*Partie Footer*/
 footer {
     width: 100%;
     display: inline-flex;

@@ -10,41 +10,39 @@
             </div>
         </div>
         <div class="nav_header">
-            <nav>
-                <ol>
-                    <li><a href="home.php">Acceuil</a></li>
-                    <li>Le Club
-                        <ul class="sub_menu">
-                            <li><a href="whoareus.php">Qui sommes-nous?</a></li>
-                            <li>Quels sont nos objectifs</li>
-                            <li>Le mot du president</li>
-                        </ul>
-                    </li>
-                    <li>Equipe
-                        <ul class="sub_menu">
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                        </ul>
-                    </li>
-                    <li>Administratif
-                        <ul class="sub_menu">
-                            <li>Organigramme</li>
-                            <li>Horaire Entraînements</li>
-                            <li>Inscription</li>
-                        </ul>
-                    </li>
-                    <li><a href="shop.php">Notre Boutique</a></li>
-                    <li>A Propos
-                        <ul class="sub_menu">
-                            <li>Notre Gymnase</li>
-                            <li><a href="contact.php">Contact</a></li>
-                            <li>Nos Partenaires</li>
-                            <li>Politiques de confidentialité</li>
-                        </ul>
-                    </li>
-                </ol>
-            </nav>
+            <ol class="menu_bar">
+                <li class="item_header"><a href="home.php">Acceuil</a></li>
+                <li>Le Club
+                    <ul class="sub_menu">
+                        <li><a href="whoareus.php">Qui sommes-nous?</a></li>
+                        <li>Quels sont nos objectifs</li>
+                        <li>Le mot du president</li>
+                    </ul>
+                </li>
+                <li class="item_header">Equipe
+                    <ul class="sub_menu">
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+                </li>
+                <li class="item_header">Administratif
+                    <ul class="sub_menu">
+                        <li>Organigramme</li>
+                        <li>Horaire Entraînements</li>
+                        <li>Inscription</li>
+                    </ul>
+                </li>
+                <li class="item_header"><a href="shop.php">Notre Boutique</a></li>
+                <li class="item_header">A Propos
+                    <ul class="sub_menu">
+                        <li>Notre Gymnase</li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li>Nos Partenaires</li>
+                        <li>Politiques de confidentialité</li>
+                    </ul>
+                </li>
+            </ol>
         </div>
     </div>
 </header>
