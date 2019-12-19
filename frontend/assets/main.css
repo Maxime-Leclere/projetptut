@@ -8,8 +8,6 @@ ul {
 
 ol {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 a {
@@ -26,6 +24,8 @@ a {
 
 .menu_bar {
     background-color: blueviolet;
+    padding: 0;
+    margin: 0;
 }
 
 .item_header {
