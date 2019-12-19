@@ -12,34 +12,28 @@
         <div class="nav_header">
             <ol class="menu_bar">
                 <li class="item_header"><a href="home.php">Acceuil</a></li>
-                <li>Le Club
+                <li class="item_header">Le Club
                     <ul class="sub_menu">
-                        <li><a href="whoareus.php">Qui sommes-nous?</a></li>
-                        <li>Quels sont nos objectifs</li>
-                        <li>Le mot du president</li>
+                        <li class="sub_item_header"><a href="whoareus.php">Qui sommes-nous?</a></li>
+                        <li class="sub_item_header">Quels sont nos objectifs</li>
+                        <li class="sub_item_header">Le mot du president</li>
                     </ul>
                 </li>
-                <li class="item_header">Equipe
-                    <ul class="sub_menu">
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                    </ul>
-                </li>
+                <li class="item_header">Equipe</li>
                 <li class="item_header">Administratif
                     <ul class="sub_menu">
-                        <li>Organigramme</li>
-                        <li>Horaire Entraînements</li>
-                        <li><a href="register.php">Inscription</a></li>
+                        <li class="sub_item_header">Organigramme</li>
+                        <li class="sub_item_header">Horaire Entraînements</li>
+                        <li class="sub_item_header"><a href="register.php">Inscription</a></li>
                     </ul>
                 </li>
                 <li class="item_header"><a href="shop.php">Notre Boutique</a></li>
                 <li class="item_header">A Propos
                     <ul class="sub_menu">
-                        <li>Notre Gymnase</li>
-                        <li><a href="contact.php">Contact</a></li>
-                        <li>Nos Partenaires</li>
-                        <li>Politiques de confidentialité</li>
+                        <li class="sub_item_header">Notre Gymnase</li>
+                        <li class="sub_item_header"><a href="contact.php">Contact</a></li>
+                        <li class="sub_item_header">Nos Partenaires</li>
+                        <li class="sub_item_header">Politiques de confidentialité</li>
                     </ul>
                 </li>
             </ol>

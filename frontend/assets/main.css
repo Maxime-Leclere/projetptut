@@ -26,11 +26,12 @@ a {
     margin: 0;
 }
 
-.item_header {
+.item_header, .sub_item_header {
     display: inline-block;
     color: white;
     text-align: center;
 }
+
 
 footer {
     width: 100%;
