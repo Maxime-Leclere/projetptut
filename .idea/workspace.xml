@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253f995a-5a23-41f7-a911-9a0ba2059248" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/inscription.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/inscription.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,20 +61,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/frontend/assets/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+                <state relative-caret-position="500">
+                  <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/frontend/inscription.php">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/frontend/login.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+                <state relative-caret-position="240">
+                  <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
                 </state>
               </provider>
             </entry>
@@ -115,11 +119,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/frontend/header.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="75" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+                <state relative-caret-position="480">
+                  <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/frontend/register.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
                 </state>
               </provider>
             </entry>
@@ -144,8 +157,10 @@
         <option value="$PROJECT_DIR$/frontend/footer.php" />
         <option value="$PROJECT_DIR$/frontend/shop.php" />
         <option value="$PROJECT_DIR$/frontend/header.php" />
-        <option value="$PROJECT_DIR$/frontend/assets/main.css" />
         <option value="$PROJECT_DIR$/frontend/inscription.php" />
+        <option value="$PROJECT_DIR$/frontend/register.php" />
+        <option value="$PROJECT_DIR$/frontend/login.php" />
+        <option value="$PROJECT_DIR$/frontend/assets/main.css" />
       </list>
     </option>
   </component>
@@ -228,12 +243,12 @@
       <workItem from="1576250546021" duration="85000" />
       <workItem from="1576250658802" duration="66000" />
       <workItem from="1576250747254" duration="5099000" />
-      <workItem from="1576758520115" duration="3009000" />
+      <workItem from="1576758520115" duration="4935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19774000" />
+    <option name="totallyTimeSpent" value="21700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1922" height="1025" extended-state="6" />
@@ -290,13 +305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="75" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -311,10 +319,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/assets/main.css">
+    <entry file="file://$PROJECT_DIR$/frontend/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="480">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -325,10 +333,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/inscription.php">
+    <entry file="file://$PROJECT_DIR$/frontend/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state relative-caret-position="390">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/assets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>

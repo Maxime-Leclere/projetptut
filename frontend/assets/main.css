@@ -15,8 +15,6 @@ a {
     color: black;
 }
 
-/*Partie Menu Bar*/
-
 .nav_header {
     margin-left: 10%;
     margin-right: 10%;
@@ -34,10 +32,6 @@ a {
     text-align: center;
 }
 
-/*Partie Menu Bar*/
-
-
-/*Partie Footer*/
 footer {
     width: 100%;
     display: inline-flex;

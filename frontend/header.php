@@ -30,7 +30,7 @@
                     <ul class="sub_menu">
                         <li>Organigramme</li>
                         <li>Horaire Entraînements</li>
-                        <li><a href="inscription.php">Inscription</a></li>
+                        <li><a href="register.php">Inscription</a></li>
                     </ul>
                 </li>
                 <li class="item_header"><a href="shop.php">Notre Boutique</a></li>
