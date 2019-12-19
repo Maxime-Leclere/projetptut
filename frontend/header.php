@@ -15,24 +15,24 @@
                 <li class="item_header">Le Club
                     <ul class="sub_menu">
                         <li class="sub_item_header"><a href="whoareus.php">Qui sommes-nous?</a></li>
-                        <li class="sub_item_header">Quels sont nos objectifs</li>
-                        <li class="sub_item_header">Le mot du president</li>
+                        <li class="sub_item_header"><a href="whatareourobjectives.php">Quels sont nos objectifs</a></li>
+                        <li class="sub_item_header"><a href="presidentword.php">Le mot du president</li>
                     </ul>
                 </li>
                 <li class="item_header">Equipe</li>
                 <li class="item_header">Administratif
                     <ul class="sub_menu">
-                        <li class="sub_item_header">Organigramme</li>
-                        <li class="sub_item_header">Horaire Entraînements</li>
+                        <li class="sub_item_header"><a href="organigram.php">Organigramme</li>
+                        <li class="sub_item_header"><a href="trainingschedule.php">Horaire Entraînements</li>
                         <li class="sub_item_header"><a href="register.php">Inscription</a></li>
                     </ul>
                 </li>
                 <li class="item_header"><a href="shop.php">Notre Boutique</a></li>
                 <li class="item_header">A Propos
                     <ul class="sub_menu">
-                        <li class="sub_item_header">Notre Gymnase</li>
+                        <li class="sub_item_header"><a href="ourgymnase.php">Notre Gymnase</li>
                         <li class="sub_item_header"><a href="contact.php">Contact</a></li>
-                        <li class="sub_item_header">Nos Partenaires</li>
+                        <li class="sub_item_header"><a href="">Nos Partenaires</li>
                         <li class="sub_item_header">Politiques de confidentialité</li>
                     </ul>
                 </li>

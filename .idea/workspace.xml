@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253f995a-5a23-41f7-a911-9a0ba2059248" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/organigram.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ourgymnase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/presidentword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/trainingschedule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/whatareourobjectives.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,13 +127,18 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/frontend/header.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+                <state relative-caret-position="450">
+                  <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/frontend/ourpartners.php">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -173,7 +169,6 @@
         <option value="$PROJECT_DIR$/frontend/shop.php" />
         <option value="$PROJECT_DIR$/frontend/inscription.php" />
         <option value="$PROJECT_DIR$/frontend/register.php" />
-        <option value="$PROJECT_DIR$/frontend/header.php" />
         <option value="$PROJECT_DIR$/frontend/assets/main.css" />
         <option value="$PROJECT_DIR$/frontend/head.php" />
         <option value="$PROJECT_DIR$/frontend/login.php" />
@@ -183,6 +178,7 @@
         <option value="$PROJECT_DIR$/frontend/organigram.php" />
         <option value="$PROJECT_DIR$/frontend/trainingschedule.php" />
         <option value="$PROJECT_DIR$/frontend/ourgymnase.php" />
+        <option value="$PROJECT_DIR$/frontend/header.php" />
       </list>
     </option>
   </component>
@@ -265,12 +261,12 @@
       <workItem from="1576250546021" duration="85000" />
       <workItem from="1576250658802" duration="66000" />
       <workItem from="1576250747254" duration="5099000" />
-      <workItem from="1576758520115" duration="12012000" />
+      <workItem from="1576758520115" duration="12293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28777000" />
+    <option name="totallyTimeSpent" value="29058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1922" height="1025" extended-state="6" />
@@ -337,13 +333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -416,6 +405,16 @@
           <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/ourpartners.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
