@@ -19,7 +19,7 @@
                         <li class="sub_item_header"><a href="presidentword.php">Le mot du president</li>
                     </ul>
                 </li>
-                <li class="item_header">Equipe</li>
+                <li class="item_header"><a href="ourteams.php"></a>Equipe</li>
                 <li class="item_header">Administratif
                     <ul class="sub_menu">
                         <li class="sub_item_header"><a href="organigram.php">Organigramme</li>
@@ -32,7 +32,7 @@
                     <ul class="sub_menu">
                         <li class="sub_item_header"><a href="ourgymnase.php">Notre Gymnase</li>
                         <li class="sub_item_header"><a href="contact.php">Contact</a></li>
-                        <li class="sub_item_header"><a href="">Nos Partenaires</li>
+                        <li class="sub_item_header"><a href="ourpartners.php">Nos Partenaires</li>
                         <li class="sub_item_header">Politiques de confidentialité</li>
                     </ul>
                 </li>
