@@ -19,7 +19,7 @@
                         <li class="sub_item_header"><a href="presidentword.php">Le mot du president</li>
                     </ul>
                 </li>
-                <li class="item_header"><a href="ourteams.php"></a>Equipe</li>
+                <li class="item_header"><a href="ourteams.php">Equipe</li>
                 <li class="item_header">Administratif
                     <ul class="sub_menu">
                         <li class="sub_item_header"><a href="organigram.php">Organigramme</li>
