@@ -16,23 +16,23 @@
                     <ul class="sub_menu">
                         <li class="sub_item_header"><a href="whoareus.php">Qui sommes-nous?</a></li>
                         <li class="sub_item_header"><a href="whatareourobjectives.php">Quels sont nos objectifs</a></li>
-                        <li class="sub_item_header"><a href="presidentword.php">Le mot du president</li>
+                        <li class="sub_item_header"><a href="presidentword.php">Le mot du president</a></li>
                     </ul>
                 </li>
-                <li class="item_header"><a href="ourteams.php">Equipe</li>
+                <li class="item_header"><a href="ourteams.php">Equipe</a></li>
                 <li class="item_header">Administratif
                     <ul class="sub_menu">
-                        <li class="sub_item_header"><a href="organigram.php">Organigramme</li>
-                        <li class="sub_item_header"><a href="trainingschedule.php">Horaire Entraînements</li>
+                        <li class="sub_item_header"><a href="organigram.php">Organigramme</a></li>
+                        <li class="sub_item_header"><a href="trainingschedule.php">Horaire Entraînements</a></li>
                         <li class="sub_item_header"><a href="register.php">Inscription</a></li>
                     </ul>
                 </li>
                 <li class="item_header"><a href="shop.php">Notre Boutique</a></li>
                 <li class="item_header">A Propos
                     <ul class="sub_menu">
-                        <li class="sub_item_header"><a href="ourgymnase.php">Notre Gymnase</li>
+                        <li class="sub_item_header"><a href="ourgymnase.php">Notre Gymnase</a></li>
                         <li class="sub_item_header"><a href="contact.php">Contact</a></li>
-                        <li class="sub_item_header"><a href="ourpartners.php">Nos Partenaires</li>
+                        <li class="sub_item_header"><a href="ourpartners.php">Nos Partenaires</a></li>
                         <li class="sub_item_header">Politiques de confidentialité</li>
                     </ul>
                 </li>
