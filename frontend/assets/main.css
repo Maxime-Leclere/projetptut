@@ -17,6 +17,11 @@ a {
 
 /*Partie Menu Bar*/
 
+.nav_header {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .menu_bar {
     background: blueviolet;
 }
