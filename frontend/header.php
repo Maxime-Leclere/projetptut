@@ -27,6 +27,7 @@
                         <li class="sub_item_header"><a href="register.php">Inscription</a></li>
                     </ul>
                 </li>
+                <li class="item_header"><a href="calendar.php">Calendrier</a></li>
                 <li class="item_header"><a href="shop.php">Notre Boutique</a></li>
                 <li class="item_header">A Propos
                     <ul class="sub_menu">
