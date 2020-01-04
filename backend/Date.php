@@ -18,8 +18,8 @@ class Date {
         }
         while ($date->format('Y') <= $year) {
             $y = date('Y', intval($date));
-            $m = date('n', $date);
-            $d = date('j', $date);
+            $m = date('n', intval($date));
+            $d = date('j', intval($date));
             $w = str_replace('0', '7', date('w', $date));
             $tab[$y][$m][$d] = $w;
             $date->add(new DateInterval('P1D'));
