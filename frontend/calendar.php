@@ -9,8 +9,8 @@
 
 <main class="custom_body">
     <?php
-        use backend\Date as DateAlias;
-        $date = new DateAlias();
+        include_once backend\Date.php;
+        $date = new Date();
         $year = \date('Y');
         $month = \date('n');
         $dates = $date->getAll($year);
