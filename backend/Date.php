@@ -17,7 +17,7 @@ class Date {
             echo 'error initialisize DateTime';
         }
         while ($date->format('Y') <= $year) {
-            $y = intval(date('Y', $date));
+            $y = date('Y', intval($date));
             $m = date('n', $date);
             $d = date('j', $date);
             $w = str_replace('0', '7', date('w', $date));
