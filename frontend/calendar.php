@@ -54,11 +54,11 @@
                 include_once '../backend/Date.php';
                 include_once 'config.php';
                 use backend\Date;
-                $date = new Date();
-                $year = \date('Y');
-                $month = \date('n');
+                $date   = new Date();
+                $year   = \date('Y');
+                $month  = \date('n');
                 $events = $date->getEvents($year);
-                $dates = $date->getAll($year);
+                $dates  = $date->getAll($year);
             ?>
             <div class="calendar">
                 <div class="current_year_month">

@@ -21,15 +21,14 @@ class Date {
             $r[strtotime($d->Date_fin)][$d->Num_T] = 'Fin du '.$d->Nom_T. ' à '.
                 $d->Lieu;
         }
-        if (isset($d)) {
+//        if (isset($d)) {
             $reqM = $DB->query('SELECT Num_M, Date_M, Heure, Club_Adversaire, Lieu
                                          FROM MATCHS WHERE Num_T='.$d->Num_T);
             while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
                 $r[strtotime($d2->Date_M)][$d2->Num_M] = 'Match à '.$d2->Heure.
                     ' contre '. $d2->Club_Adversaire.' à '.$d2->Lieu;
             }
-        }
-
+//        }
         return $r;
     }
 
