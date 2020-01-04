@@ -1,4 +1,9 @@
 <?php
+namespace backend;
+
+use DateInterval;
+use DateTime;
+use Exception;
 
 class Date {
     var $days   = array('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche');

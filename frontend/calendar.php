@@ -9,6 +9,7 @@
 
 <main class="custom_body">
     <?php
+        use backend\Date;
         $date = new Date();
         $year = \date('Y');
         $month = \date('n');
@@ -20,6 +21,10 @@
             <a class="previous_month" href="#"><<<?php echo $date->months[$month-2]; ?></a>
             <a class="next_month" href="#"><?php echo $date->months[$month]; ?>>></a>
         </div>
+<!--        --><?php //$dates =current($dates);
+//        foreach ($dates as $m=>$days) {
+//
+//        }?>
 
     </div>
     <pre><?php print_r($dates); ?></pre>

@@ -50,6 +50,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maxle\Desktop\IUT Travail\2eme année\test\projetptut\backend" />
+      <recent name="C:\Users\maxle\Desktop\IUT Travail\2eme année\test\projetptut\frontend" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -81,7 +87,7 @@
       <workItem from="1576250658802" duration="66000" />
       <workItem from="1576250747254" duration="5099000" />
       <workItem from="1576758520115" duration="12675000" />
-      <workItem from="1578092227108" duration="4832000" />
+      <workItem from="1578092227108" duration="5378000" />
     </task>
     <servers />
   </component>
