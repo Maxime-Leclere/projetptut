@@ -20,7 +20,7 @@ class Date {
             $m = date('n', $date);
             $d = date('j', $date);
             $w = str_replace('0', '7', date('w', $date));
-            $tab[y][m][d] = $w;
+            $tab[$y][$m][$d] = $w;
             $date->add(new \DateInterval('P1D'));
         }
         return $tab;
