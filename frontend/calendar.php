@@ -41,6 +41,16 @@
                             <?php } ?>
                         </tr>
                     </thead>
+                    <tbody>
+                        <tr>
+                        <?php foreach ($days as $d=>$w) { ?>
+                            <td><?php echo $d; ?></td>
+                            <?php if ($w == 7) { ?>
+                                <tr></tr>
+                            <?php } ?>
+                        <?php } ?>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         <?php } ?>
