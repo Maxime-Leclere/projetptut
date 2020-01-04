@@ -9,6 +9,7 @@
             $('.daysofmonth:first').show();
             var current = 1;
             $('.previous_month').addClass('active');
+            $('.next_month').addClass('active');
             $('.previous_month').click(function() {
                 if(current === 1) {
                     $('#month'+current).slideUp();
@@ -20,15 +21,15 @@
                     $('#month'+current).slideDown();
                 }
             });
-            $('.next_month').addClass('active').click(function() {
+            $('.previous_month').click(function() {
                 if (current === 12) {
-                    $('#month'+current).slideDown();
+                    $('#month'+current).slideUp();
                     current = 1;
-                    $('#month'+current).slideUp();
-                } else {
                     $('#month'+current).slideDown();
-                    ++current;
+                } else {
                     $('#month'+current).slideUp();
+                    ++current;
+                    $('#month'+current).slideDown();
                 }
             });
         });
