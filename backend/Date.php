@@ -8,7 +8,7 @@ use Exception;
 class Date {
     var $days   = array('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche');
     var $months = array('Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin',
-        'Juillet', 'Août', 'Septembre', 'Octobre', 'Décembre');
+        'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
     public function getAll($year) {
         $tab = array();
         try {
