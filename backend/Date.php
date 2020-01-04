@@ -23,7 +23,7 @@ class Date {
             $w = str_replace('0', '7', $date->format('w'));
             $tab[$y][$m][$d] = $w;
 //            $date->add(new DateInterval('P1D'));
-            date_add($date, date_interval_create_from_date_string('1 day'));
+            date_add($date, date_interval_create_from_date_string('01 days'));
         }
         return $tab;
     }
