@@ -22,7 +22,7 @@ class Date {
             $d = date('j', intval($date));
             $w = str_replace('0', '7', date('w', intval($date)));
             $tab[$y][$m][$d] = $w;
-            $date->add(new DateInterval('P1D'));
+            $date->add(new DateInterval('P1Y'));
         }
         return $tab;
     }
