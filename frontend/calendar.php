@@ -17,7 +17,7 @@
                         $('#month'+current).slideUp();
                         $('#link_month'+current).hide();
                         current = 12;
-                        $('#link_month'+current).show();
+                        $('#link_month'+current-1).show();
                         $('#month'+current).slideDown();
                         alert(current);
                     } else {
@@ -31,7 +31,7 @@
                 });
                 $('.next_month').click(function() {
                     if (current === 12) {
-                        $('#link_month'+current).hide();
+                        $('#link_month'+current-1).hide();
                         $('#month'+current).slideUp();
                         current = 1;
                         $('#link_month'+current).show();
