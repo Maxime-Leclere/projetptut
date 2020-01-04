@@ -81,7 +81,7 @@
       <workItem from="1576250658802" duration="66000" />
       <workItem from="1576250747254" duration="5099000" />
       <workItem from="1576758520115" duration="12675000" />
-      <workItem from="1578092227108" duration="4232000" />
+      <workItem from="1578092227108" duration="4562000" />
     </task>
     <servers />
   </component>
@@ -89,6 +89,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1032" y="179" key="#Inspections" timestamp="1578096798707">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="179" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1578096798707" />
     <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1578092532489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

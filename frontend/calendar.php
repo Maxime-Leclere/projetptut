@@ -9,7 +9,7 @@
 
 <main class="custom_body">
     <?php
-        use backend\Date;
+        use \backend\Date;
         $date = new Date();
         $year = \date('Y');
         $month = \date('n');

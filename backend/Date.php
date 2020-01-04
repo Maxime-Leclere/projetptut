@@ -1,7 +1,9 @@
 <?php
 namespace backend;
 
+use DateInterval;
 use DateTime;
+use Exception;
 
 class Date {
 
@@ -12,7 +14,7 @@ class Date {
         $tab = array();
         try {
             $date = new DateTime($year . '-01-01');
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             echo 'error initialisize DateTime';
         }
         while ($date->format('Y') <= $year) {
@@ -21,7 +23,7 @@ class Date {
             $d = date('j', $date);
             $w = str_replace('0', '7', date('w', $date));
             $tab[$y][$m][$d] = $w;
-            $date->add(new \DateInterval('P1D'));
+            $date->add(new DateInterval('P1D'));
         }
         return $tab;
     }
