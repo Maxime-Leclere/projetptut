@@ -8,29 +8,37 @@
                 $('.daysofmonth').hide();
                 $('.daysofmonth:first').show();
                 $('.monthName').hide();
-                $('.monthName:first').show();
                 var current = 1;
+                $('#link_month'+current).show();
                 $('.previous_month').addClass('active');
                 $('.next_month').addClass('active');
                 $('.previous_month').click(function() {
                     if(current === 1) {
                         $('#month'+current).slideUp();
+                        $('#link_month'+current).hide();
                         current = 12;
+                        $('#link_month'+current).show();
                         $('#month'+current).slideDown();
                     } else {
+                        $('#link_month'+current).hide();
                         $('#month'+current).slideUp();
                         --current;
+                        $('#link_month'+current).show();
                         $('#month'+current).slideDown();
                     }
                 });
                 $('.next_month').click(function() {
                     if (current === 12) {
+                        $('#link_month'+current).hide();
                         $('#month'+current).slideUp();
                         current = 1;
+                        $('#link_month'+current).show();
                         $('#month'+current).slideDown();
                     } else {
+                        $('#link_month'+current).hide();
                         $('#month'+current).slideUp();
                         ++current;
+                        $('#link_month'+current).show();
                         $('#month'+current).slideDown();
                     }
                 });
@@ -65,12 +73,14 @@
                             echo end($date->months);
                         } else {
                             echo $date->months[$month-2];
-                        }?></a>
+                        }?>
+                    </a>
                     <a class="next_month" href="#"><?php if ($month == 12) {
                             echo current($date->months);
                         } else {
                             echo $date->months[$month];
-                        }?>>></a>
+                        }?>>>
+                    </a>
                 </div>
                 <?php $dates = current($dates);
                 foreach ($dates as $m=>$days) { ?>
