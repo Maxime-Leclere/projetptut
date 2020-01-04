@@ -44,6 +44,9 @@
                     <tbody>
                         <tr>
                         <?php foreach ($days as $d=>$w) { ?>
+                            <?php if ($d == 1) { ?>
+                                <td colspan="<?php echo $w-1; ?>"></td>
+                            <?php } ?>
                             <td><?php echo $d; ?></td>
                             <?php if ($w == 7) { ?>
                                 <tr></tr>
