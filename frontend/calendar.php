@@ -82,7 +82,7 @@
                             <?php } ?>
                             <td><?php echo $d; ?></td>
                             <?php if ($w == 7) { ?>
-                                <tr></tr>
+                                </tr><tr>
                             <?php } ?>
                         <?php } ?>
                         <?php if ($end != 7) { ?>
