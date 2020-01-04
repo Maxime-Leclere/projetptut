@@ -52,10 +52,12 @@
         <main class="custom_body">
             <?php
                 include_once '../backend/Date.php';
+                include_once 'config.php';
                 use backend\Date;
                 $date = new Date();
                 $year = \date('Y');
                 $month = \date('n');
+                $events = $date->getEvents($year);
                 $dates = $date->getAll($year);
             ?>
             <div class="calendar">
@@ -107,7 +109,7 @@
                 <?php } ?>
 
             </div>
-            <pre><?php print_r($dates); ?></pre>
+            <pre><?php print_r($events); ?></pre>
         </main>
 
         <?php include_once 'footer.php'; ?>
