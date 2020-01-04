@@ -20,9 +20,9 @@ class Date {
             $y = date('Y', intval($date));
             $m = date('n', intval($date));
             $d = date('j', intval($date));
-            $w = str_replace('0', '7', date('w', intval($date)));
+            $w = str_replace('0', '7', $date->format('w'));
             $tab[$y][$m][$d] = $w;
-            $date->add(new DateInterval('P1Y'));
+            $date->add(new DateInterval('P1D'));
         }
         return $tab;
     }
