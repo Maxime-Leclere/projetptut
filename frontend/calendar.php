@@ -8,7 +8,8 @@
             $('.daysofmonth').hide();
             $('.daysofmonth:first').show();
             var current = 1;
-            $('.previous_month').addClass('active').click(function() {
+            $('.previous_month').addClass('active');
+            $('.previous_month').click(function() {
                 if(current === 1) {
                     $('#month'+current).slideUp();
                     current = 12;
