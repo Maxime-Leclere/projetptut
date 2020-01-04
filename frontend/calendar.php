@@ -2,6 +2,12 @@
 <html lang="fr">
 <head>
     <?php include_once 'head.php' ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($)){
+            $('.month').hide()
+        }
+    </script>
 </head>
 
 <body>
@@ -32,7 +38,7 @@
         </div>
         <?php $dates =current($dates);
         foreach ($dates as $m=>$days) { ?>
-            <div class="daysofmonth">
+            <div class="daysofmonth" id="month<?php echo $m; ?>">
                 <table>
                     <thead>
                         <tr>
