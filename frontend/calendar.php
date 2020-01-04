@@ -10,6 +10,7 @@
 <main class="custom_body">
     <?php
         include_once '../backend/Date.php';
+        use backend\Date;
         $date = new Date();
         $year = \date('Y');
         $month = \date('n');
