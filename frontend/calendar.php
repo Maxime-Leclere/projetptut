@@ -43,7 +43,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                        <?php foreach ($days as $d=>$w) { ?>
+                        <?php $end = end($days);
+                        foreach ($days as $d=>$w) { ?>
                             <?php if ($d == 1) { ?>
                                 <td colspan="<?php echo $w-1; ?>"></td>
                             <?php } ?>
@@ -51,6 +52,9 @@
                             <?php if ($w == 7) { ?>
                                 <tr></tr>
                             <?php } ?>
+                        <?php } ?>
+                        <?php if ($end != 7) { ?>
+                            <td colspan="<?php echo 7-$end; ?>"></td>
                         <?php } ?>
                         </tr>
                     </tbody>
