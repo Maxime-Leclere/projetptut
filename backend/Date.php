@@ -16,7 +16,7 @@ class Date {
         } catch (Exception $e) {
             echo 'error initialisize DateTime';
         }
-        while ($date->format('Y') <= $year) {
+        while (intval($date->format('Y')) <= intval($year)) {
             $y = date('Y', $date);
             $m = date('n', $date);
             $d = date('j', $date);
