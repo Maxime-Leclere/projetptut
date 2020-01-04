@@ -55,11 +55,10 @@
                     <div class="months">
                         <?php foreach ($date->months as $id=>$m) { ?>
                             <div class="monthName" id="link_month<?php echo $id+1; ?>">
-                                <?php echo $m; ?>
+                                <?php echo $m.' '.$year; ?>
                             </div>
                         <?php } ?>
                     </div>
-                    <?php echo ' '.$year; ?>
                 </div>
                 <div class="select_month">
                     <a class="previous_month" href="#"><<<?php if ($month == 1) {
@@ -73,7 +72,7 @@
                             echo $date->months[$month];
                         }?>>></a>
                 </div>
-                <?php $dates =current($dates);
+                <?php $dates = current($dates);
                 foreach ($dates as $m=>$days) { ?>
                     <div class="daysofmonth" id="month<?php echo $m; ?>">
                         <table>
