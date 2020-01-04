@@ -1,12 +1,6 @@
 <?php
-namespace backend;
-
-use DateInterval;
-use DateTime;
-use Exception;
 
 class Date {
-
     var $days   = array('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche');
     var $months = array('Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin',
         'Juillet', 'Août', 'Septembre', 'Octobre', 'Décembre', '');

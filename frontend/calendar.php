@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php use backend\Date;
-
-    include_once 'head.php' ?>
+    <?php include_once 'head.php' ?>
 </head>
 
 <body>
@@ -22,6 +20,7 @@
             <a class="previous_month" href="#"><<<?php echo $date->months[$month-2]; ?></a>
             <a class="next_month" href="#"><?php echo $date->months[$month]; ?>>></a>
         </div>
+
     </div>
     <pre><?php print_r($dates); ?></pre>
 </main>
