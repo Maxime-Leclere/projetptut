@@ -19,8 +19,16 @@
     <div class="calendar">
         <div class="current_year_month"><?php echo $date->months[$month-1].' '.$year; ?></div>
         <div class="select_month">
-            <a class="previous_month" href="#"><<<?php echo $date->months[$month-2]; ?></a>
-            <a class="next_month" href="#"><?php echo $date->months[$month]; ?>>></a>
+            <a class="previous_month" href="#"><<<?php if ($month == 1) {
+                    echo end($date->months);
+                } else {
+                    echo $date->months[$month-2];
+                }?></a>
+            <a class="next_month" href="#"><?php if ($month == 12) {
+                    echo current($date->months);
+                } else {
+                    echo $date->months[$month];
+                }?>>></a>
         </div>
 <!--        --><?php //$dates =current($dates);
 //        foreach ($dates as $m=>$days) {
