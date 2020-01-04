@@ -21,15 +21,15 @@
                     $('#month'+current).slideDown();
                 }
             });
-            $('.previous_month').click(function() {
+            $('.next_month').click(function() {
                 if (current === 12) {
-                    $('#month'+current).slideUp();
+                    $('#month'+current).slideDown();
                     current = 1;
-                    $('#month'+current).slideDown();
-                } else {
                     $('#month'+current).slideUp();
-                    ++current;
+                } else {
                     $('#month'+current).slideDown();
+                    ++current;
+                    $('#month'+current).slideUp();
                 }
             });
         });
