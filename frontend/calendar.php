@@ -30,10 +30,20 @@
                     echo $date->months[$month];
                 }?>>></a>
         </div>
-<!--        --><?php //$dates =current($dates);
-//        foreach ($dates as $m=>$days) {
-//
-//        }?>
+        <?php $dates =current($dates);
+        foreach ($dates as $m=>$days) { ?>
+            <div class="daysofmonth">
+                <table>
+                    <thead>
+                        <tr>
+                            <?php foreach ($date->days as $d) {?>
+                                <th><?php echo $d ?></th>
+                            <?php } ?>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        <?php } ?>
 
     </div>
     <pre><?php print_r($dates); ?></pre>
