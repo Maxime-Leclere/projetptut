@@ -7,6 +7,8 @@
             jQuery(function ($){
                 $('.daysofmonth').hide();
                 $('.daysofmonth:first').show();
+                $('.monthName').hide();
+                $('.monthName:first').show();
                 var current = 1;
                 $('.previous_month').addClass('active');
                 $('.next_month').addClass('active');
@@ -33,8 +35,6 @@
                     }
                 });
             });
-            $('.monthName').hide();
-            $('.monthName:first').show();
         </script>
     </head>
 
