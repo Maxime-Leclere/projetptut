@@ -19,14 +19,12 @@
                         current = 12;
                         $('#link_month'+current).show();
                         $('#month'+current).slideDown();
-                        alert(current);
                     } else {
                         $('#link_month'+current).hide();
                         $('#month'+current).slideUp();
                         --current;
                         $('#link_month'+current).show();
                         $('#month'+current).slideDown();
-                        alert(current);
                     }
                 });
                 $('.next_month').click(function() {
@@ -36,14 +34,12 @@
                         current = 1;
                         $('#link_month'+current).show();
                         $('#month'+current).slideDown();
-                        alert(current);
                     } else {
                         $('#link_month'+current).hide();
                         $('#month'+current).slideUp();
                         ++current;
                         $('#link_month'+current).show();
                         $('#month'+current).slideDown();
-                        alert(current);
                     }
                 });
             });
