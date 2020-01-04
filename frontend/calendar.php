@@ -33,6 +33,8 @@
                     }
                 });
             });
+            $('.monthName').hide();
+            $('.monthName:first').show();
         </script>
     </head>
 
