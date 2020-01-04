@@ -23,13 +23,13 @@
             });
             $('.next_month').click(function() {
                 if (current === 12) {
-                    $('#month'+current).slideDown();
+                    $('#month'+current).slideUp();
                     current = 1;
-                    $('#month'+current).slideUp();
-                } else {
                     $('#month'+current).slideDown();
-                    ++current;
+                } else {
                     $('#month'+current).slideUp();
+                    ++current;
+                    $('#month'+current).slideDown();
                 }
             });
         });
