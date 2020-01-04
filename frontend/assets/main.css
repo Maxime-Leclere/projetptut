@@ -74,4 +74,6 @@ footer {
     margin: 16px;
 }
 
-/*Partie Footer*/
+table, th, td {
+    border: 1px solid black;
+}
