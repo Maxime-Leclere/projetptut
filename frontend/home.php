@@ -31,6 +31,7 @@
                 <input type="text" id="title" name="title" placeholder="taper votre titre" required>
                 <label>Texte</label>
                 <textarea id="text" name="text" placeholder="taper votre texte" required></textarea>
+                <button type="submit">envoyer</button>
             </form>
         </main>
         <?php include_once 'footer.php' ?>

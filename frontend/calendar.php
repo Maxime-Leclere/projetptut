@@ -119,8 +119,6 @@
                 <?php } ?>
 
             </div>
-
-            <pre><?php print_r($events); ?></pre>
         </main>
 
         <?php include_once 'footer.php'; ?>
