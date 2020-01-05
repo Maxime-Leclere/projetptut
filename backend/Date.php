@@ -10,6 +10,20 @@ class Date {
     var $months = array('Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin',
         'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
 
+    public function getArticles($year) {
+        global $DB;
+        $r = array();
+        $req = $DB->query('SELECT * FROM `ARTICLES` WHERE YEAR(Date_A)='.$year.' 
+                        ORDER BY Date_A DESC, Time_A DESC');
+        $i = 0;
+        while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
+            $r[$i] = $d->Tite_A."\n".$d->Date_A.' '.
+            $d->Time_A."\n".$d->Text_A;
+            ++$i;
+        }
+        return $r;
+    }
+
     public function getEvents($year) {
         global $DB;
         $r = array();
