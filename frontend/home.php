@@ -26,8 +26,13 @@
                     </div>
                 <?php } }?>
             </div>
+            <form action="AddArticle.php" method="post">
+                <label>Titre</label>
+                <input type="text" id="title" name="title" placeholder="taper votre titre" required>
+                <label>Texte</label>
+                <textarea id="text" name="text" placeholder="taper votre texte" required></textarea>
+            </form>
         </main>
-
         <?php include_once 'footer.php' ?>
     </body>
 </html>
