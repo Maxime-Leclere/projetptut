@@ -88,13 +88,23 @@
                             <tbody>
                                 <tr>
                                 <?php $end = end($days);
+                                $time = strtotime("$year-$m-$d");
                                 foreach ($days as $d=>$w) { ?>
                                     <?php if ($d == 1) { ?>
                                         <?php if($w != 1) { ?>
                                             <td colspan="<?php echo $w-1; ?>"></td>
                                         <?php } ?>
                                     <?php } ?>
-                                    <td><?php echo $d; ?></td>
+                                    <td>
+                                        <?php echo $d; ?>
+                                        <ul class="events">
+                                            <?php if(isset($events[$time])) {
+                                                foreach ($events[$time] as $e) {?>
+                                                    <li><?php echo $e; ?></li>
+                                                <?php }
+                                            }?>
+                                        </ul>
+                                    </td>
                                     <?php if ($w == 7) { ?>
                                         </tr><tr>
                                     <?php } ?>
@@ -109,6 +119,7 @@
                 <?php } ?>
 
             </div>
+
             <pre><?php print_r($events); ?></pre>
         </main>
 
