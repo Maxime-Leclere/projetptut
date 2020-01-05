@@ -88,8 +88,8 @@
                             <tbody>
                                 <tr>
                                 <?php $end = end($days);
-
-                                foreach ($days as $d=>$w) { $time = strtotime("$year-$m-$d");?>
+                                foreach ($days as $d=>$w) {
+                                    $time = strtotime("$year-$m-$d");?>
                                     <?php if ($d == 1) { ?>
                                         <?php if($w != 1) { ?>
                                             <td colspan="<?php echo $w-1; ?>"></td>
