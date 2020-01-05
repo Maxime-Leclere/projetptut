@@ -86,7 +86,13 @@ th {
     border: 1px solid black;
 }
 
+.articles, .article {
+    border: 1px solid black;
+}
+
 .custom_body {
     margin-left: 20%;
     margin-right: 20%;
 }
+
+
