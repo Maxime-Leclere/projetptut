@@ -28,9 +28,9 @@
             </div>
             <form action="AddArticle.php" method="post">
                 <label>Titre</label>
-                <input type="text" id="title" name="title" placeholder="taper votre titre" required>
+                <input type="text" id="title" name="title" placeholder="taper votre titre" required><br>
                 <label>Texte</label>
-                <textarea id="text" name="text" placeholder="taper votre texte" required></textarea>
+                <textarea id="text" name="text" placeholder="taper votre texte" required></textarea><br>
                 <button type="submit">envoyer</button>
             </form>
         </main>
