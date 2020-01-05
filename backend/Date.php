@@ -15,17 +15,15 @@ class Date {
         $r = array();
         $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 
                                     FROM TOURNOI WHERE YEAR(Date_deb) ='.$year);
-        $dd = null;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[strtotime($d->Date_deb)][$d->Num_T] = 'Debut du '.$d->Nom_T. ' à '.
                 $d->Lieu;
             $r[strtotime($d->Date_fin)][$d->Num_T] = 'Fin du '.$d->Nom_T. ' à '.
                 $d->Lieu;
-            $dd = $d;
         }
 //        if (isset($d)) {
-            $reqM = $DB->query('SELECT Num_M, Date_M, Heure, Club_Adversaire, Lieu
-                                         FROM MATCHS WHERE Num_T='.$dd->Num_T);
+            $reqM = $DB->query('SELECT Num_M, Date_M, Heure, 
+Club_Adversaire, M.Lieu FROM MATCHS M, TOURNOI T WHERE M.Num_T = T.Num_T');
             while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
                 $r[strtotime($d2->Date_M)][$d2->Num_M] = 'Match à '.$d2->Heure.
                     ' contre '. $d2->Club_Adversaire.' à '.$d2->Lieu;
