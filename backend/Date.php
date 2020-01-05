@@ -17,7 +17,7 @@ class Date {
                         ORDER BY Date_A DESC, Time_A DESC');
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = $d->Tite_A."\n".$d->Date_A.' '.
+            $r[$i] = ''.$d->Tite_A."\n".$d->Date_A.' '.
             $d->Time_A."\n".$d->Text_A;
             ++$i;
         }
