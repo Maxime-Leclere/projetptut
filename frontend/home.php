@@ -16,7 +16,7 @@
             $year   = \date('Y');
             $month  = \date('n');
             $day    = \date('j');
-            $articles = $date->getArticles($year, isset($_GET['limit']) ? $_GET['limit'] : 5);
+            $articles = $date->getArticles($year);
             ?>
             <div class="articles">
                 <?php if (isset($articles)) {
