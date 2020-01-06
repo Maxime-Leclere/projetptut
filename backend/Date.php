@@ -14,7 +14,7 @@ class Date {
         global $DB;
         $r = array();
         $req = $DB->query('SELECT * FROM `ARTICLES` WHERE YEAR(Date_A)='.$year.' 
-                        ORDER BY Date_A DESC, Time_A DESC');
+                        ORDER BY Date_A DESC, Time_A DESC LIMIT 5');
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = '<h1>'.$d->Title_A.'</h1>'.$d->Date_A.' '.
