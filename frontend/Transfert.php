@@ -24,7 +24,6 @@ function transfert()
 
         $img_type = $_FILES['fic']['type'];
         $img_nom = $_FILES['fic']['name'];
-        var_dump($img_type);
     }
 }
 ?>
