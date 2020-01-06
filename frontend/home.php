@@ -29,7 +29,7 @@
             <form action="AddArticle.php" method="post">
                 <label>Titre</label><br>
                 <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
-                <input type="image" name="image"><br>
+                <input type="file" name="image"><br>
                 <label>Texte</label><br>
                 <textarea id="Text" name="text" placeholder="taper votre texte" required></textarea><br>
                 <button type="submit">envoyer</button>
