@@ -26,6 +26,14 @@
                     </div>
                 <?php } }?>
             </div>
+            <?php
+            include 'Transfert.php';
+            if ( isset($_FILES['fic']) )
+            {
+                transfert();
+            }
+
+            ?>
             <form action="AddArticle.php" method="post">
                 <label>Titre</label><br>
                 <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
