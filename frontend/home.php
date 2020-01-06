@@ -30,9 +30,9 @@
             include_once 'Transfert.php';
             if ( isset($_FILES['fic']) )
             {
-                transfert();
+                transfert();            var_dump($_FILES['fic']['type']);
+
             }
-            var_dump($_FILES['fic']['type']);
             ?>
             <form action="AddArticle.php" method="post">
                 <label>Titre</label><br>
