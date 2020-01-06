@@ -10,11 +10,11 @@ class Date {
     var $months = array('Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin',
         'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
 
-    public function getArticles($year) {
+    public function getArticles($year, $limit) {
         global $DB;
         $r = array();
         $req = $DB->query('SELECT * FROM `ARTICLES` WHERE YEAR(Date_A)='.$year.' 
-                        ORDER BY Date_A DESC, Time_A DESC LIMIT 5');
+                        ORDER BY Date_A DESC, Time_A DESC LIMIT ' .$limit);
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = '<h1>'.$d->Title_A.'</h1>'.$d->Date_A.' '.
