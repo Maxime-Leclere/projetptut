@@ -27,7 +27,7 @@
                 <?php } }?>
             </div>
             <?php
-            include 'Transfert.php';
+            include_once 'Transfert.php';
             if ( isset($_FILES['fic']) )
             {
                 transfert();
