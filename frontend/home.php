@@ -22,7 +22,7 @@
                 <?php if (isset($articles)) {
                     foreach ($articles as $a) {?>
                     <div class="article">
-                        <?php echo $a; ?>
+                        <?php header("Content-type: png");echo $a; ?>
                     </div>
                 <?php } }?>
             </div>
