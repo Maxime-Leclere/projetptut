@@ -3,8 +3,8 @@
     global $DB;
     $title = $_POST['title'];
     $text = $_POST['text'];
-    $img_blob = '';
-    function Transfert($img_blob) {
+    $img_blob = file_get_contents ($_FILES['image']['tmp_name']);
+    function Transfert() {
         $ret        = false;
         $img_taille = 0;
         $taille_max = 250000;
@@ -21,17 +21,16 @@
                 echo "Trop gros !";
                 return false;
             }
-            $img_blob .= file_get_contents ($_FILES['image']['tmp_name']);
             echo 'renvoie true';
             return true;
         }
     }
-    if(Transfert($img_blob)) {
+    if(Transfert()) {
         $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`, `Image_A`) VALUES ('$title', '$text', '".addslashes($img_blob)."')");
     } else {
         echo 'requete';
         $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('$title', '$text')");
         echo'fn requete';
     }
-//    header('Location: home.php');
+    header('Location: home.php');
 ?>
