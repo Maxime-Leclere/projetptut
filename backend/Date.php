@@ -18,7 +18,7 @@ class Date {
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = '<h1>'.$d->Title_A.'</h1><p>'.$d->Date_A.' '.
-            $d->Time_A.'</p><img src="data:image/jpeg;base64{'.addslashes($d->Image_A).'}"/><p>'.$d->Text_A.'</p>';
+            $d->Time_A.'</p><img src="data:image/jpeg;base64{'.$d->Image_A.'}"/><p>'.$d->Text_A.'</p>';
             ++$i;
         }
         return $r;
