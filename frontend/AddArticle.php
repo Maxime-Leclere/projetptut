@@ -31,5 +31,5 @@
     } else {
         $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('$title', '$text')");
     }
-//    header('Location: home.php');
+    header('Location: home.php');
 ?>
