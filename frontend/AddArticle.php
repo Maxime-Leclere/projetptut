@@ -29,7 +29,9 @@
     if(Transfert($img_blob)) {
         $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`, `Image_A`) VALUES ('$title', '$text', '".addslashes($img_blob)."')");
     } else {
+        echo 'requete';
         $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('$title', '$text')");
+        echo'fn requete';
     }
     header('Location: home.php');
 ?>
