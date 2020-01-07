@@ -22,6 +22,7 @@
                 return false;
             }
             $img_blob += file_get_contents ($_FILES['image']['tmp_name']);
+            echo 'renvoie true';
             return true;
         }
     }
@@ -30,5 +31,5 @@
     } else {
         $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('$title', '$text')");
     }
-    header('Location: home.php');
+//    header('Location: home.php');
 ?>
