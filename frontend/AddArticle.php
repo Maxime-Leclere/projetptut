@@ -3,8 +3,6 @@
     global $DB;
     $title = $_POST['title'];
     $text = $_POST['text'];
-    $img_type = '';
-    $img_nom  = '';
     $img_blob = '';
     function Transfert($img_blob) {
         $ret        = false;
