@@ -8,20 +8,20 @@
         $ret        = false;
         $img_taille = 0;
         $taille_max = 250000;
-        $ret        = is_uploaded_file($_FILES['fic']['tmp_name']);
+        $ret        = is_uploaded_file($_FILES['image']['tmp_name']);
 
         if (!$ret) {
             echo "Problème de transfert";
             return false;
         } else {
-            // Le fichier a bien été reçu
-            $img_taille = $_FILES['fic']['size'];
+            // Le imagehier a bien été reçu
+            $img_taille = $_FILES['image']['size'];
 
             if ($img_taille > $taille_max) {
                 echo "Trop gros !";
                 return false;
             }
-            $img_blob = file_get_contents ($_FILES['fic']['tmp_name']);
+            $img_blob = file_get_contents ($_FILES['image']['tmp_name']);
 
             return true;
         }
@@ -31,5 +31,5 @@
     } else {
         $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('$title', '$text')");
     }
-//    header('Location: home.php');
+    header('Location: home.php');
 ?>
