@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="253f995a-5a23-41f7-a911-9a0ba2059248" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/backend/Date.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Date.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/AddArticle.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/AddArticle.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/Date.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+            <state relative-caret-position="270">
+              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -224,12 +223,12 @@
       <workItem from="1578255601450" duration="9798000" />
       <workItem from="1578323142447" duration="2487000" />
       <workItem from="1578395649629" duration="2880000" />
-      <workItem from="1578400833798" duration="494000" />
+      <workItem from="1578400833798" duration="792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7154000" />
+    <option name="totallyTimeSpent" value="7452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1682" height="995" extended-state="6" />
@@ -348,8 +347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/Date.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+        <state relative-caret-position="270">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
         </state>
       </provider>
     </entry>
