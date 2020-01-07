@@ -21,7 +21,7 @@
                 echo "Trop gros !";
                 return false;
             }
-            $img_blob = file_get_contents ($_FILES['image']['tmp_name']);
+            $img_blob(file_get_contents ($_FILES['image']['tmp_name']));
             return true;
         }
     }

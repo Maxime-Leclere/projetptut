@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253f995a-5a23-41f7-a911-9a0ba2059248" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/Date.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Date.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/AddArticle.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/AddArticle.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/AddArticle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+            <state relative-caret-position="345">
+              <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/Date.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+              <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -108,13 +108,13 @@
         <option value="$PROJECT_DIR$/frontend/calendar.php" />
         <option value="$PROJECT_DIR$/frontend/Transfert.php" />
         <option value="$PROJECT_DIR$/frontend/home.php" />
-        <option value="$PROJECT_DIR$/frontend/AddArticle.php" />
         <option value="$PROJECT_DIR$/backend/Date.php" />
+        <option value="$PROJECT_DIR$/frontend/AddArticle.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-1" />
     <option name="y" value="28" />
     <option name="width" value="840" />
@@ -223,15 +223,15 @@
       <workItem from="1578255601450" duration="9798000" />
       <workItem from="1578323142447" duration="2487000" />
       <workItem from="1578395649629" duration="2880000" />
-      <workItem from="1578400833798" duration="792000" />
+      <workItem from="1578400833798" duration="1222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7452000" />
+    <option name="totallyTimeSpent" value="7882000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="28" width="1682" height="995" extended-state="6" />
+    <frame x="-1" y="28" width="1682" height="995" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.085679315" />
@@ -338,17 +338,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/AddArticle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/Date.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/AddArticle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
         </state>
       </provider>
     </entry>
