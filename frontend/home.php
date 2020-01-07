@@ -27,7 +27,7 @@
                 <?php } }?>
             </div>
 
-            <form action="AddArticle.php" method="post">
+            <form enctype="multipart/form-data" action="AddArticle.php" method="post">
                 <label>Titre</label><br>
                 <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
                 <input type="file" name="image"><br>
