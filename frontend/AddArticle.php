@@ -33,5 +33,5 @@
         $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('$title', '$text')");
         echo'fn requete';
     }
-    header('Location: home.php');
+//    header('Location: home.php');
 ?>
