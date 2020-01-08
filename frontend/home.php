@@ -33,7 +33,7 @@
                 <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
                 <input type="file" name="image"><br>
                 <label>Texte</label><br>
-                <textarea id="Text" name="text" placeholder="taper votre texte" required></textarea><br>
+                <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
                 <button type="submit">envoyer</button>
             </form>
         </main>
