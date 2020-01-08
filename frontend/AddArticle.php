@@ -9,14 +9,14 @@
         } else {
             $text = "";
         }
-        $taille_max = 250000;
+        $taille_max = 2500000;
         $ret        = is_uploaded_file($_FILES['image']['tmp_name']);
 
         if (!$ret) {
             echo "Problème de transfert";
             return false;
         } else {
-            // Le imagehier a bien été reçu
+            // L'image a bien été reçu
             $img_taille = $_FILES['image']['size'];
 
             if ($img_taille > $taille_max) {
