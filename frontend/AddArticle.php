@@ -21,8 +21,9 @@
             }
             $tmp_name = $_FILES['image']["tmp_name"];
             $name = basename($_FILES["image"]["name"]);
-            move_uploaded_file($tmp_name, "assets/image_article/$name");
-            $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`, `Image_A`) VALUES ('$title', '$text', '$name')");
+            $destinationFinal = "assets/image_article/$name";
+            move_uploaded_file($tmp_name, "$destinationFinal");
+            $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`, `Image_A`) VALUES ('$title', '$text', '$destinationFinal')");
             return true;
         }
     }
