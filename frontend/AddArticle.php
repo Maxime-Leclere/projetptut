@@ -4,7 +4,11 @@
     function Transfert() {
         global $DB;
         $title = $_POST['title'];
-        $text = $_POST['text'];
+        if(isset($_POST['text'])) {
+            $text = $_POST['text'];
+        } else {
+            $text = "";
+        }
         $taille_max = 250000;
         $ret        = is_uploaded_file($_FILES['image']['tmp_name']);
 
@@ -35,4 +39,4 @@
         $req = $DB->exec("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('$title', '$text')");
     }
     header('Location: home.php');
-?>
+
