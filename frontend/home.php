@@ -18,6 +18,7 @@
             $day    = \date('j');
             $articles = $date->getArticles($year);
             ?>
+            <h1>Articles</h1>
             <div class="articles">
                 <?php if (isset($articles)) {
                     foreach ($articles as $a) {?>
