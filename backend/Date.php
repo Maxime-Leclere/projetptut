@@ -19,7 +19,7 @@ class Date {
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = '<h1>'.$d->Title_A.'</h1><p>'.$d->Date_A.' '.
             $d->Time_A.'</p>';
-            if ( $d->Image_A != "")$r[$i] .= '<img src="$d->Image_A">';
+            if ( $d->Image_A != "")$r[$i] .= '<img src="'.$d->Image_A.'">';
             $r[$i] .= '<p>'.$d->Text_A.'</p>';
             ++$i;
         }
