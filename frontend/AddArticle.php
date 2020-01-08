@@ -23,7 +23,7 @@
             $name = basename($_FILES["image"]["name"]);
             $destinationFinal = "assets/image_article/$name";
             move_uploaded_file($tmp_name, "$destinationFinal");
-            $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`, `Image_A`) VALUES ('$title', '$text', '$destinationFinal')");
+            $DB->exec("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`, `Image_A`) VALUES ('$title', '$text', '$destinationFinal')");
             return true;
         }
     }
