@@ -9,20 +9,11 @@
         } else {
             $text = "";
         }
-        $taille_max = 2500000;
-        $ret        = is_uploaded_file($_FILES['image']['tmp_name']);
-
+        $ret = is_uploaded_file($_FILES['image']['tmp_name']);
         if (!$ret) {
             echo "Problème de transfert";
             return false;
         } else {
-            // L'image a bien été reçu
-            $img_taille = $_FILES['image']['size'];
-
-            if ($img_taille > $taille_max) {
-                echo "Trop gros !";
-                return false;
-            }
             $tmp_name = $_FILES['image']["tmp_name"];
             $name = basename($_FILES["image"]["name"]);
             $destinationFinal = "assets/image_article/$name";
