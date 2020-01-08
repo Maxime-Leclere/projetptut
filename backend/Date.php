@@ -37,15 +37,37 @@ class Date {
             $r[strtotime($d->Date_fin)][$d->Num_T] = 'Fin du '.$d->Nom_T. ' à '.
                 $d->Lieu;
         }
-//        if (isset($d)) {
-            $reqM = $DB->query('SELECT Num_M, Date_M, Heure, 
-            Club_Adversaire, M.Lieu FROM MATCHS M, TOURNOI T WHERE M.Num_T = T.Num_T 
-            AND YEAR(Date_M) = '.$year);
-            while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
-                $r[strtotime($d2->Date_M)][$d2->Num_M] = 'Match à '.$d2->Heure.
-                    ' contre '. $d2->Club_Adversaire.' à '.$d2->Lieu;
-            }
-//        }
+        $reqM = $DB->query('SELECT Num_M, Date_M, Heure, 
+        Club_Adversaire, M.Lieu FROM MATCHS M, TOURNOI T WHERE M.Num_T = T.Num_T 
+        AND YEAR(Date_M) = '.$year);
+        while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
+            $r[strtotime($d2->Date_M)][$d2->Num_M] = 'Match à '.$d2->Heure.
+                ' contre '. $d2->Club_Adversaire.' à '.$d2->Lieu;
+        }
+        return $r;
+    }
+    public function getHomeEvents($year) {
+        global $DB;
+        $r = array();
+        $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 
+                                    FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND YEAR(Date_deb) ='.$year);
+        $i = 0;
+        while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
+            $r[$i] = '<h3>Debut du '.$d->Nom_T.'</h3><p>'.$d->Date_deb.'</p>';
+            ++$i;
+            $r[$i] = '<h3>Fin du '.$d->Nom_T.'</h3><p>'.$d->Date_fin.'</p>';
+            ++$i;
+        }
+        $j = 0;
+        $reqM = $DB->query('SELECT Num_M, Date_M, Heure, 
+        Club_Adversaire, M.Lieu, Nom_Equipe FROM MATCHS M, EQUIPE E, Jouer J WHERE 
+        M.Num_M = J.Num_M AND J.Num_Equipe = E.Num_Equipe 
+        AND M.Lieu="Aix-en-Provence" AND YEAR(Date_M) = '.$year);
+        while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
+            $r[$j] = '<h3>'.$d2->Lieu.' contre '. $d2->Club_Adversaire.'</h3><p>'.$d2->Date_M.
+                ' '.$d2->Heure.'</p>';
+            ++$j;
+        }
         return $r;
     }
 

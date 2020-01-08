@@ -82,11 +82,8 @@ td {
     border: 1px solid black;
 }
 
-.articles, .article {
-    border: 1px solid black;
-}
-
 .article {
+    border: 1px solid black;
     padding: 10%;
 }
 

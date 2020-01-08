@@ -17,16 +17,28 @@
             $month  = \date('n');
             $day    = \date('j');
             $articles = $date->getArticles($year);
+            $homeEvents = $date->getHomeEvents($year);
             ?>
-            <h1>Articles</h1>
             <div class="articles">
+                <h1>Articles</h1>
                 <?php if (isset($articles)) {
                     foreach ($articles as $a) {?>
                     <div class="article">
-                        <?php
-                        echo $a; ?>
+                        <?php echo $a; ?>
                     </div>
-                <?php } }?>
+                <?php }
+                }?>
+            </div>
+
+            <div class="homeEvents">
+                <h1>Evènement à domicile</h1>
+                <?php if(isset($homeEvents)) {
+                    foreach ($homeEvents as $hE) {?>
+                        <div class="homeEvent">
+                            <?php echo $hE; ?>
+                        </div>
+                    <?php }
+                }?>
             </div>
 
             <form enctype="multipart/form-data" action="AddArticle.php" method="post">
