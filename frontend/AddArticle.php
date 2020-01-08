@@ -32,7 +32,7 @@
         global $DB;
         $title = $_POST['title'];
         $text = $_POST['text'];
-        $req = $DB->exec("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`, `Image_A`) VALUES ('$title', '$text', '')");
+        $req = $DB->exec("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('$title', '$text')");
     }
     header('Location: home.php');
 ?>
