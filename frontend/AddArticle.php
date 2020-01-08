@@ -1,12 +1,10 @@
 <?php
     include_once 'config.php';
-    global $DB;
-    $title = $_POST['title'];
-    $text = $_POST['text'];
-    $img_blob = file_get_contents ($_FILES['image']['tmp_name']);
+
     function Transfert() {
-        $ret        = false;
-        $img_taille = 0;
+        global $DB;
+        $title = $_POST['title'];
+        $text = $_POST['text'];
         $taille_max = 250000;
         $ret        = is_uploaded_file($_FILES['image']['tmp_name']);
 
@@ -21,16 +19,19 @@
                 echo "Trop gros !";
                 return false;
             }
-            echo 'renvoie true';
+            $tmp_name = $_FILES['image']["tmp_name"];
+            $name = basename($_FILES["image"]["name"]);
+            move_uploaded_file($tmp_name, "assets/image_article/$name");
+            $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`, `Image_A`) VALUES ('$title', '$text', '$name')");
             return true;
         }
     }
-    if(Transfert()) {
-        $req = $DB->query("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`, `Image_A`) VALUES ('$title', '$text', '".addslashes($img_blob)."')");
-    } else {
-        echo 'requete';
+
+    if(!Transfert()) {
+        global $DB;
+        $title = $_POST['title'];
+        $text = $_POST['text'];
         $req = $DB->exec("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('$title', '$text')");
-        echo'fn requete';
     }
     header('Location: home.php');
 ?>
