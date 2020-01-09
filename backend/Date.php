@@ -71,7 +71,7 @@ class Date {
         J.Num_Equipe = E.Num_Equipe AND M.Lieu='Aix-en-Provence' AND Date_M >= $dateCurrent AND Heure >= '".$timeCurrent.
             "' ORDER BY Date_M DESC, Heure DESC");
         while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = '<h3>'.$d2->Lieu.' contre '. $d2->Club_Adversaire.'</h3><p>'.$d2->Date_M.
+            $r[$i] = '<h3>'.$d2->Nom_Equipe.' contre '. $d2->Club_Adversaire.'</h3><p>'.$d2->Date_M.
                 ' '.$d2->Heure.'</p>';
             ++$i;
         }
