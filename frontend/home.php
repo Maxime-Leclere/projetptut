@@ -31,7 +31,7 @@
             </div>
 
             <div class="homeEvents">
-                <h1>Evènement à domicile</h1>
+                <h1>Prochains évènements à domicile</h1>
                 <?php if(isset($homeEvents)) {
                     foreach ($homeEvents as $hE) {?>
                         <div class="homeEvent">
