@@ -56,7 +56,7 @@ class Date {
         $sec    = \date('s');
 
         $dateCurrent = strtotime("$year-$m-$d");
-        $timeCurrent =strtotime("$hour:$min:$sec");
+        $timeCurrent = strtotime("$hour:$min:$sec");
         $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 
                                     FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND YEAR(Date_deb) ='.$year);
         $i = 0;
@@ -68,8 +68,7 @@ class Date {
         }
         $reqM = $DB->query("SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu, 
         Nom_Equipe FROM MATCHS M, EQUIPE E, Jouer J WHERE M.Num_M = J.Num_M AND 
-        J.Num_Equipe = E.Num_Equipe AND M.Lieu='Aix-en-Provence' AND Date_M >= $dateCurrent AND Heure >= '".$timeCurrent.
-            "' ORDER BY Date_M DESC, Heure DESC");
+        J.Num_Equipe = E.Num_Equipe AND M.Lieu='Aix-en-Provence' AND YEAR(Date_M) = $year ORDER BY Date_M DESC, Heure DESC");
         while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = '<h3>'.$d2->Lieu.' contre '. $d2->Club_Adversaire.'</h3><p>'.$d2->Date_M.
                 ' '.$d2->Heure.'</p>';

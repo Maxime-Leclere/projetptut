@@ -56,7 +56,6 @@
                 use backend\Date;
                 $date   = new Date();
                 $year   = \date('Y');
-                $month  = \date('n');
                 $events = $date->getEvents($year);
                 $dates  = $date->getAll($year);
             ?>
