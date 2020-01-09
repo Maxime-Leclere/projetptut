@@ -62,7 +62,7 @@ class Date {
         Nom_Equipe FROM MATCHS M, EQUIPE E, Jouer J WHERE M.Num_M = J.Num_M AND 
         J.Num_Equipe = E.Num_Equipe AND M.Lieu="Aix-en-Provence" AND YEAR(Date_M) ='.$year);
         while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = '<h3>'.$d2->Lieu.' contre '. $d2->Club_Adversaire.'</h3><p>'.strtotime($d2->Date_M).
+            $r[$i] = '<h3>'.$d2->Lieu.' contre '. $d2->Club_Adversaire.'</h3><p>'.$d2->Date_M.
                 ' '.$d2->Heure.'</p>';
             ++$i;
         }
