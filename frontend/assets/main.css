@@ -74,21 +74,45 @@ footer {
     margin: 16px;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 table, td, th {
     border: 1px solid black;
 }
 
-td {
-    border: 1px solid black;
+th {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.articles, .article {
+td {
+    padding: 1%;
+}
+
+.article {
     border: 1px solid black;
+    padding: 10%;
+}
+
+.article_image {
+    width: 15%;
+    height: 15%;
+    border-radius: 5%;
 }
 
 .custom_body {
     margin-left: 20%;
     margin-right: 20%;
+    background-color: darkgray;
 }
 
+.calendar {
+    padding: 10%;
+}
+
+body {
+    background-color: aliceblue;
+}
 
