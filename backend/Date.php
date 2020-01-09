@@ -70,7 +70,7 @@ class Date {
     }
 
     public function getAll($year) {
-        $tab = array();
+        $r = array();
         try {
             $date = new DateTime($year . '-01-01');
         } catch (Exception $e) {
@@ -81,9 +81,9 @@ class Date {
             $m = $date->format('n');
             $d = $date->format('j');
             $w = str_replace('0', '7', $date->format('w'));
-            $tab[$y][$m][$d] = $w;
+            $r[$y][$m][$d] = $w;
             $date->add(new DateInterval('P1D'));
         }
-        return $tab;
+        return $r;
     }
 }
