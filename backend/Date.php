@@ -46,9 +46,11 @@ class Date {
         }
         return $r;
     }
-    public function getHomeEvents($year) {
+    public function getHomeEvents($year, $m, $d, $hour, $min, $sec) {
         global $DB;
         $r = array();
+        $dateCurrent = strtotime("$year-$m-$d");
+        $timeCurrent =strtotime("$hour:$min:$sec");
         $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 
                                     FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND YEAR(Date_deb) ='.$year);
         $i = 0;

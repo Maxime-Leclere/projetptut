@@ -16,8 +16,11 @@
             $year   = \date('Y');
             $month  = \date('n');
             $day    = \date('j');
+            $hour   = \date('H');
+            $min    = \date('i');
+            $sec    = \date('s');
             $articles = $date->getArticles($year);
-            $homeEvents = $date->getHomeEvents($year);
+            $homeEvents = $date->getHomeEvents($year, $month, $day, $hour, $min, $sec);
             ?>
             <div class="articles">
                 <h1>Articles</h1>
