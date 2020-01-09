@@ -16,16 +16,32 @@
             $year   = \date('Y');
             $month  = \date('n');
             $day    = \date('j');
+            $hour   = \date('H');
+            $min    = \date('i');
+            $sec    = \date('s');
             $articles = $date->getArticles($year);
+            $homeEvents = $date->getHomeEvents($year, $month, $day, $hour, $min, $sec);
             ?>
             <div class="articles">
+                <h1>Articles</h1>
                 <?php if (isset($articles)) {
                     foreach ($articles as $a) {?>
                     <div class="article">
-                        <?php
-                        echo $a; ?>
+                        <?php echo $a; ?>
                     </div>
-                <?php } }?>
+                <?php }
+                }?>
+            </div>
+
+            <div class="homeEvents">
+                <h1>Prochains évènements à domicile</h1>
+                <?php if(isset($homeEvents)) {
+                    foreach ($homeEvents as $hE) {?>
+                        <div class="homeEvent">
+                            <?php echo $hE; ?>
+                        </div>
+                    <?php }
+                }?>
             </div>
 
             <form enctype="multipart/form-data" action="AddArticle.php" method="post">
@@ -33,7 +49,7 @@
                 <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
                 <input type="file" name="image"><br>
                 <label>Texte</label><br>
-                <textarea id="Text" name="text" placeholder="taper votre texte" required></textarea><br>
+                <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
                 <button type="submit">envoyer</button>
             </form>
         </main>

@@ -18,7 +18,9 @@ class Date {
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = '<h1>'.$d->Title_A.'</h1><p>'.$d->Date_A.' '.
-            $d->Time_A.'</p>'.$d->Image_A.'<p>'.$d->Text_A.'</p>';
+            $d->Time_A.'</p>';
+            if ($d->Image_A != "")$r[$i] .= '<img class="article_image" src="'.$d->Image_A.'">';
+            if ($d->Text_A != "")$r[$i] .= '<p>'.$d->Text_A.'</p>';
             ++$i;
         }
         return $r;
@@ -35,20 +37,42 @@ class Date {
             $r[strtotime($d->Date_fin)][$d->Num_T] = 'Fin du '.$d->Nom_T. ' à '.
                 $d->Lieu;
         }
-//        if (isset($d)) {
-            $reqM = $DB->query('SELECT Num_M, Date_M, Heure, 
-            Club_Adversaire, M.Lieu FROM MATCHS M, TOURNOI T WHERE M.Num_T = T.Num_T 
-            AND YEAR(Date_M) = '.$year);
-            while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
-                $r[strtotime($d2->Date_M)][$d2->Num_M] = 'Match à '.$d2->Heure.
-                    ' contre '. $d2->Club_Adversaire.' à '.$d2->Lieu;
-            }
-//        }
+        $reqM = $DB->query('SELECT Num_M, Date_M, Heure, 
+        Club_Adversaire, M.Lieu FROM MATCHS M, TOURNOI T WHERE M.Num_T = T.Num_T 
+        AND YEAR(Date_M) = '.$year);
+        while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
+            $r[strtotime($d2->Date_M)][$d2->Num_M] = 'Match à '.$d2->Heure.
+                ' contre '. $d2->Club_Adversaire.' à '.$d2->Lieu;
+        }
+        return $r;
+    }
+    public function getHomeEvents($year, $m, $d, $hour, $min, $sec) {
+        global $DB;
+        $r = array();
+        $dateCurrent = strtotime("$year-$m-$d");
+        $timeCurrent =strtotime("$hour:$min:$sec");
+        $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 
+                                    FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND YEAR(Date_deb) ='.$year);
+        $i = 0;
+        while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
+            $r[$i] = '<h3>Debut du '.$d->Nom_T.'</h3><p>'.$d->Date_deb.'</p>';
+            ++$i;
+            $r[$i] = '<h3>Fin du '.$d->Nom_T.'</h3><p>'.$d->Date_fin.'</p>';
+            ++$i;
+        }
+        $reqM = $DB->query('SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu, 
+        Nom_Equipe FROM MATCHS M, EQUIPE E, Jouer J WHERE M.Num_M = J.Num_M AND 
+        J.Num_Equipe = E.Num_Equipe AND M.Lieu="Aix-en-Provence" AND YEAR(Date_M) ='.$year);
+        while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
+            $r[$i] = '<h3>'.$d2->Lieu.' contre '. $d2->Club_Adversaire.'</h3><p>'.$d2->Date_M.
+                ' '.$d2->Heure.'</p>';
+            ++$i;
+        }
         return $r;
     }
 
     public function getAll($year) {
-        $tab = array();
+        $r = array();
         try {
             $date = new DateTime($year . '-01-01');
         } catch (Exception $e) {
@@ -59,9 +83,9 @@ class Date {
             $m = $date->format('n');
             $d = $date->format('j');
             $w = str_replace('0', '7', $date->format('w'));
-            $tab[$y][$m][$d] = $w;
+            $r[$y][$m][$d] = $w;
             $date->add(new DateInterval('P1D'));
         }
-        return $tab;
+        return $r;
     }
 }
