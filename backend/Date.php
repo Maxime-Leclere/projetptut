@@ -67,7 +67,7 @@ class Date {
             ++$i;
         }
         $reqM = $DB->query("SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu, 
-        Nom_Equipe FROM MATCHS M, EQUIPE2 E, Jouer J WHERE M.Num_M = J.Num_M AND 
+        Nom_Equipe FROM MATCHS M, Equipe E, Jouer J WHERE M.Num_M = J.Num_M AND 
         J.Num_Equipe = E.Num_Equipe AND M.Lieu='Aix-en-Provence' AND Date_M >= $dateCurrent
              ORDER BY Date_M DESC, Heure DESC");
         while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
