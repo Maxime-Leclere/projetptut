@@ -19,7 +19,7 @@
             $destinationFinal = "assets/image_article/$name";
             move_uploaded_file($tmp_name, "$destinationFinal");
             $DB->exec("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`, `Image_A`) VALUES ('".
-                addslashes($title)."', '$text', '".addslashes($text)."')");
+                addslashes($title)."', '".addslashes($text)."', '$destinationFinal')");
             return true;
         }
     }
