@@ -58,7 +58,7 @@ class Date {
         $dateCurrent = strtotime("$year-$m-$d");
         $timeCurrent = strtotime("$hour:$min:$sec");
         $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 
-                                    FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND Date_deb) ='.$dateCurrent);
+                                    FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND Date_deb ='.$dateCurrent);
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = '<h3>Debut du '.$d->Nom_T.'</h3><p>'.$d->Date_deb.'</p>';
