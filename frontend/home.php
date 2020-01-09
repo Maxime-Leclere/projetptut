@@ -14,8 +14,8 @@
             use backend\Date;
             $date   = new Date();
             $year   = \date('Y');
-            $month  = \date('n');
-            $day    = \date('j');
+            $month  = \date('m');
+            $day    = \date('d');
             $hour   = \date('H');
             $min    = \date('i');
             $sec    = \date('s');

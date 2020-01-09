@@ -60,9 +60,10 @@ class Date {
             $r[$i] = '<h3>Fin du '.$d->Nom_T.'</h3><p>'.$d->Date_fin.'</p>';
             ++$i;
         }
-        $reqM = $DB->query('SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu, 
+        $reqM = $DB->query("SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu, 
         Nom_Equipe FROM MATCHS M, EQUIPE E, Jouer J WHERE M.Num_M = J.Num_M AND 
-        J.Num_Equipe = E.Num_Equipe AND M.Lieu="Aix-en-Provence" AND YEAR(Date_M) ='.$year);
+        J.Num_Equipe = E.Num_Equipe AND M.Lieu='Aix-en-Provence' AND Date_M >= $dateCurrent AND Heure >= '".$timeCurrent.
+            "' ORDER BY Date_M DESC, Heure DESC");
         while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = '<h3>'.$d2->Lieu.' contre '. $d2->Club_Adversaire.'</h3><p>'.$d2->Date_M.
                 ' '.$d2->Heure.'</p>';
