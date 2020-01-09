@@ -46,9 +46,15 @@ class Date {
         }
         return $r;
     }
-    public function getHomeEvents($year, $m, $d, $hour, $min, $sec) {
+    public function getHomeEvents($year) {
         global $DB;
         $r = array();
+        $m      = \date('m');
+        $d      = \date('d');
+        $hour   = \date('H');
+        $min    = \date('i');
+        $sec    = \date('s');
+
         $dateCurrent = strtotime("$year-$m-$d");
         $timeCurrent =strtotime("$hour:$min:$sec");
         $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 

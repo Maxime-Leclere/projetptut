@@ -20,7 +20,7 @@
             $min    = \date('i');
             $sec    = \date('s');
             $articles = $date->getArticles($year);
-            $homeEvents = $date->getHomeEvents($year, $month, $day, $hour, $min, $sec);
+            $homeEvents = $date->getHomeEvents($year);
             ?>
             <div class="articles">
                 <h1>Articles</h1>
