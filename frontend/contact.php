@@ -23,15 +23,15 @@
             <form action="../backend/SendMail.php" method="post">
 <!--                <div class="form-group">-->
                     <label for="email">Email addresse:</label>
-                    <input type="email" class="form-control" placeholder="Enter email" id="email" name="Email">
+                    <input type="email" class="form-control" placeholder="Enter email" name="email">
 <!--                </div>-->
 <!--                <div class="form-group">-->
                     <label for="sujet">Sujet:</label>
-                    <input type="text" class="form-control" id="sujet">
+                    <input type="text" class="form-control" name="sujet">
 <!--                </div>-->
 <!--                <div class="form-group">-->
                     <label for="comment">Message:</label>
-                    <textarea class="form-control" rows="5" id="message"></textarea>
+                    <textarea class="form-control" rows="5" name="message"></textarea>
 <!--                </div>-->
 
                 <button type="submit" class="btn btn-primary">Submit</button>
