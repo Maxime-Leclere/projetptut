@@ -4,6 +4,5 @@
     $message = $_POST['message'];
 
 
-//    mail($mail, $subject, $message);
-    mail("maxleclere1999@gmail.com", "zoulou", "gggggggggggg");
+    mail($mail, $subject, $message);
     header('Location: ../frontend/contact.php');
