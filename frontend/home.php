@@ -43,6 +43,7 @@
                     <?php }
                 }?>
             </div>
+            <a href="calendar.php">Voir tout les évènements</a>
 
             <form enctype="multipart/form-data" action="AddArticle.php" method="post">
                 <label>Titre</label><br>
