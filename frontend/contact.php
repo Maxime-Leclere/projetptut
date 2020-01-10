@@ -20,7 +20,7 @@
         </form>
 
 <!--        <div class="container" style="height: 100%"><br>-->
-            <form action="backend/SendMail.php" method="post">
+            <form action="../backend/SendMail.php" method="post">
 <!--                <div class="form-group">-->
                     <label for="email">Email addresse:</label>
                     <input type="email" class="form-control" placeholder="Enter email" id="email" name="Email">

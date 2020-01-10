@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253f995a-5a23-41f7-a911-9a0ba2059248" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/SendMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/contact.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -120,8 +118,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/frontend/contact.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -142,8 +140,8 @@
         <option value="$PROJECT_DIR$/frontend/AddArticle.php" />
         <option value="$PROJECT_DIR$/backend/Date.php" />
         <option value="$PROJECT_DIR$/frontend/home.php" />
-        <option value="$PROJECT_DIR$/frontend/contact.php" />
         <option value="$PROJECT_DIR$/backend/SendMail.php" />
+        <option value="$PROJECT_DIR$/frontend/contact.php" />
       </list>
     </option>
   </component>
@@ -266,12 +264,12 @@
       <workItem from="1578400833798" duration="6262000" />
       <workItem from="1578570681423" duration="103000" />
       <workItem from="1578574340514" duration="7568000" />
-      <workItem from="1578667049191" duration="3006000" />
+      <workItem from="1578667049191" duration="3596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23599000" />
+    <option name="totallyTimeSpent" value="24189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1682" height="995" extended-state="6" />
@@ -392,13 +390,6 @@
     <entry file="file://$PROJECT_DIR$/frontend/login.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/config.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -413,6 +404,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
         </state>
       </provider>
     </entry>
