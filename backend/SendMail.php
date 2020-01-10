@@ -5,4 +5,4 @@
 
 
     mail($mail, $subject, $message);
-    header('Location: contact.php');
+    header('Location: ../frontend/contact.php');
