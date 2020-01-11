@@ -2,11 +2,11 @@
 <html lang="fr">
     <head>
 
-        <?php include_once 'header.php' ?>
+<!--        --><?php //include_once 'header.php' ?>
     </head>
 
     <body>
-<!--        --><?php //include_once 'header.php' ?>
+        <?php include_once 'header.php' ?>
 
         <?php
         include_once '../backend/Date.php';
