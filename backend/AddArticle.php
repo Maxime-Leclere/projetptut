@@ -35,5 +35,5 @@
         $req = $DB->exec("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('".
             addslashes($title)."', '".addslashes($text)."')");
     }
-    header('Location: home.php');
+    header('Location: ../frontend/home.php');
 
