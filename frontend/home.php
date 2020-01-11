@@ -61,7 +61,9 @@
                                         </div>
                                     <?php }
                                 }?>
-                                <a href="calendar.php">Voir tout les évènements</a>
+                                <div class="card-header ">
+                                    <a href="calendar.php">Voir tout les évènements</a>
+                                </div>
                             </div>
                         </div>
                     </div>
