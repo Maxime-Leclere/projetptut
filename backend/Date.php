@@ -61,9 +61,9 @@ class Date {
                                     FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND Date_deb >='.$dateCurrent);
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = '<h3 class="home_events_title">Debut du '.$d->Nom_T.'</h3><p class="home_events_text">'.$d->Date_deb.'</p>';
+            $r[$i] = '<h4 class="home_events_title">Debut du '.$d->Nom_T.'</h4><p class="home_events_text">'.$d->Date_deb.'</p>';
             ++$i;
-            $r[$i] = '<h3 class="home_events_title">Fin du '.$d->Nom_T.'</h3><p class="home_events_text">'.$d->Date_fin.'</p>';
+            $r[$i] = '<h4 class="home_events_title">Fin du '.$d->Nom_T.'</h4><p class="home_events_text">'.$d->Date_fin.'</p>';
             ++$i;
         }
         $reqM = $DB->query("SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu, 
@@ -72,7 +72,7 @@ class Date {
              ORDER BY Date_M DESC, Heure DESC");
         while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
             if ($d2->Heure < $timeCurrent && $d2->Date_M >= $dateCurrent)continue;
-            $r[$i] = '<h3 class="home_events_title">'.$d2->Nom_Equipe.' contre '. $d2->Club_Adversaire.'</h3><p class="home_events_text">'.$d2->Date_M.
+            $r[$i] = '<h4 class="home_events_title">'.$d2->Nom_Equipe.' contre '. $d2->Club_Adversaire.'</h4><p class="home_events_text">'.$d2->Date_M.
                 ' '.$d2->Heure.'</p>';
             ++$i;
         }
