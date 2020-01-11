@@ -77,6 +77,6 @@ else{
 }
 
 // changer chemin apres
-header('Location: ../frontend/login.php');
+header('Location: ../frontend/home.php');
 
 ?>
