@@ -66,6 +66,10 @@ table, td, th {
     border: 1px solid #343a40;
 }
 
+th {
+    width: 14%;
+}
+
 .article_image {
     width: 15%;
     height: 15%;
