@@ -17,10 +17,10 @@ class Date {
                         ORDER BY Date_A DESC, Time_A DESC');
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = '<h1>'.$d->Title_A.'</h1><p>'.$d->Date_A.' '.
+            $r[$i] = '<h3 class="article_title">'.$d->Title_A.'</h3><p>'.$d->Date_A.' '.
             $d->Time_A.'</p>';
             if ($d->Image_A != "")$r[$i] .= '<img class="article_image" src="'.$d->Image_A.'">';
-            if ($d->Text_A != "")$r[$i] .= '<p>'.$d->Text_A.'</p>';
+            if ($d->Text_A != "")$r[$i] .= '<p class="article_text">'.$d->Text_A.'</p>';
             ++$i;
         }
         return $r;
@@ -61,9 +61,9 @@ class Date {
                                     FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND Date_deb >='.$dateCurrent);
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = '<h3>Debut du '.$d->Nom_T.'</h3><p>'.$d->Date_deb.'</p>';
+            $r[$i] = '<h3 class="home_events_title">Debut du '.$d->Nom_T.'</h3><p class="home_events_text">'.$d->Date_deb.'</p>';
             ++$i;
-            $r[$i] = '<h3>Fin du '.$d->Nom_T.'</h3><p>'.$d->Date_fin.'</p>';
+            $r[$i] = '<h3 class="home_events_title">Fin du '.$d->Nom_T.'</h3><p class="home_events_text">'.$d->Date_fin.'</p>';
             ++$i;
         }
         $reqM = $DB->query("SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu, 
@@ -72,7 +72,7 @@ class Date {
              ORDER BY Date_M DESC, Heure DESC");
         while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
             if ($d2->Heure < $timeCurrent && $d2->Date_M >= $dateCurrent)continue;
-            $r[$i] = '<h3>'.$d2->Nom_Equipe.' contre '. $d2->Club_Adversaire.'</h3><p>'.$d2->Date_M.
+            $r[$i] = '<h3 class="home_events_title">'.$d2->Nom_Equipe.' contre '. $d2->Club_Adversaire.'</h3><p class="home_events_text">'.$d2->Date_M.
                 ' '.$d2->Heure.'</p>';
             ++$i;
         }

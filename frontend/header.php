@@ -1,6 +1,6 @@
 <header>
     <?php
-    function login(){
+    function (){
 
         return '<div class="modal fade" id = "connexion" >
     <div class="modal-dialog modal-lg" >
@@ -78,7 +78,7 @@
 
             if (!isset($_SESSION['login'])){
                 echo'<form action="register.php" method="post">
-                         <button type="submit" name="register" class="btn btn-primary">S\'incrire </button >
+                         <button type="submit" name="register" class="btn btn-primary">Inscription</button >
                      </form >
                      <button type = "button" class="btn btn-primary" data-toggle = "modal" data-target = "#connexion" >
                          Connexion

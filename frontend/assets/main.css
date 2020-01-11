@@ -1,3 +1,5 @@
+
+
 li {
     list-style-type: none;
 }
@@ -121,3 +123,20 @@ body {
     background-color: aliceblue;
 }
 
+.article_text, .article_title {
+    color: #343a40;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.article_title:hover {
+    text-decoration: underline;
+}
+
+.home_events_text, .home_events_title {
+    color: #343a40;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home_events_title:hover {
+    text-decoration: underline;
+}
