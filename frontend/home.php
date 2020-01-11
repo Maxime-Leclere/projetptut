@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-sm-8" style="background-color:lavender;">
 <!--                    // article à inserer-->
-                    <div class="card-header"><h2>Articles</h2></div>
+                    <div class="card-header"><h2 class="article_title">ARTICLES</h2></div>
                     <?php if (isset($articles)) {
                         foreach ($articles as $a) {?>
                             <div class="article">
