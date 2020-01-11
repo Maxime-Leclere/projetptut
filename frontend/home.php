@@ -10,7 +10,7 @@
         <main class="custom_body">
             <?php
             include_once '../backend/Date.php';
-            require_once ("../backend/Config.php");
+            require ("../backend/Config.php");
             use backend\Date;
             $date   = new Date();
             $year   = \date('Y');
