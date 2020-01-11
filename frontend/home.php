@@ -27,9 +27,8 @@
         <div class="container" style="height: 100%"><br>
             <div class="row">
                 <div class="col-sm-8" style="background-color:lavender;">
-                    <h2>iefhj</h2>
-                    // article à inserer
-                    <h1>Articles</h1>
+<!--                    // article à inserer-->
+                    <h2>Articles</h2>
                     <?php if (isset($articles)) {
                         foreach ($articles as $a) {?>
                             <div class="article">
@@ -47,14 +46,13 @@
                                 </a>
                             </div>
                             <div id="collapseOne" class="collapse show " data-parent="#accordion">
-                                <div class="card-body ">
-                                    // evenement à inserer
                                     <?php if(isset($homeEvents)) {
                                         foreach ($homeEvents as $hE) {?>
-                                            <?php echo $hE; ?>
+                                            <div class="card-body ">
+                                                <?php echo $hE; ?>
+                                            </div>
                                         <?php }
                                     }?>
-                                </div>
                             </div>
                         </div>
                     </div>
