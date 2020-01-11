@@ -36,6 +36,14 @@
                             </div>
                         <?php }
                     }?>
+                    <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
+                        <label>Titre</label><br>
+                        <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
+                        <input type="file" name="image"><br>
+                        <label>Texte</label><br>
+                        <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
+                        <button type="submit">envoyer</button>
+                    </form>
                 </div>
                 <div class="col-sm-4" style="background-color:lavenderblush;">
                     <div id="accordion"><br>
@@ -46,48 +54,20 @@
                                 </a>
                             </div>
                             <div id="collapseOne" class="collapse show " data-parent="#accordion">
-                                    <?php if(isset($homeEvents)) {
-                                        foreach ($homeEvents as $hE) {?>
-                                            <div class="card-body ">
-                                                <?php echo $hE; ?>
-                                            </div>
-                                        <?php }
-                                    }?>
+                                <?php if(isset($homeEvents)) {
+                                    foreach ($homeEvents as $hE) {?>
+                                        <div class="card-body ">
+                                            <?php echo $hE; ?>
+                                        </div>
+                                    <?php }
+                                }?>
+                                <a href="calendar.php">Voir tout les évènements</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-<!--        <div class="articles">-->
-<!--            <h1>Articles</h1>-->
-<!--            --><?php //if (isset($articles)) {
-//                foreach ($articles as $a) {?>
-<!--                <div class="article">-->
-<!--                    --><?php //echo $a; ?>
-<!--                </div>-->
-<!--            --><?php //}
-//            }?>
-<!--        </div>-->
-<!--        <div class="homeEvents">-->
-<!--            <h1>Prochains évènements à domicile</h1>-->
-<!--            --><?php //if(isset($homeEvents)) {
-//                foreach ($homeEvents as $hE) {?>
-<!--                    <div class="homeEvent">-->
-<!--                        --><?php //echo $hE; ?>
-<!--                    </div>-->
-<!--                --><?php //}
-//            }?>
-<!--        </div>-->
-        <a href="calendar.php">Voir tout les évènements</a>
-        <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
-            <label>Titre</label><br>
-            <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
-            <input type="file" name="image"><br>
-            <label>Texte</label><br>
-            <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
-            <button type="submit">envoyer</button>
-        </form>
         <?php include_once 'footer.php' ?>
     </body>
 </html>
