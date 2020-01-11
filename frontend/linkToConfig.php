@@ -1,2 +1,2 @@
 <?php
-include_once 'backend/Config.php';
+include_once '../backend/Config.php';
