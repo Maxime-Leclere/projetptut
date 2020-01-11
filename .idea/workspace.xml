@@ -32,12 +32,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="227" />
-    <option name="y" value="28" />
-    <option name="width" value="840" />
-    <option name="height" value="994" />
-  </component>
   <component name="ProjectId" id="1Vu9gaGNw4gFpK2BRopqeWlV17G" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -111,7 +105,7 @@
       <workItem from="1578570681423" duration="103000" />
       <workItem from="1578574340514" duration="7568000" />
       <workItem from="1578667049191" duration="4569000" />
-      <workItem from="1578741771200" duration="6476000" />
+      <workItem from="1578741771200" duration="9230000" />
     </task>
     <servers />
   </component>
