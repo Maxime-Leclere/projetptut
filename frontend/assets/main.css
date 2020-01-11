@@ -93,8 +93,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.home_events_text, .home_events_title {
+.home_events_text {
+    color: #5f666c;
+}
+
+.home_events_title {
     color: #343a40;
+}
+
+.home_events_text, .home_events_title {
     font-family: 'Open Sans', sans-serif;
 }
 
