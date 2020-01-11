@@ -17,7 +17,7 @@ $row = $stmt->fetch();
 
 if(empty ($row )) {
     print_r("tu n'as pas de compte ");
-    header ("Refresh: 2;URL=/../login.php");
+    header ("Refresh: 2;URL=/../frontend/login.php");
 
 }
 else
@@ -32,7 +32,7 @@ else
     $_SESSION['Status'] = $row['Status'];
     $_SESSION['Num_Equipe'] = $row['Num_Equipe'];
     $_SESSION['login'] = "ok";
-    header('Location: /../Test.php');
+    header('Location: ../frontend/home.php');
 
 }
 
