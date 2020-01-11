@@ -59,6 +59,10 @@ table, td, th {
     text-align: center;
 }
 
+.select_month {
+    display: inline-block;
+}
+
 .previous_month {
     margin-right: 100%;
 }
