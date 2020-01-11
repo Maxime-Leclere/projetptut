@@ -47,7 +47,7 @@
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href=""> Le Club</a>
+                    <a class="nav-link" href="club.php"> Le Club</a>
                 </li>
 
                 <li class="nav-item" role="presentation">
@@ -55,7 +55,7 @@
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="">Administratif</a>
+                    <a class="nav-link" href="administrative.php">Administratif</a>
                 </li>
 
                 <li class="nav-item" role="presentation">
@@ -63,15 +63,11 @@
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="">Nos Partenaires</a>
+                    <a class="nav-link" href="ourpartners.php">Nos Partenaires</a>
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="">Politique de confidentialité</a>
-                </li>
-
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="">Notre Boutique</a>
+                    <a class="nav-link" href="shop.php">Notre Boutique</a>
                 </li>
             </ul>
         </ul>
