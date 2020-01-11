@@ -56,9 +56,7 @@ table, td, th {
 }
 
 .select_month, .day_text {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
 }
 
 .article_image {
