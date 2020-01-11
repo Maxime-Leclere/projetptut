@@ -50,7 +50,7 @@ footer {
 }
 
 .day_num {
-    vertical-align: top;
+    position: relative;
 }
 
 .previous_month {
