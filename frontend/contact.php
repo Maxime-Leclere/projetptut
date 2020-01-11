@@ -24,7 +24,7 @@
                     <label for="comment">Message:</label>
                     <textarea class="form-control" rows="5" name="message"></textarea>
                 </div>
-                
+
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
