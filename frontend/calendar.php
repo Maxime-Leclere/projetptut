@@ -49,7 +49,7 @@
     <body>
         <?php include_once 'header.php' ?>
 
-        <main class="custom_body">
+        <div class="container" style="height: 100%">
             <?php
                 include_once '../backend/Date.php';
                 include_once '../backend/Config.php';
@@ -118,7 +118,7 @@
                 <?php } ?>
 
             </div>
-        </main>
+        </div>
 
         <?php include_once 'footer.php'; ?>
     </body>
