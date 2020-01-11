@@ -55,10 +55,6 @@ th {
     padding-right: 5%;
 }
 
-td {
-    padding: 1%;
-}
-
 .article_image {
     width: 15%;
     height: 15%;
@@ -72,11 +68,6 @@ body {
 .article_text, .article_title {
     color: #343a40;
     font-family: 'Open Sans', sans-serif;
-}
-
-.article_title:hover {
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 .home_events_text, .home_events_title {
