@@ -37,7 +37,7 @@
     }?>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="home.php">
             <img src="assets/Img/Logo.png" alt="Logo" class="logo">
         </a>
         <ul class="navbar-nav">
