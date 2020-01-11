@@ -7,10 +7,11 @@
     <body>
         <?php include_once 'header.php' ?>
 
-        <main class="custom_body">
-            <h1>Notre Boutique</h1>
-            <img src="assets/boutique_2019_2020.jpg" height="150" width="200">
-        </main>
+        <div class="container" style="height: 100%">
+            <h2>Notre Boutique</h2><br>
+            <img class="rounded mx-auto d-block" src="assets/Img/BOUTIQUE-2019_2020-768x536.jpg" style=" width: 60%"><br>
+            <p class="rounded mx-auto d-block">Indiquez à votre entraineur la référence et quantité de matériel voulue.</p><br>
+        </div>
 
         <?php include_once 'footer.php' ?>
     </body>
