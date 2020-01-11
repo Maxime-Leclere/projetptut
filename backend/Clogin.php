@@ -17,7 +17,7 @@ $row = $stmt->fetch();
 
 if(empty ($row )) {
     print_r("tu n'as pas de compte ");
-    header ("Refresh: 2;URL=/../frontend/login.php");
+    header ("Refresh: 2;URL=/../frontend/home.php");
 
 }
 else
