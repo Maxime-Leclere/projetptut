@@ -36,14 +36,16 @@
                             </div>
                         <?php }
                     }?>
-                    <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
-                        <label>Titre</label><br>
-                        <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
-                        <input type="file" name="image"><br>
-                        <label>Texte</label><br>
-                        <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
-                        <button type="submit">envoyer</button>
-                    </form>
+                    <div class="card-header">
+                        <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
+                            <label>Titre</label><br>
+                            <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
+                            <input type="file" name="image"><br>
+                            <label>Texte</label><br>
+                            <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
+                            <button type="submit">envoyer</button>
+                        </form>
+                    </div>
                 </div>
                 <div class="col-sm-4" style="background-color:lavenderblush;">
                     <div id="accordion"><br>
