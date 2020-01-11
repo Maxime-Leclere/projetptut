@@ -93,15 +93,10 @@ td {
     padding: 1%;
 }
 
-.article {
-    border: 1px solid black;
-    padding: 10%;
-}
-
 .article_image {
     width: 15%;
     height: 15%;
-    border-radius: 5%;
+    border-radius: 2.5%;
 }
 
 .custom_body {
