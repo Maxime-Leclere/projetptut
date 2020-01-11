@@ -10,7 +10,7 @@
         <main class="custom_body">
             <?php
             include_once '../backend/Date.php';
-            include_once 'config.php';
+            include_once '../backend/Config.php';
             use backend\Date;
             $date   = new Date();
             $year   = \date('Y');
@@ -45,7 +45,7 @@
             </div>
             <a href="calendar.php">Voir tout les évènements</a>
 
-            <form enctype="multipart/form-data" action="AddArticle.php" method="post">
+            <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
                 <label>Titre</label><br>
                 <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
                 <input type="file" name="image"><br>

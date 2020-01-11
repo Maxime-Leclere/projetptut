@@ -1,5 +1,5 @@
 <?php
-    include_once 'config.php';
+    include_once 'Config.php';
 
     function Transfert() {
         global $DB;
