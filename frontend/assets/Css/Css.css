@@ -1,0 +1,115 @@
+.logo{
+    width: 100px;
+}
+
+h2, h3{
+    text-align: center;
+}
+#boutique{
+    display: flex;
+    justify-content: center;
+}
+.container-fluid{
+    background-color: yellow;
+}
+.container{
+    background-color: white;
+    /*height: 100%;*/
+
+}
+
+
+/**{*/
+/*    color:white;*/
+/*}*/
+body{
+    background-color: #ffffff;
+    /*background-color: white;*/
+}
+#Pimg{
+    justify-content: space-between;
+}
+.carousel-item{
+    width: 100%;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    display: inline-flex;
+    background-color: fuchsia;
+}
+
+.content_footer {
+    margin: auto;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+}
+
+.menu_item_footer {
+    display: inline-flex;
+    text-align: center;
+    padding: 0;
+}
+
+.item_footer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#icon_facebook {
+    width: 16px;
+    height: 30px;
+}
+
+#icon_contact {
+    width: 30px;
+    height: 30px;
+}
+
+#icon_twitter {
+    width: 29px;
+    height: 28px;
+}
+
+.text_footer {
+    margin: 16px;
+}
+
+/*Equipe*/
+
+#equipe1 {
+
+}
+
+#equipe2 {
+    /*background-color:blue;*/
+}
+
+#equipe3 {
+
+}
+
+#equipe4 {
+
+}
+
+#equipe16{
+    background-color:yellow;
+}
+
+.equipe {
+    display:none;
+    visibility:hidden;
+    /*height:50%;*/
+    /*background-color:black;*/
+}
+
+.txt{
+    text-align: center;
+    color: black;
+}
+
+/**/
