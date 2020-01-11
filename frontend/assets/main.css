@@ -50,11 +50,6 @@ table, td, th {
     border: 1px solid #343a40;
 }
 
-th {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
 .article_image {
     width: 15%;
     height: 15%;
