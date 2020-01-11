@@ -1,4 +1,8 @@
 <?php
+namespace backend;
+    use PDO;
+    use PDOException;
+
     try {
         $DB = new PDO('mysql:host=mysql-projetptut.alwaysdata.net;dbname=projetptut_database;',
             '195907', 'Azertyuiop1999');
