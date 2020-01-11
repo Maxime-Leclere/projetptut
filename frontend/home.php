@@ -10,7 +10,7 @@
         <main class="custom_body">
             <?php
             include_once '../backend/Date.php';
-            include_once "linkToConfig.php";
+            include_once "../backend/Config.php";
             use backend\Date;
             $date   = new Date();
             $year   = \date('Y');
