@@ -49,10 +49,6 @@ footer {
     text-align: center;
 }
 
-.day_num {
-    position: relative;
-}
-
 .previous_month {
     margin-right: 10%;
 }
@@ -68,6 +64,10 @@ table {
 
 table, td, th {
     border: 1px solid #888e94;
+}
+
+td {
+    padding-top: 0;
 }
 
 th {
