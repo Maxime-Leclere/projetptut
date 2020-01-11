@@ -45,12 +45,13 @@ footer {
     text-decoration: none;
 }
 
-.month_text, .day_text, .day_num, .select_month {
+.month_text, .day_text, .select_month {
     text-align: center;
 }
 
-.day_num {
-    vertical-align: text-top;
+.day_num  {
+    vertical-align: top;
+    horiz-align: center;
 }
 
 .previous_month {
