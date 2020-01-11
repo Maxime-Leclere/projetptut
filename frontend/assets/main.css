@@ -121,6 +121,7 @@ body {
 
 .article_title:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .home_events_text, .home_events_title {
@@ -130,4 +131,5 @@ body {
 
 .home_events_title:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
