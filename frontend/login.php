@@ -13,7 +13,7 @@ function login()
                 <!--Modal body-->
                 <div class="modal-body" >
                     <div class="container" style = "height: 100%" ><br >
-                        <form action = "Controller/Clogin.php" method = "post" >
+                        <form action = "../backend/Clogin.php" method = "post" >
                             <div class="form-group" >
                                 <label for="email" > Email address:</label >
                                 <input type = "email" class="form-control" placeholder = "Enter email" id = "email" name = "Email" >
