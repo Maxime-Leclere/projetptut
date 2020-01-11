@@ -42,8 +42,7 @@ footer {
 }
 
 .select_month {
-    list-style-type: none;
-
+    text-decoration: none;
 }
 
 .month_text, .day_text, .day_num {
@@ -51,7 +50,11 @@ footer {
 }
 
 .previous_month {
-    margin-right: 100%;
+    margin-right: 10%;
+}
+
+.next_month {
+    margin-left: 10%;
 }
 
 table {
