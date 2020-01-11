@@ -74,6 +74,10 @@ th {
     width: 14%;
 }
 
+.article {
+    text-align: center;
+}
+
 .article_image {
     width: 15%;
     height: 15%;
