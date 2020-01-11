@@ -99,7 +99,7 @@
                                         <ul class="events">
                                             <?php if(isset($events[$time])) {
                                                 foreach ($events[$time] as $e) {?>
-                                                    <li><?php echo $e; ?></li>
+                                                    <li class="event_text"><?php echo $e; ?></li>
                                                 <?php }
                                             }?>
                                         </ul>

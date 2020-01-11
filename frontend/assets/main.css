@@ -80,6 +80,10 @@ th {
     width: 14%;
 }
 
+.event_text {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .article {
     text-align: center;
 }
