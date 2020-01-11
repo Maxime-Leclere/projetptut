@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
 
-        <?php include_once 'head.php' ?>
+<!--        --><?php //include_once 'head.php' ?>
     </head>
 
     <body>
