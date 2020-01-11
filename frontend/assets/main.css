@@ -41,6 +41,11 @@ footer {
     margin: 16px;
 }
 
+.select_month {
+    text-decoration: none;
+
+}
+
 table {
     border-collapse: collapse;
     border-radius: 10%;
@@ -50,8 +55,10 @@ table, td, th {
     border: 1px solid #343a40;
 }
 
-th {
-    align-content: center;
+.select_month, .day_text {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .article_image {

@@ -64,7 +64,7 @@
                     <div class="months">
                         <?php foreach ($date->months as $id=>$m) { ?>
                             <div class="monthName" id="link_month<?php echo $id+1; ?>">
-                                <?php echo $m.' '.$year; ?>
+                                <?php echo '<p class="month_text">'.$m.' '.$year.'</p>'; ?>
                             </div>
                         <?php } ?>
                     </div>
@@ -80,7 +80,7 @@
                             <thead>
                                 <tr>
                                     <?php foreach ($date->days as $d) {?>
-                                        <th><?php echo $d ?></th>
+                                        <th><?php echo '<p class="day_text">'.$d.'</p>' ?></th>
                                     <?php } ?>
                                 </tr>
                             </thead>
