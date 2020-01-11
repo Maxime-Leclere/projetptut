@@ -55,16 +55,12 @@ table, td, th {
     border: 1px solid #343a40;
 }
 
-.month_text, .day_text {
+.month_text, .day_text, .day_num {
     text-align: center;
 }
 
 .previous_month {
-    text-align: left;
-}
-
-.next_month {
-    text-align: right;
+    margin-right: 100%;
 }
 
 .article_image {

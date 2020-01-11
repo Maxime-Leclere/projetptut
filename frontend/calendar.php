@@ -95,7 +95,7 @@
                                         <?php } ?>
                                     <?php } ?>
                                     <td>
-                                        <?php echo $d; ?>
+                                        <?php echo '<p class="day_num">'.$d.'</p>'; ?>
                                         <ul class="events">
                                             <?php if(isset($events[$time])) {
                                                 foreach ($events[$time] as $e) {?>
