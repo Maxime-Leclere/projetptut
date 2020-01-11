@@ -42,8 +42,16 @@ footer {
 }
 
 .select_month {
-    text-decoration: none;
+    list-style-type: none;
 
+}
+
+.month_text, .day_text, .day_num {
+    text-align: center;
+}
+
+.previous_month {
+    margin-right: 100%;
 }
 
 table {
@@ -53,18 +61,6 @@ table {
 
 table, td, th {
     border: 1px solid #343a40;
-}
-
-.month_text, .day_text, .day_num {
-    text-align: center;
-}
-
-.select_month {
-    display: inline-block;
-}
-
-.previous_month {
-    margin-right: 100%;
 }
 
 .article_image {
