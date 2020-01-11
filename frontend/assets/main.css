@@ -49,6 +49,10 @@ footer {
     text-align: center;
 }
 
+.day_num {
+    vertical-align: top;
+}
+
 .previous_month {
     margin-right: 10%;
 }
