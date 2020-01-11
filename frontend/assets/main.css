@@ -55,8 +55,16 @@ table, td, th {
     border: 1px solid #343a40;
 }
 
-.select_month, .day_text {
+.month_text, .day_text {
     text-align: center;
+}
+
+.previous_month {
+    text-align: left;
+}
+
+.next_month {
+    text-align: right;
 }
 
 .article_image {
