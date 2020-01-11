@@ -1,18 +1,16 @@
 <?php
 session_start();
 
-define('HOST', 'mysql:host=mysql-projetptut.alwaysdata.net; dbname=projetptut_database;');
-define('USER', '195907');
-define('PASSWORD', 'Azertyuiop1999');
-define('TABLENAME', 'projetptut_database');
-
-$pdo = new PDO(HOST, USER, PASSWORD );
 
 $email = $_POST['Email'];
 $password = $_POST['Mdp'] ;
 $password =sha1($password);
 
-$stmt = $pdo->query("Select * from Utilisateur Where Email = '$email' AND Mdp = '$password'");
+include_once 'Config.php';
+
+global $DB;
+
+$stmt = $DB->query("Select * from Utilisateur Where Email = '$email' AND Mdp = '$password'");
 $row = $stmt->fetch();
 
 if(empty ($row )) {

@@ -67,7 +67,7 @@
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="shz">Notre Boutique</a>
+                    <a class="nav-link" href="shop.php">Notre Boutique</a>
                 </li>
             </ul>
         </ul>
