@@ -17,7 +17,7 @@ class Date {
                         ORDER BY Date_A DESC, Time_A DESC');
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = '<h3 class="article_title">'.$d->Title_A.'</h3><p>'.$d->Date_A.' '.
+            $r[$i] = '<h3 class="article_title">'.$d->Title_A.'</h3><p class="article_text">'.$d->Date_A.' '.
             $d->Time_A.'</p>';
             if ($d->Image_A != "")$r[$i] .= '<img class="article_image" src="'.$d->Image_A.'">';
             if ($d->Text_A != "")$r[$i] .= '<p class="article_text">'.$d->Text_A.'</p>';
