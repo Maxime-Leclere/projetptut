@@ -52,7 +52,8 @@ footer {
 
 
 .day_num {
-
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .previous_month {
