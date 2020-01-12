@@ -97,6 +97,7 @@ footer {
 
 .today {
     border: 3px solid #007bff;
+    vertical-align: top;
 }
 
 .event_text {
