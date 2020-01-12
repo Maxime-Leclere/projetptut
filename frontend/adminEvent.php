@@ -43,7 +43,7 @@
                     <?php if (!isset($tournoi[0])) { ?>
                         <tr>
                             <?php $i = 5;
-                            for ($u = 0; $i>$u; ++$u) {?>
+                            for ($u = 0; $i>=$u; ++$u) {?>
                                 <td class="td_event">
                                     <?php echo '<p class="attr_tournoi">Rien</p>'?>
                                 </td>
