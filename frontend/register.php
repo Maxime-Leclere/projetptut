@@ -18,7 +18,7 @@
             <input type="text" class="form-control" placeholder="Entrer nom" id="nom" name="Nom">
         </div>
         <div class="form-group">
-            <label for="email">Email addresse:</label>
+            <label for="email">Email:</label>
             <input type="email" class="form-control" placeholder="Enter email" id="email" name="Email">
         </div>
         <label for="sele" class="col-md-4">Sélectionner votre sexe:</label>
@@ -63,7 +63,7 @@
             <input type="password" class="form-control" placeholder="Entrer mot de passe" id="pwd" name="MdpS">
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-warning">S'inscrire</button>
     </form>
 </div>
 

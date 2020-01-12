@@ -25,14 +25,14 @@ function hearder_contenue()
                             <input type="password" class="form-control" placeholder="Mot de Passe" id="pwd" name="Mdp">
                         </div>
 
-                        <button type="submit" name="formconnexion" class="btn btn-warning">Submit</button>
+                        <button type="submit" name="formconnexion" class="btn btn-warning">Se connecter</button>
                     </form>
                 </div>
             </div>
 
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
             </div>
 
         </div>
@@ -147,7 +147,7 @@ else if ($_SESSION["Status"] == 2){
                 </form >';
 
     }
-    echo'<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+    echo'<button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
 
             </div>
 
