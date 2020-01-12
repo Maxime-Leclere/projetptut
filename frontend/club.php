@@ -2,8 +2,6 @@
 <html lang="fr">
     <head>
         <?php include_once 'head.php' ?>
-        <script src="assets/Css/jquery-3.4.1.min.js"></script>
-        <script src="assets/Css/bootstrap.min.js"></script>
     </head>
 
     <body>
