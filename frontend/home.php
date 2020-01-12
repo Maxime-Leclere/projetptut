@@ -38,21 +38,20 @@
                     }?>
                     <?php if ($_SESSION["Status"] == 2){?>
                         <div class="card-header">
-                            <div class="container">
-                                <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
-                                    <div class="form-group">
-                                        <label>Titre</label><br>
-                                        <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
-                                    </div>
-                                    <input type="file" name="image"><br>
-                                    <div class="form-group">
-                                        <label>Texte</label><br>
-                                        <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">envoyer</button>
-                                </form>
-                            </div>
-
+                            <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
+                                <div class="form-group">
+                                    <label>Titre</label><br>
+                                    <input type="text" id="Title" name="title" class="form-control" placeholder="taper votre titre" required><br>
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" name="image" class="form-control"><br>
+                                </div>
+                                <div class="form-group">
+                                    <label>Texte</label><br>
+                                    <textarea id="Text" name="text" placeholder="taper votre texte" class="form-control"></textarea><br>
+                                </div>
+                                <button type="submit" class="btn btn-primary">envoyer</button>
+                            </form>
                         </div>
                     <?php } ?>
                 </div>
