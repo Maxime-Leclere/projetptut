@@ -2,6 +2,7 @@
 footer {
     width: 100%;
     display: inline-flex;
+    background-color: #343a40;
 }
 
 .content_footer {
@@ -14,8 +15,9 @@ footer {
 .menu_item_footer {
     display: inline-flex;
     text-align: center;
-    vertical-align: center;
+    margin: auto;
     padding: 0;
+    list-style-type: none;
 }
 
 .item_footer {
