@@ -64,6 +64,58 @@
                 <?php }?>
                 </tbody>
             </table>
+            <div class="form_event">
+                <form action="../backend/AddMatch.php" method="post">
+                    <h1>Ajouter un match</h1>
+                    <div class="form-group">
+                        <label for="date">Date du match</label>
+                        <input type="date" class="form-control" name="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Heure du match</label>
+                        <input type="time" class="form-control" name="time">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Nom du club Adverse</label>
+                        <input type="text" class="form-control" name="nameCA">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Lieu</label>
+                        <input type="text" class="form-control" name="lieu">
+                    </div>
+                    //ajouter num du tournoi defilement
+
+                    <button type="submit" class="btn btn-primary">Insérer</button>
+                </form>
+
+                <form action="" method="post">
+                    <h1>Ajouter un tournoi</h1>
+                    <div class="form-group">
+                        <label for="date">Nom du tournoi</label>
+                        <input type="date" class="form-control" name="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="datedeb">Date de commencement du tournoi</label>
+                        <input type="date" class="form-control" name="datedeb">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="datefin">Date de fin du tournoi</label>
+                        <input type="date" class="form-control" name="datefin">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Lieu</label>
+                        <input type="text" class="form-control" name="lieu">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Insérer</button>
+                </form>
+
+            </div>
         </div>
         <?php include_once 'footer.php' ?>
     </body>

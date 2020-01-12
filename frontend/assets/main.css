@@ -117,6 +117,10 @@ footer {
     text-align: center;
 }
 
+.name_attr_match, .name_attr_tournoi {
+    color: aliceblue;
+}
+
 body {
     background-color: aliceblue;
 }
