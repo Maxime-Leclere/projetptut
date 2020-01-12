@@ -35,7 +35,8 @@
                             <?php $attr_tournois = $t->getAttr();?>
                             <?php foreach ($attr_tournois as $attrT) {?>
                                 <td class="td_event">
-                                    <?php echo '<p class="attr_tournoi">'.$attrT.'</p>'?>
+                                    <?php if (isset($attrT))echo '<p class="attr_tournoi">'.$attrT.'</p>';
+                                            else echo '<p class="attr_tournoi">Rien</p>'?>
                                 </td>
                             <?php } ?>
                         </tr>
