@@ -53,6 +53,11 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
+.month_text {
+    font-weight: bold;
+    font-size: 45px;
+}
+
 .day_num {
     font-size: 20px;
     font-weight: bold;

@@ -37,7 +37,6 @@
                         <?php }
                     }?>
                     <?php if ($_SESSION["Status"] == 2){?>
-                        <div class="card-header"></div>
                         <div class="card-header">
                             <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
                                 <div class="form-group">
