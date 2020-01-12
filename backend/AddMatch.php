@@ -1,10 +1,10 @@
 <?php
     include_once 'Config.php';
 
-    $date = $_POST['date'];
-    $time = $_POST['date'].':00';
-    $nameCA = $_POST['date'];
-    $lieu = $_POST['date'];
+    $date   = $_POST['date'];
+    $time   = $_POST['time'].':00';
+    $nameCA = $_POST['nameCA'];
+    $lieu   = $_POST['lieu'];
 
 var_dump($date);
 var_dump($time);
