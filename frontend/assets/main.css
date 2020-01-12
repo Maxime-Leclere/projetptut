@@ -9,12 +9,12 @@ footer {
     display: inline-flex;
     text-align: center;
     align-items: center;
-    vertical-align: center;
 }
 
 .menu_item_footer {
     display: inline-flex;
     text-align: center;
+    vertical-align: center;
     padding: 0;
 }
 
