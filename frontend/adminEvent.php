@@ -38,7 +38,6 @@
                             <?php } ?>
                     </tr>
                 <?php }?>
-                <tr>cococ</tr>
                 </tbody>
             </table>
 

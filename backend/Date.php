@@ -38,6 +38,7 @@ class Date {
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = new Tournoi($d->Num_T, $d->Nom_T, $d->Date_deb, $d->Date_fin,
                                     $d->Lieu);
+            ++$i;
         }
         return $r;
     }
@@ -52,6 +53,7 @@ class Date {
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = new Match($d->Num_M, $d->Date_M, $d->Heure, $d->Club_Adversaire,
             $d->Lieu, $d->Num_T);
+            ++$i;
         }
         return $r;
     }
