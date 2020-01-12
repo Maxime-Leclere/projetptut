@@ -21,11 +21,11 @@
         $tournoi = $date->getTournoi($year);
         ?>
         <div class="container">
-            <table>
+            <table class="table_event">
                 <thead>
                     <tr>
                         <?php foreach ($date->attrTournoi as $attr) {?>
-                            <th><?php echo '<p class="name_attr_tournoi">'.$attr.'</p>' ?></th>
+                            <th class="th_event"><?php echo '<p class="name_attr_tournoi">'.$attr.'</p>' ?></th>
                         <?php } ?>
                     </tr>
                 </thead>
@@ -34,7 +34,7 @@
                         <tr>
                             <?php $attr_tournois = $t->getAttr();?>
                             <?php foreach ($attr_tournois as $attrT) {?>
-                                <td>
+                                <td class="td_event">
                                     <?php echo '<p class="attr_tournoi">'.$attrT.'</p>'?>
                                 </td>
                             <?php } ?>
@@ -43,11 +43,11 @@
                 </tbody>
             </table>
 
-            <table>
+            <table class="table_event">
                 <thead>
                     <tr>
                         <?php foreach ($date->attrMatch as $attr) {?>
-                            <th><?php echo '<p class="name_attr_match">'.$attr.'</p>' ?></th>
+                            <th class="th_event"><?php echo '<p class="name_attr_match">'.$attr.'</p>' ?></th>
                         <?php } ?>
                     </tr>
                 </thead>
@@ -56,7 +56,7 @@
                     <tr>
                         <?php $attr_matchs = $m->getAttr();?>
                         <?php foreach ($attr_matchs as $attrM) {?>
-                            <td>
+                            <td class="td_event">
                                 <?php echo '<p class="attr_match">'.$attrM.'</p>'?>
                             </td>
                         <?php } ?>

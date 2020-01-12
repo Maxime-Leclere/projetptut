@@ -113,6 +113,10 @@ footer {
     border-radius: 2.5%;
 }
 
+.table_event {
+    text-align: center;
+}
+
 body {
     background-color: aliceblue;
 }
