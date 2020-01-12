@@ -42,12 +42,15 @@
                                 <div class="form-group">
                                     <label>Titre</label><br>
                                     <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
+                                </div>
+                                <div class="form-group">
                                     <input type="file" name="image"><br>
+                                </div>
+                                <div class="form-group">
                                     <label>Texte</label><br>
                                     <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
-
                                 </div>
-                                <button type="submit">envoyer</button>
+                                <button type="submit" class="btn btn-primary">envoyer</button>
                             </form>
                         </div>
                     <?php } ?>
