@@ -1,17 +1,13 @@
 <?php
 session_start();
 
+include_once 'Config.php';
 $topost = $_POST['equipe'];
 $postall= $_POST['Status'];
 
-define('HOST', 'mysql:host=mysql-projetptut.alwaysdata.net; dbname=projetptut_database;');
-define('USER', '195907');
-define('PASSWORD', 'Azertyuiop1999');
-define('TABLENAME', 'projetptut_database');
+global $DB;
 
-$pdo = new PDO(HOST, USER, PASSWORD);
-
-$stmt = $pdo->query("Select * from Utilisateur where Num_Equipe = '$topost'");
+$stmt = $DB->query("Select * from Utilisateur where Num_Equipe = '$topost'");
 $row = $stmt->fetchAll();
 //$row = $stmt->fetchAll();
 
