@@ -8,7 +8,7 @@
     var_dump($dateDeb);
     var_dump($dateFin);
     var_dump($lieu);
-//    $req = $DB->query("INSERT INTO `TOURNOI`(`Nom_T`, `Date_deb`,
-//    `Date_fin`, `Lieu`) VALUES ('$name', '$dateDeb', '$dateFin', '$lieu')");
-//
-//    header("Location: ../frontend/adminEvent.php");
+    $req = $DB->query("INSERT INTO `TOURNOI`(`Nom_T`, `Date_deb`,
+    `Date_fin`, `Lieu`) VALUES ('$name', '$dateDeb', '$dateFin', '$lieu')");
+
+    header("Location: ../frontend/adminEvent.php");
