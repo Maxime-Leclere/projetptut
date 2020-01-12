@@ -24,7 +24,7 @@
         ?>
 
 
-        <div class="container" style="height: 100%"><br>
+        <div class="container" style="height: 100%">
             <div class="row">
                 <div class="col-sm-8" style="background-color:lavender;">
 <!--                    // article à inserer-->
@@ -38,20 +38,23 @@
                     }?>
                     <?php if ($_SESSION["Status"] == 2){?>
                         <div class="card-header">
-                            <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
-                                <div class="form-group">
-                                    <label>Titre</label><br>
-                                    <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
-                                </div>
-                                <div class="form-group">
-                                    <input type="file" name="image"><br>
-                                </div>
-                                <div class="form-group">
-                                    <label>Texte</label><br>
-                                    <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
-                                </div>
-                                <button type="submit" class="btn btn-primary">envoyer</button>
-                            </form>
+                            <div class="container">
+                                <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
+                                    <div class="form-group">
+                                        <label>Titre</label><br>
+                                        <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="file" name="image"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Texte</label><br>
+                                        <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">envoyer</button>
+                                </form>
+                            </div>
+
                         </div>
                     <?php } ?>
                 </div>
