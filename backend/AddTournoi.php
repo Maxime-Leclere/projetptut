@@ -1,4 +1,6 @@
 <?php
+    include_once 'Config.php';
+
     $name    = $_POST['name'];
     $dateDeb = $_POST['datedeb'];
     $dateFin = $_POST['datefin'];
