@@ -10,6 +10,9 @@ class Date {
     var $months = array('Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin',
         'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
 
+    var $attrTournoi = array('Num Tournoi', 'Nom Tournoi', 'Date debut', 'Date fin', 'Lieu');
+    var $attrMatch   = array('Num Match', 'Date Match', 'Heure', 'Club Adversaire', 'Lieu', 'Num Tournoi');
+
     public function getArticles($year) {
         global $DB;
         $r = array();
@@ -22,6 +25,33 @@ class Date {
             if ($d->Image_A != "")$r[$i] .= '<img class="article_image" src="'.$d->Image_A.'">';
             if ($d->Text_A != "")$r[$i] .= '<p class="article_text">'.$d->Text_A.'</p>';
             ++$i;
+        }
+        return $r;
+    }
+
+    public function getTournoi($year) {
+        global $DB;
+        $r = array();
+        $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 
+                FROM TOURNOI WHERE YEAR(Date_deb) ='.$year.' ORDER BY Date_deb DESC');
+        $i = 0;
+        while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
+            $r[$i] = new \Tournoi($d->Num_T, $d->Nom_T, $d->Date_deb, $d->Date_fin,
+                                    $d->Lieu);
+        }
+        return $r;
+    }
+
+    public function getMatch($year) {
+        global $DB;
+        $r = array();
+        $req = $DB->query('SELECT Num_M, Date_M, Heure, 
+        Club_Adversaire, M.Lieu FROM MATCHS M WHERE YEAR(Date_M) = '.$year.
+        ' ORDER BY Date_M DESC, Heure DESC');
+        $i = 0;
+        while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
+            $r[$i] = new \Match($d->Num_M, $d->Date_M, $d->Heure, $d->Club_Adversaire,
+            $d->Lieu, $d->Num_T);
         }
         return $r;
     }

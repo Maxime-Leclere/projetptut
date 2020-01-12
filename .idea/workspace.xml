@@ -105,7 +105,8 @@
       <workItem from="1578570681423" duration="103000" />
       <workItem from="1578574340514" duration="7568000" />
       <workItem from="1578667049191" duration="4569000" />
-      <workItem from="1578741771200" duration="34423000" />
+      <workItem from="1578741771200" duration="34620000" />
+      <workItem from="1578831623548" duration="3848000" />
     </task>
     <servers />
   </component>
@@ -137,14 +138,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578743409284" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1578761116009">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1578833811968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578761116009" />
-    <state x="1136" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1578255748750">
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578833811968" />
+    <state x="1136" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1578831667715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1136" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578255748750" />
+    <state x="1136" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578831667715" />
     <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578092878280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
