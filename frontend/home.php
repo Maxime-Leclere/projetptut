@@ -6,6 +6,11 @@
     </head>
 
     <body>
+        <div class="container-fluid cf">
+            <br>
+            <h2>Bienvenue sur le site de L'AUCVB</h2>
+            <h3>Aix-Université-Club 13 Volley-Ball</h3>
+        </div>
         <?php include_once 'header.php' ?>
 
         <?php
