@@ -113,6 +113,15 @@ footer {
     border-radius: 2.5%;
 }
 
+.form_event {
+    display: flex;
+}
+
+.form_event_insert {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .table_event {
     text-align: center;
     width: 100%;

@@ -65,7 +65,7 @@
                 </tbody>
             </table>
             <div class="form_event">
-                <form action="../backend/AddMatch.php" method="post">
+                <form class="form_event_insert" action="../backend/AddMatch.php" method="post">
                     <h1>Ajouter un match</h1>
                     <div class="form-group">
                         <label for="date">Date du match</label>
@@ -93,7 +93,7 @@
                     <button type="submit" class="btn btn-primary">Insérer</button>
                 </form>
 
-                <form action="../backend/AddTournoi.php" method="post">
+                <form class="form_event_insert" action="../backend/AddTournoi.php" method="post">
                     <h1>Ajouter un tournoi</h1>
                     <div class="form-group">
                         <label for="name">Nom du tournoi</label>
