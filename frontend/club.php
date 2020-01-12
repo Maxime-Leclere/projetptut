@@ -9,7 +9,7 @@
     <body>
         <?php include_once 'header.php' ?>
 
-        <div class="container" style="height: 120%">
+        <div class="container" style="min-height: 120%">
             <div id="accordion"><br>
                 <h2>Informations sur le Club</h2><br>
                 <div class="card">
@@ -22,6 +22,7 @@
                         <div class="card-body">
                             <h3> Qui sommes-nous ?</h3>
 
+
                             <p>L’AUC13VB est une association sportive créée en 2011 (ayant pour ancienne dénomination AVBA) qui oeuvre depuis 8 ans pour que le volley-ball soit pleinement représenté dans le paysage sportif aixois.</p>
 
                             <p>Ce changement de dénomination s’inscrit dans l’intégration de notre association à l’AUC Général (fédération regroupant 15 associations sportives aixoises, soit plus de 3200 adhérents).</p>
@@ -30,9 +31,13 @@
 
                             <p>En intégrant l’AUC et en changeant de dénomination, un pas de plus est fait pour continuer à faire grandir le volley-ball à Aix-en-Provence.</p>
 
+
+
                             <p>L’AUC13VB veut donc maintenir cette dynamique et parvenir à associer pratique du volley-ball et formation des jeunes dans un réel esprit de convivialité.</p>
 
                             <p>L’AUC13VB veut aussi continuer à se construire autour d’une gestion rigoureuse et transparente appliquée aux domaines administratif, financier et sportif.</p>
+
+
 
                             <p>Pour l’année 2017-2018, quelques chiffres et évènements permettent de témoigner de la bonne santé de notre association :</p>
 
@@ -52,6 +57,8 @@
                     <div id="collapseTwo" class="collapse" data-parent="#accordion">
                         <div class="card-body">
                             <h3>Quels sont nos objectifs ?</h3>
+
+
 
                             <p>L’année 2017-2018 s’est inscrite dans la continuité des  précédentes années en affirmant et affichant la présence du volley-ball dans le paysage sportif aixois tout en agissant au mieux pour donner un élan supplémentaire à notre association.</p>
 

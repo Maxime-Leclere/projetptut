@@ -29,7 +29,7 @@
                 <div id="organi" class="container tab-pane active"><br>
                     <h3>ORGANIGRAMME</h3>
                     <img class="rounded mx-auto d-block" src="assets/Img/Organi.jpg"><br>
-                    <button type="button" class="btn btn-primary rounded mx-auto d-block" data-toggle="collapse" data-target="#en">Liste des Entraîneurs 2019/2020 :</button><br>
+                    <button type="button" class="btn btn-warning rounded mx-auto d-block" data-toggle="collapse" data-target="#en">Liste des Entraîneurs 2019/2020 :</button><br>
                     <div id="en" class="collapse">
                         <table class="table">
                             <thead>
@@ -99,7 +99,6 @@
                             </tbody>
                         </table><br>
                     </div>
-
                 </div>
                 <div id="Hentr" class="container tab-pane fade"><br>
                     <h3>HORAIRES ENTRAÎNEMENTS</h3>
