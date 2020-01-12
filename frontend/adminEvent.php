@@ -86,7 +86,6 @@
                         <label for="name">Lieu</label>
                         <input type="text" class="form-control" name="lieu">
                     </div>
-                    //ajouter num du tournoi defilement
                     <div class="form-group">
                         <label for="numT">Numero du tournoi</label>
                         <input type="number" class="form-control" name="numT">
