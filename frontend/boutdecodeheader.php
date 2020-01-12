@@ -8,7 +8,7 @@ function hearder_contenue()
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Inscrption</h4>
+                <h4 class="modal-title">Se connecter</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
@@ -17,12 +17,12 @@ function hearder_contenue()
                 <div class="container" style="height: 100%"><br>
                     <form action="../backend/Clogin.php" method="post">
                         <div class="form-group">
-                            <label for="email">Email address:</label>
-                            <input type="email" class="form-control" placeholder="Enter email" id="email" name="Email">
+                            <label for="email">Entrer votre adresse Email:</label>
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="Email">
                         </div>
                         <div class="form-group">
-                            <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" placeholder="Enter password" id="pwd" name="Mdp">
+                            <label for="pwd">Entrer votre mot de passe:</label>
+                            <input type="password" class="form-control" placeholder="Mot de Passe" id="pwd" name="Mdp">
                         </div>
 
                         <button type="submit" name="formconnexion" class="btn btn-warning">Submit</button>
