@@ -22,7 +22,7 @@
         ?>
         <div class="container">
             <table class="table_event">
-                <thead class="thead-dark">
+                <thead class="thead_event">
                     <tr>
                         <?php foreach ($date->attrTournoi as $attr) {?>
                             <th class="th_event"><?php echo '<p class="name_attr_tournoi">'.$attr.'</p>' ?></th>
@@ -44,7 +44,7 @@
             </table>
 
             <table class="table_event">
-                <thead class="thead-dark">
+                <thead class="thead_event">
                     <tr>
                         <?php foreach ($date->attrMatch as $attr) {?>
                             <th class="th_event"><?php echo '<p class="name_attr_match">'.$attr.'</p>' ?></th>

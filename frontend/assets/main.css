@@ -117,6 +117,14 @@ footer {
     text-align: center;
 }
 
+.thead_event {
+    border-radius: 5%;
+}
+
+.th_event {
+    background-color: #343a40
+}
+
 .name_attr_match, .name_attr_tournoi {
     color: aliceblue;
 }
