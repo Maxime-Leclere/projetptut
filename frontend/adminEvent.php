@@ -32,8 +32,8 @@
                 <tbody>
                     <?php foreach ($tournoi as $t) {?>
                         <tr>
-                            <?php $attr_tournoi = $t->getAttr();?>
-                            <?php foreach ($attr_tournoi as $attrT) {?>
+                            <?php $attr_tournois = $t->getAttr();?>
+                            <?php foreach ($attr_tournois as $attrT) {?>
                                 <td>
                                     <?php echo '<p class="attr_tournoi">'.$attrT.'</p>'?>
                                 </td>
@@ -54,8 +54,8 @@
                 <tbody>
                 <?php foreach ($match as $m) {?>
                     <tr>
-                        <?php $attr_match = $m->getAttr();?>
-                        <?php foreach ($attr_match as $attrM) {?>
+                        <?php $attr_matchs = $m->getAttr();?>
+                        <?php foreach ($attr_matchs as $attrM) {?>
                             <td>
                                 <?php echo '<p class="attr_match">'.$attrM.'</p>'?>
                             </td>
