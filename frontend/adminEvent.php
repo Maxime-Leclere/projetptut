@@ -22,7 +22,7 @@
         ?>
         <div class="container">
             <table class="table_event">
-                <thead class="thead_event">
+                <thead>
                     <tr>
                         <?php foreach ($date->attrTournoi as $attr) {?>
                             <th class="th_event"><?php echo '<p class="name_attr_tournoi">'.$attr.'</p>' ?></th>
@@ -44,7 +44,7 @@
             </table>
 
             <table class="table_event">
-                <thead class="thead_event">
+                <thead>
                     <tr>
                         <?php foreach ($date->attrMatch as $attr) {?>
                             <th class="th_event"><?php echo '<p class="name_attr_match">'.$attr.'</p>' ?></th>
@@ -94,11 +94,11 @@
                     <button type="submit" class="btn btn-primary">Insérer</button>
                 </form>
 
-                <form action="" method="post">
+                <form action="../backend/AddTournoi.php" method="post">
                     <h1>Ajouter un tournoi</h1>
                     <div class="form-group">
-                        <label for="date">Nom du tournoi</label>
-                        <input type="date" class="form-control" name="name">
+                        <label for="name">Nom du tournoi</label>
+                        <input type="text" class="form-control" name="name">
                     </div>
 
                     <div class="form-group">
@@ -112,7 +112,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="name">Lieu</label>
+                        <label for="lieu">Lieu</label>
                         <input type="text" class="form-control" name="lieu">
                     </div>
                     <button type="submit" class="btn btn-primary">Insérer</button>
