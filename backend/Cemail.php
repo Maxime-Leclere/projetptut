@@ -1,13 +1,8 @@
 <?php
+session_start();
 
-echo $_POST['contenue'];
-echo '<br><hr>';
-echo $_POST['tete'];
-echo '<br><hr>';
-echo $_POST['equipe'];
-echo '<br><hr>';
-
-$topost = "'" . $_POST['equipe'] . "'";
+$topost = $_POST['equipe'];
+$postall= $_POST['Status'];
 
 define('HOST', 'mysql:host=mysql-projetptut.alwaysdata.net; dbname=projetptut_database;');
 define('USER', '195907');
@@ -16,19 +11,12 @@ define('TABLENAME', 'projetptut_database');
 
 $pdo = new PDO(HOST, USER, PASSWORD);
 
-
-
-print_r("Select * from Utilisateur where Num_Equipe = '3'");
-
-$stmt = $pdo->exec("Select * from Utilisateur where Num_Equipe = 3");
+$stmt = $pdo->query("Select * from Utilisateur where Num_Equipe = '$topost'");
 $row = $stmt->fetchAll();
 //$row = $stmt->fetchAll();
 
-print_r($row);
-//print_r($row[1]);
-
-
-//foreach ($row as $tmp) {
-//}
+foreach ($row as $tmp) {
+    mail($tmp[5], $_POST['tete'], $_POST['contenue']);
+}
 
 ?>

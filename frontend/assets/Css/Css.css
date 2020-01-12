@@ -9,9 +9,7 @@ h2, h3{
     display: flex;
     justify-content: center;
 }
-.container-fluid{
-    background-color: yellow;
-}
+
 .container{
     background-color: white;
     /*height: 100%;*/
@@ -23,7 +21,8 @@ h2, h3{
 /*    color:white;*/
 /*}*/
 body{
-    background-color: #ffffff;
+    height: 100%;
+    background-color: #fbfbf4 ;
     /*background-color: white;*/
 }
 #Pimg{
@@ -31,50 +30,6 @@ body{
 }
 .carousel-item{
     width: 100%;
-}
-
-/*footer*/
-
-footer {
-    width: 100%;
-    display: inline-flex;
-}
-
-.content_footer {
-    margin: auto;
-    display: inline-flex;
-    text-align: center;
-    align-items: center;
-}
-
-.menu_item_footer {
-    display: inline-flex;
-    text-align: center;
-    padding: 0;
-}
-
-.item_footer {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#icon_facebook {
-    width: 16px;
-    height: 30px;
-}
-
-#icon_contact {
-    width: 30px;
-    height: 30px;
-}
-
-#icon_twitter {
-    width: 29px;
-    height: 28px;
-}
-
-.text_footer {
-    margin: 16px;
 }
 
 /*Equipe*/
@@ -111,4 +66,22 @@ footer {
     color: black;
 }
 
+/*navbar*/
+.cf{
+    background-color: #fbfbf4;
+    height: 10%;
+}
+.btnav{
+    margin-left: 17%;
+}
+
+.btnsd{
+    height: 10%;
+}
+
 /**/
+.nav-link, .card-link{
+    color: #000000;
+}
+
+/*#ffc107*/

@@ -47,20 +47,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\maxle\Desktop\IUT Travail\2eme année\test\test assamblage de 2 partie\projetptut\backend" />
-      <recent name="C:\Users\maxle\Desktop\IUT Travail\2eme année\test\test assamblage de 2 partie\projetptut\frontend\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\maxle\Desktop\IUT Travail\2eme année\test\test assamblage de 2 partie\projetptut\backend" />
       <recent name="C:\Users\maxle\Desktop\IUT Travail\2eme année\test\projetptut\frontend" />
       <recent name="C:\Users\maxle\Desktop\IUT Travail\2eme année\test\projetptut\backend" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maxle\Desktop\IUT Travail\2eme année\test\test assamblage de 2 partie\projetptut\frontend" />
+      <recent name="C:\Users\maxle\Desktop\IUT Travail\2eme année\test\test assamblage de 2 partie\projetptut\backend" />
+      <recent name="C:\Users\maxle\Desktop\IUT Travail\2eme année\test\test assamblage de 2 partie\projetptut\frontend\assets" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -106,7 +107,7 @@
       <workItem from="1578574340514" duration="7568000" />
       <workItem from="1578667049191" duration="4569000" />
       <workItem from="1578741771200" duration="34620000" />
-      <workItem from="1578831623548" duration="15668000" />
+      <workItem from="1578831623548" duration="20999000" />
     </task>
     <servers />
   </component>
@@ -126,6 +127,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1032" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578264890211" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578864930287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578864930287" />
     <state x="1187" y="386" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578748164576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -138,10 +143,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578743409284" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1578843462321">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1578864951005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578843462321" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578864951005" />
     <state x="1136" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1578831667715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
