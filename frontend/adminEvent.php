@@ -9,7 +9,11 @@
 
         <?php
         include_once '../backend/Date.php';
+        include_once '../backend/Tournoi.php';
+        include_once '../backend/Match.php';
         include "../backend/Config.php";
+        use backend\Match;
+        use backend\Tournoi;
         use backend\Date;
         $date    = new Date();
         $year    = \date('Y');
