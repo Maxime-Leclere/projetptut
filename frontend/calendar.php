@@ -94,7 +94,8 @@
                                             <td colspan="<?php echo $w-1; ?>"></td>
                                         <?php } ?>
                                     <?php } ?>
-                                    <td>
+                                    <td <?php if ($time == strtotime(\date('Y-m-d'))) {?>
+                                        class="today" <?php }?>>
                                         <?php echo '<p class="day_num">'.$d.'</p>'; ?>
                                         <ul class="events">
                                             <?php if(isset($events[$time])) {

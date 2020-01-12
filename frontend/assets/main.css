@@ -78,8 +78,16 @@ td {
     vertical-align: top;
 }
 
+td:hover {
+    background-color: #DFDFDF;
+}
+
 th {
     width: 14%;
+}
+
+.today {
+    border: 2px solid #007bff;
 }
 
 .event_text {
