@@ -44,7 +44,8 @@
                                     <input type="text" id="Title" name="title" class="form-control" placeholder="taper votre titre" required><br>
                                 </div>
                                 <div class="form-group">
-                                    <input type="file" name="image" class="form-control"><br>
+                                    <label>Image à insérer</label>
+                                    <input type="file" name="image"><br>
                                 </div>
                                 <div class="form-group">
                                     <label>Texte</label><br>
