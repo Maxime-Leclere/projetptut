@@ -76,11 +76,11 @@
                 <?php $dates = current($dates);
                 foreach ($dates as $m=>$days) { ?>
                     <div class="daysofmonth" id="month<?php echo $m; ?>">
-                        <table>
+                        <table class="table_calendar">
                             <thead>
                                 <tr>
                                     <?php foreach ($date->days as $d) {?>
-                                        <th><?php echo '<p class="day_text">'.$d.'</p>' ?></th>
+                                        <th class="th_calendar"><?php echo '<p class="day_text">'.$d.'</p>' ?></th>
                                     <?php } ?>
                                 </tr>
                             </thead>
@@ -95,7 +95,9 @@
                                         <?php } ?>
                                     <?php } ?>
                                     <td <?php if ($time == strtotime(\date('Y-m-d'))) {?>
-                                        class="today" <?php }?>>
+                                        class="today" <?php } else {?>
+                                            class="td_calendar"
+                                        <?php }?>>
                                         <?php echo '<p class="day_num">'.$d.'</p>'; ?>
                                         <ul class="events">
                                             <?php if(isset($events[$time])) {

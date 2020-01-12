@@ -73,25 +73,25 @@ footer {
     margin-left: 10%;
 }
 
-table {
+.table_calendar {
     border-collapse: collapse;
     width: 100%;
     min-height: 800px;
 }
 
-table, td, th {
+.table_calendar, .td_calendar, .th_calendar {
     border: 1px solid #888e94;
 }
 
-td {
+.td_calendar {
     vertical-align: top;
 }
 
-td:hover {
+.td_calendar:hover {
     background-color: #DFDFDF;
 }
 
-th {
+.th_calendar {
     width: 14%;
 }
 

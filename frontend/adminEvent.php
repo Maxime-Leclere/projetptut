@@ -20,16 +20,16 @@
         $match   = $date->getMatch($year);
         $tournoi = $date->getTournoi($year);
         ?>
-
-        <table>
-            <thead>
+        <div class="container">
+            <table>
+                <thead>
                 <tr>
                     <?php foreach ($date->attrTournoi as $attr) {?>
                         <th><?php echo '<p class="name_attr_tournoi">'.$attr.'</p>' ?></th>
                     <?php } ?>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <tr>
                     <?php foreach ($tournoi as $t) {
                         $attr_tournoi = $t->getAttr();
@@ -38,31 +38,31 @@
                         <?php } ?>
                     <?php }?>
                 </tr>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
 
-        <table>
-            <thead>
-            <tr>
-                <?php foreach ($date->attrMatch as $attr) {?>
-                    <th><?php echo '<p class="name_attr_match">'.$attr.'</p>' ?></th>
-                <?php } ?>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <?php foreach ($match as $m) {
-                    $attr_match = $m->getAttr();
-                    foreach ($attr_match as $attrM) {?>
-                        <td>
-                            <?php echo '<p class="attr_match">'.$attrM.'</p>'?>
-                        </td>
+            <table>
+                <thead>
+                <tr>
+                    <?php foreach ($date->attrMatch as $attr) {?>
+                        <th><?php echo '<p class="name_attr_match">'.$attr.'</p>' ?></th>
                     <?php } ?>
-                <?php }?>
-            </tr>
-            </tbody>
-        </table>
-
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <?php foreach ($match as $m) {
+                        $attr_match = $m->getAttr();
+                        foreach ($attr_match as $attrM) {?>
+                            <td>
+                                <?php echo '<p class="attr_match">'.$attrM.'</p>'?>
+                            </td>
+                        <?php } ?>
+                    <?php }?>
+                </tr>
+                </tbody>
+            </table>
+        </div>
         <?php include_once 'footer.php' ?>
     </body>
 </html>
