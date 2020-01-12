@@ -37,6 +37,7 @@
                         <?php }
                     }?>
                     <?php if ($_SESSION["Status"] == 2){?>
+                        <div class="card-header"></div>
                         <div class="card-header">
                             <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
                                 <div class="form-group">
@@ -44,7 +45,7 @@
                                     <input type="text" id="Title" name="title" class="form-control" placeholder="taper votre titre" required><br>
                                 </div>
                                 <div class="form-group">
-                                    <label>Image à insérer</label>
+                                    <label>Image à insérer</label><br>
                                     <input type="file" name="image"><br>
                                 </div>
                                 <div class="form-group">
