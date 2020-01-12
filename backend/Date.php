@@ -38,7 +38,7 @@ class Date {
                 FROM TOURNOI WHERE YEAR(Date_deb) ='.$year.' ORDER BY Date_deb DESC');
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = new \Tournoi($d->Num_T, $d->Nom_T, $d->Date_deb, $d->Date_fin,
+            $r[$i] = new Tournoi($d->Num_T, $d->Nom_T, $d->Date_deb, $d->Date_fin,
                                     $d->Lieu);
         }
         return $r;
@@ -52,7 +52,7 @@ class Date {
         ' ORDER BY Date_M DESC, Heure DESC');
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = new \Match($d->Num_M, $d->Date_M, $d->Heure, $d->Club_Adversaire,
+            $r[$i] = new Match($d->Num_M, $d->Date_M, $d->Heure, $d->Club_Adversaire,
             $d->Lieu, $d->Num_T);
         }
         return $r;
