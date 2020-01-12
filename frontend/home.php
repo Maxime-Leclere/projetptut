@@ -44,9 +44,7 @@
                                         <label>Titre</label><br>
                                         <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
                                     </div>
-                                    <div class="form-group">
-                                        <input type="file" name="image"><br>
-                                    </div>
+                                    <input type="file" name="image"><br>
                                     <div class="form-group">
                                         <label>Texte</label><br>
                                         <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
