@@ -56,7 +56,7 @@
                                     <label>Texte</label><br>
                                     <textarea id="Text" name="text" placeholder="taper votre texte" class="form-control"></textarea><br>
                                 </div>
-                                <button type="submit" class="btn btn-primary">envoyer</button>
+                                <button type="submit" class="btn btn-warning">Envoyer</button>
                             </form>
                         </div>
                     <?php } ?>
