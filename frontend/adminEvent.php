@@ -35,12 +35,21 @@
                             <?php $attr_tournois = $t->getAttr();?>
                             <?php foreach ($attr_tournois as $attrT) {?>
                                 <td class="td_event">
-                                    <?php if (isset($attrT))echo '<p class="attr_tournoi">'.$attrT.'</p>';
-                                            else echo '<p class="attr_tournoi">Rien</p>'?>
+                                    <?php echo '<p class="attr_tournoi">'.$attrT.'</p>'?>
                                 </td>
                             <?php } ?>
                         </tr>
                     <?php }?>
+                    <?php if (!isset($tournoi)) { ?>
+                        <tr>
+                            <?php $i = 5;
+                            for ($u = 0; $i>$u; ++$u) {?>
+                                <td class="td_event">
+                                    <?php echo '<p class="attr_tournoi">Rien</p>'?>
+                                </td>
+                            <?php } ?>
+                        </tr>
+                    <?php } ?>
                 </tbody>
             </table>
 
@@ -63,6 +72,16 @@
                         <?php } ?>
                     </tr>
                 <?php }?>
+                <?php if (!isset($match)) { ?>
+                    <tr>
+                        <?php $i = 5;
+                        for ($u = 0; $i>$u; ++$u) {?>
+                            <td class="td_event">
+                                <?php echo '<p class="attr_match">Rien</p>'?>
+                            </td>
+                        <?php } ?>
+                    </tr>
+                <?php } ?>
                 </tbody>
             </table>
             <div class="form_event">
