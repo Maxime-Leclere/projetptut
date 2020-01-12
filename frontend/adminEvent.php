@@ -30,14 +30,14 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <?php foreach ($tournoi as $t) {
-                        $attr_tournoi = $t->getAttr();
-                        foreach ($attr_tournoi as $attrT) {?>
-                            <td><?php echo '<p class="attr_tournoi">'.$attrT.'</p>'?></td>
-                        <?php } ?>
-                    <?php }?>
-                </tr>
+                <?php foreach ($tournoi as $t) {?>
+                    <tr>
+                            <?php $attr_tournoi = $t->getAttr();?>
+                            <?php foreach ($attr_tournoi as $attrT) {?>
+                                <td><?php echo '<p class="attr_tournoi">'.$attrT.'</p>'?></td>
+                            <?php } ?>
+                    </tr>
+                <?php }?>
                 </tbody>
             </table>
 
