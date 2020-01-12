@@ -50,16 +50,16 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <?php foreach ($match as $m) {
-                        $attr_match = $m->getAttr();
-                        foreach ($attr_match as $attrM) {?>
+                <?php foreach ($match as $m) {?>
+                    <tr>
+                        <?php$attr_match = $m->getAttr();?>
+                        <?php foreach ($attr_match as $attrM) {?>
                             <td>
                                 <?php echo '<p class="attr_match">'.$attrM.'</p>'?>
                             </td>
                         <?php } ?>
-                    <?php }?>
-                </tr>
+                    </tr>
+                <?php }?>
                 </tbody>
             </table>
         </div>
