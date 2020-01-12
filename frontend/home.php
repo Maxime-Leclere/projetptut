@@ -39,11 +39,14 @@
                     <?php if ($_SESSION["Status"] == 2){?>
                         <div class="card-header">
                             <form enctype="multipart/form-data" action="../backend/AddArticle.php" method="post">
-                                <label>Titre</label><br>
-                                <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
-                                <input type="file" name="image"><br>
-                                <label>Texte</label><br>
-                                <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
+                                <div class="form-group">
+                                    <label>Titre</label><br>
+                                    <input type="text" id="Title" name="title" placeholder="taper votre titre" required><br>
+                                    <input type="file" name="image"><br>
+                                    <label>Texte</label><br>
+                                    <textarea id="Text" name="text" placeholder="taper votre texte"></textarea><br>
+
+                                </div>
                                 <button type="submit">envoyer</button>
                             </form>
                         </div>
