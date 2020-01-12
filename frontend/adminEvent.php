@@ -40,7 +40,7 @@
                             <?php } ?>
                         </tr>
                     <?php }?>
-                    <?php if (!isset($tournoi)) { ?>
+                    <?php if (!isset($tournoi[0])) { ?>
                         <tr>
                             <?php $i = 5;
                             for ($u = 0; $i>$u; ++$u) {?>
@@ -72,7 +72,7 @@
                         <?php } ?>
                     </tr>
                 <?php }?>
-                <?php if (!isset($match)) { ?>
+                <?php if (!isset($match[0])) { ?>
                     <tr>
                         <?php $i = 5;
                         for ($u = 0; $i>$u; ++$u) {?>
