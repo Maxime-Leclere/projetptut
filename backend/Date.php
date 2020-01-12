@@ -4,8 +4,6 @@ namespace backend;
 use DateInterval;
 use DateTime;
 use Exception;
-use backend\Tournoi;
-use backend\Match;
 
 class Date {
     var $days   = array('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche');
