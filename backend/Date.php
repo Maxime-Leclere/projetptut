@@ -47,7 +47,7 @@ class Date {
         global $DB;
         $r = array();
         $req = $DB->query('SELECT Num_M, Date_M, Heure, 
-        Club_Adversaire, M.Lieu FROM MATCHS M WHERE YEAR(Date_M) = '.$year.
+        Club_Adversaire, M.Lieu, Num_T FROM MATCHS M WHERE YEAR(Date_M) = '.$year.
         ' ORDER BY Date_M DESC, Heure DESC');
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
