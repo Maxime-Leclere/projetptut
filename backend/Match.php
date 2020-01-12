@@ -1,4 +1,5 @@
 <?php
+namespace backend;
 class Match {
     private $id;
     private $dateM;

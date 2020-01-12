@@ -1,4 +1,5 @@
 <?php
+namespace backend;
 class Tournoi {
     private $id;
     private $nom;
