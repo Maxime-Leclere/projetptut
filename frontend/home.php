@@ -31,7 +31,7 @@
 
         <div class="container" style="height: 100%">
             <div class="row">
-                <div class="col-sm-8" style="background-color:lavender;">
+                <div class="col-sm-8" style="background-color:white;">
 <!--                    // article à inserer-->
                     <div class="card-header"><h2 class="article_title">ARTICLES</h2></div>
                     <?php if (isset($articles)) {
@@ -61,7 +61,7 @@
                         </div>
                     <?php } ?>
                 </div>
-                <div class="col-sm-4" style="background-color:lavenderblush;">
+                <div class="col-sm-4" style="background-color:white;">
                     <div id="accordion"><br>
                         <div class="card">
                             <div class="card-header ">
