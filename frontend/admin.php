@@ -33,7 +33,7 @@
                     <select name="change" class="custom-select mb-6 col-md-4" style="width: 30%">
                         <option value="Status">Status</option>
                         <option value="Email">Email</option>
-                        <option value="IdGroupe">Equipe</option>
+                        <option value="Num_Equipe">Equipe</option>
                     </select>
                     <input class="form-check-input" type="text" name="tchange">
                     <button type="submit" class="btn btn-warning" >Changer</button>
