@@ -26,4 +26,4 @@ function Equipe(){
 }
 
 //&& $_SESSION['DateN'] < 2005/01/01 && $_SESSION['DateN'] > 2000/01/01
-header('Location: /../frontend/admin.php')?>
+header('Location: ../frontend/admin.php')?>

@@ -5,7 +5,10 @@
     </head>
 
     <body>
-        <?php include_once 'header.php';?>
+        <?php
+        session_start();
+        if($_SESSION['Status'] != 2)header('Location: home.php');
+        include_once 'header.php';?>
 
         <?php
         include_once '../backend/Date.php';
@@ -110,7 +113,7 @@
                         <label for="numT">Numero du tournoi</label>
                         <input type="number" class="form-control" name="numT">
                     </div>
-                    <button type="submit" class="btn btn-primary">Insérer</button>
+                    <button type="submit" class="btn btn-warning">Insérer</button>
                 </form>
 
                 <form class="form_event_insert" action="../backend/AddTournoi.php" method="post">
@@ -134,7 +137,7 @@
                         <label for="lieu">Lieu</label>
                         <input type="text" class="form-control" name="lieu">
                     </div>
-                    <button type="submit" class="btn btn-primary">Insérer</button>
+                    <button type="submit" class="btn btn-warning">Insérer</button>
                 </form>
 
             </div>
