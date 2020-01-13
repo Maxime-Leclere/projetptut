@@ -6,6 +6,8 @@
 
     <body>
         <?php
+        session_start();
+
         if($_SESSION['Status'] != 2){
             header('Location: home.php');
         }

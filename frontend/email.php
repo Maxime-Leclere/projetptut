@@ -5,7 +5,10 @@
     </head>
 
     <body>
-        <?php if($_SESSION['Status'] != 2) {
+        <?php
+        session_start();
+
+        if($_SESSION['Status'] != 2) {
             header('Location: home.php');
         }?>
         <?php include_once 'header.php';?>
