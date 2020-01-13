@@ -12,6 +12,7 @@ h2, h3{
 
 .container{
     background-color: white;
+    min-height: 770px;
 }
 
 body{

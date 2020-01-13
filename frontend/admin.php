@@ -36,7 +36,7 @@
                         <option value="IdGroupe">Equipe</option>
                     </select>
                     <input class="form-check-input" type="text" name="tchange">
-                    <button type="submit" class="btn btn-primary"" >Submit</button>
+                    <button type="submit" class="btn btn-warning" >Changer</button>
                 </form></div></br>';
         }
 

@@ -11,7 +11,7 @@
         if($_SESSION['Status'] != 2) {
             header('Location: home.php');
         }?>
-        <?php include_once 'header.php';?>
+        <?php include_once 'header.php'?>
 
         <div class="container" style = "height: 100%" ><br >
             <form action = "../backend/Cemail.php" method = "post" >
