@@ -9,7 +9,10 @@
         session_start();
 
         if($_SESSION['Status'] != 2){
-            header('Location: home.php');
+            try {
+                header('Location: home.php');
+
+            } catch (Exception $e){}
         }
 
         include_once 'header.php';
