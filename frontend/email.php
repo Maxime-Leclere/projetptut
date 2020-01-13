@@ -13,7 +13,7 @@
         }?>
         <?php include_once 'header.php'?>
 
-        <div class="container" style = "height: 100%" ><br >
+        <div class="container" style="min-height: 770px"><br >
             <form action = "../backend/Cemail.php" method = "post" >
                 <label for="sele" class="col-md-4" > Sélectionner Equipe:</label >
                 <div style = "flex-direction: row; display: flex; " >

@@ -49,7 +49,7 @@
     <body>
         <?php include_once 'header.php' ?>
 
-        <div class="container" style="height: 100%">
+        <div class="container" style="min-height: 770px">
             <?php
                 include_once '../backend/Date.php';
                 include_once '../backend/Config.php';

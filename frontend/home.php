@@ -29,7 +29,7 @@
         ?>
 
 
-        <div class="container" style="height: 100%">
+        <div class="container" style="min-height: 770px">
             <div class="row">
                 <div class="col-sm-8" style="background-color:white;">
 <!--                    // article à inserer-->

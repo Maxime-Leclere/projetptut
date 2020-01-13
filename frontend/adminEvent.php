@@ -23,7 +23,7 @@
         $match   = $date->getMatch($year);
         $tournoi = $date->getTournoi($year);
         ?>
-        <div class="container">
+        <div class="container" style="min-height: 770px">
             <table class="table_event">
                 <thead>
                     <tr>

@@ -7,7 +7,7 @@
     <body>
         <?php include_once 'header.php' ?>
 
-        <div class="container" style="height: 100%"><br>
+        <div class="container" style="min-height: 770px"><br>
             <form action="../backend/SendMail.php" method="post">
                 <h1>Formulaire de contact</h1>
                 <div class="form-group">

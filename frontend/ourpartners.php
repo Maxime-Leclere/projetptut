@@ -7,7 +7,7 @@
     <body>
         <?php include_once 'header.php' ?>
 
-        <div class="container">
+        <div class="container" style="min-height: 770px">
             <h2>Nos partenaires :</h2>
             <div class="col-md-12" id="Pimg">
                 <a href="http://www.aixenprovence.fr/" target="_blank">
