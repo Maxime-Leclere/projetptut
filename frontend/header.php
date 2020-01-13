@@ -60,7 +60,7 @@
                                 <button type="submit" name="deconnexion" class="btn btn-outline-warning">Déconnexion</button>
                             </form>
                             <button type="button" class="btn btn-outline-warning btnsd" data-toggle="modal" data-target="#co123">
-                                 Open modal
+                                 Mon Profil
                             </button>';
             }
             ?>

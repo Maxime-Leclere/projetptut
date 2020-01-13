@@ -25,7 +25,7 @@
                     <textarea class="form-control" rows="5" name="message"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-warning">Submit</button>
+                <button type="submit" class="btn btn-warning">Envoyer</button>
             </form>
         </div>
 

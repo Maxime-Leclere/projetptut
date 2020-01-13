@@ -46,7 +46,7 @@
                     <label for="contenue" > Contenue du mail:</label >
                     <input type = "text" class="form-control" placeholder = "Contenue du mail" id = "contenue" name = "contenue" style = "height: 75px" >
                 </div >
-                <button type = "submit" class="btn btn-warning" > Submit</button >
+                <button type = "submit" class="btn btn-warning" >Envoyer</button >
             </form >
         </div >
         <?php include_once 'footer.php' ?>
