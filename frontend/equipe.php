@@ -6,7 +6,7 @@
 
     <body>
         <?php include_once 'header.php';?>
-        <div class="container" style="min-height: 120%"><br>
+        <div class="container" style="min-height: 770px"><br>
             <div class="dropdown">
                 <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
                     Choisissez vôtre équipe

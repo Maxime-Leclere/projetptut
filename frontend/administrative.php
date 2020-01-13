@@ -7,7 +7,7 @@
     <body>
         <?php include_once 'header.php' ?>
 
-        <div class="container">
+        <div class="container" style="min-height: 770px">
             <h2>Administration</h2>
             <br>
             <ul class="nav nav-tabs">

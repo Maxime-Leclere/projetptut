@@ -7,7 +7,7 @@
     <body>
         <?php include_once 'header.php' ?>
 
-        <div class="container" style="min-height: 120%">
+        <div class="container" style="min-height: 770px">
             <div id="accordion"><br>
                 <h2>Informations sur le Club</h2><br>
                 <div class="card">
