@@ -20,7 +20,7 @@
             for ($i = 0; $i <= count($tmp); $i++) {
             echo "<p class= 'aze' >" . $tmp[$i] . "</p>";
             }
-            echo '<form class="form-inline" action="Controller/Cadmin.php" method="post" onsubmit="Equipe()" style="height: 100%; display: flex; flex-direction: row; width: 40%">
+            echo '<form class="form-inline" action="../backend/Cadmin.php" method="post" onsubmit="Equipe()" style="height: 100%; display: flex; flex-direction: row; width: 40%">
                     <input style="visibility: hidden; display: none;" value= ' . $tmp[0] . ' name="idU">
                     <select name="change" class="custom-select mb-6 col-md-4" style="width: 30%">
                         <option value="Status">Status</option>
