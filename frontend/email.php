@@ -5,6 +5,9 @@
     </head>
 
     <body>
+        <?php if($_SESSION['Status'] != 2) {
+            header('Location: home.php');
+        }?>
         <?php include_once 'header.php';?>
 
         <div class="container" style = "height: 100%" ><br >
@@ -38,7 +41,7 @@
 
                 <div class="form-group" >
                     <label for="contenue" > Contenue du mail:</label >
-                    <input type = "text" class="form-control" placeholder = "Contenue du mail" id = "contenue" name = "contenue" style = "height: 20%" >
+                    <input type = "text" class="form-control" placeholder = "Contenue du mail" id = "contenue" name = "contenue" style = "height: 75px" >
                 </div >
                 <button type = "submit" class="btn btn-warning" > Submit</button >
             </form >
