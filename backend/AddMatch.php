@@ -8,6 +8,6 @@
     $numT   = $_POST['numT'];
 
     $req = $DB->query("INSERT INTO `MATCHS`(`Date_M`, `Heure`, `Club_Adversaire`, `Lieu`, 
-            `Num_T`) VALUES ('".str_replace(" 00:00:00","",$date)."', '$time', '".addslashes($nameCA)."', '".addslashes($lieu)."', $numT)");
+            `Num_T`) VALUES ('".str_replace(" 00:00:00","","".$date."")."', '$time', '".addslashes($nameCA)."', '".addslashes($lieu)."', $numT)");
 
     header("Location: ../frontend/adminEvent.php");
