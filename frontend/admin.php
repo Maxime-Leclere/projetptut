@@ -16,7 +16,6 @@
         }
 
         include_once 'header.php';
-        include_once '../backend/Cadmin.php';
         include_once '../backend/Config.php';
 
         global $DB;
