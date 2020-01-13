@@ -10,7 +10,7 @@ class Match {
 
     public function __construct($idM, $dateM, $hour, $clubAdv, $lieu, $idT) {
         $this->id      = $idM;
-        $this->dateM     = str_replace(" 00:00:00","",$dateM);
+        $this->dateM   = $dateM;
         $this->hour    = $hour;
         $this->clubAdv = $clubAdv;
         $this->lieu    = $lieu;
