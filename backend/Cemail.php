@@ -14,5 +14,5 @@ $row = $stmt->fetchAll();
 foreach ($row as $tmp) {
     mail($tmp[5], $_POST['tete'], $_POST['contenue']);
 }
-
+header('Location: ../backend/email.php')
 ?>
