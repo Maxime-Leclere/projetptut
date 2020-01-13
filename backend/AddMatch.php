@@ -2,6 +2,7 @@
     include_once 'Config.php';
 
     $date   = $_POST['date'];
+    $date   = str_replace(" 00:00:00","",$date);
     $time   = $_POST['time'].':00';
     $nameCA = $_POST['nameCA'];
     $lieu   = $_POST['lieu'];
