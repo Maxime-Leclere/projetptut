@@ -153,7 +153,11 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
-.home_events_title:hover {
+.home_events_title:hover, .article_title:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+a.article_title {
+    color: black;
 }

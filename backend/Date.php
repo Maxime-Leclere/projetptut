@@ -16,11 +16,12 @@ class Date {
     public function getArticles($year) {
         global $DB;
         $r = array();
-        $req = $DB->query('SELECT * FROM `ARTICLES` WHERE YEAR(Date_A)='.$year.' 
+        $req = $DB->query('SELECT * FROM `ARTICLES` WHERE YEAR(Date_A)='.$year.'
                         ORDER BY Date_A DESC, Time_A DESC');
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = '<h3 class="article_title">'.$d->Title_A.'</h3><p class="article_text">'.$d->Date_A.' '.
+            $r[$i] = '<h3 class="article_title"><a href="article.php?article='.
+                $d->Num_A.'" class="article_title">'.$d->Title_A.'</a></h3><p class="article_text">'.$d->Date_A.' '.
             $d->Time_A.'</p>';
             if ($d->Image_A != "")$r[$i] .= '<img class="article_image" src="'.$d->Image_A.'">';
             if ($d->Text_A != "")$r[$i] .= '<p class="article_text">'.$d->Text_A.'</p>';
@@ -32,7 +33,7 @@ class Date {
     public function getTournoi($year) {
         global $DB;
         $r = array();
-        $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 
+        $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu
                 FROM TOURNOI WHERE YEAR(Date_deb) ='.$year.' ORDER BY Date_deb DESC');
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
@@ -46,7 +47,7 @@ class Date {
     public function getMatch($year) {
         global $DB;
         $r = array();
-        $req = $DB->query('SELECT Num_M, Date_M, Heure, 
+        $req = $DB->query('SELECT Num_M, Date_M, Heure,
         Club_Adversaire, M.Lieu, Num_T FROM MATCHS M WHERE YEAR(Date_M) = '.$year.
         ' ORDER BY Date_M DESC, Heure DESC');
         $i = 0;
@@ -61,7 +62,7 @@ class Date {
     public function getEvents($year) {
         global $DB;
         $r = array();
-        $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 
+        $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu
                                     FROM TOURNOI WHERE YEAR(Date_deb) ='.$year);
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[strtotime($d->Date_deb)][$d->Num_T] = 'Debut du '.$d->Nom_T. ' à '.
@@ -69,8 +70,8 @@ class Date {
             $r[strtotime($d->Date_fin)][$d->Num_T] = 'Fin du '.$d->Nom_T. ' à '.
                 $d->Lieu;
         }
-        $reqM = $DB->query('SELECT Num_M, Date_M, Heure, 
-        Club_Adversaire, M.Lieu FROM MATCHS M, TOURNOI T WHERE M.Num_T = T.Num_T 
+        $reqM = $DB->query('SELECT Num_M, Date_M, Heure,
+        Club_Adversaire, M.Lieu FROM MATCHS M, TOURNOI T WHERE M.Num_T = T.Num_T
         AND YEAR(Date_M) = '.$year);
         while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
             $r[strtotime($d2->Date_M)][$d2->Num_M] = 'Match à '.$d2->Heure.
@@ -89,7 +90,7 @@ class Date {
 
         $dateCurrent = strtotime("$year-$m-$d");
         $timeCurrent = strtotime("$hour:$min:$sec");
-        $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu 
+        $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu
                                     FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND Date_deb >='.$dateCurrent);
         $i = 0;
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
@@ -98,8 +99,8 @@ class Date {
             $r[$i] = '<h4 class="home_events_title">Fin du '.$d->Nom_T.'</h4><p class="home_events_text">'.$d->Date_fin.'</p>';
             ++$i;
         }
-        $reqM = $DB->query("SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu, 
-        Nom_Equipe FROM MATCHS M, Equipe E, Jouer J WHERE M.Num_M = J.Num_M AND 
+        $reqM = $DB->query("SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu,
+        Nom_Equipe FROM MATCHS M, Equipe E, Jouer J WHERE M.Num_M = J.Num_M AND
         J.Num_Equipe = E.Num_Equipe AND M.Lieu='Aix-en-Provence' AND Date_M >= $dateCurrent
              ORDER BY Date_M DESC, Heure DESC");
         while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
