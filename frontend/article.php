@@ -8,6 +8,8 @@
         <?php include_once 'header.php' ?>
         <?php
         require '../backend/ArticleManager.php';
+        include "../backend/Config.php";
+
         use backend\ArticleManager;
         use backend\Article;
 
