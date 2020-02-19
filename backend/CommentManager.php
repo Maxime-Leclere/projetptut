@@ -12,5 +12,5 @@ class CommentManager {
         // $articleData->setDate_A(new \DateTime($articleData->getDate_A()));
         return $articleData;
     }
-    }
+
 }
