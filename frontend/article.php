@@ -13,6 +13,7 @@
 
         use backend\ArticleManager;
         use backend\Article;
+        if($_GET['article'] == null)header('Location: home.php');
 
         $manager = new ArticleManager();
         $article = $manager->get(intval($_GET['article']));

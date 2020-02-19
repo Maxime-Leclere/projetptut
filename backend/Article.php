@@ -11,7 +11,12 @@ class Article {
 
     public function __construct($Num_A, $Title_A, $Text_A, $Date_A, $Time_A,
             $Image_A) {
-        set
+        $this->setNum_A($Num_A);
+        $this->setTitle_A($Title_A);
+        $this->setText_A($Text_A);
+        $this->setDate_A($Date_A);
+        $this->setTime_A($Time_A);
+        $this->setImage_A($Image_A);
     }
 
     public function getNum_A() {return $this->Num_A;}
@@ -46,10 +51,10 @@ class Article {
     }
 
     public function show() {
-        $r = '<h3 class="article_title">'.getTitle_A().'</h3><p class="article_text">'.getDate_A().' '.
-            getTime_A().'</p>';
-        if (getImage_A() != "")$r .= '<img class="article_image" src="'.getImage_A().'">';
-        if (getText_A() != "")$r .= '<p class="article_text">'.getText_A().'</p>';
+        $r = '<h3 class="article_title">'.$this->getTitle_A().
+        '</h3><p class="article_text">'.$this->getDate_A().' '.$this->getTime_A().'</p>';
+        if ($this->getImage_A() != "")$r .= '<img class="article_image" src="'.$this->getImage_A().'">';
+        if ($this->getText_A() != "")$r .= '<p class="article_text">'.$this->getText_A().'</p>';
         return $r;
     }
 }
