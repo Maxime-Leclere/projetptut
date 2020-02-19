@@ -7,7 +7,8 @@
     <body>
         <?php include_once 'header.php' ?>
         <?php
-        require '../backend/ArticleManager.php';
+        include_once '../backend/ArticleManager.php';
+        include_once '../backend/Article.php';
         include "../backend/Config.php";
 
         use backend\ArticleManager;
