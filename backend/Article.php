@@ -19,6 +19,7 @@ class Article {
         $this->setImage_A($Image_A);
     }
 
+
     public function getNum_A() {return $this->Num_A;}
     public function getTitle_A() {return $this->Title_A;}
     public function getText_A() {return $this->Text_A;}
@@ -51,10 +52,10 @@ class Article {
     }
 
     public function show() {
-        $r = '<h3 class="article_title">'.$this->getTitle_A().
+        $r = '<div class="article"><h3 class="article_title">'.$this->getTitle_A().
         '</h3><p class="article_text">'.$this->getDate_A().' '.$this->getTime_A().'</p>';
         if ($this->getImage_A() != "")$r .= '<img class="article_image" src="'.$this->getImage_A().'">';
-        if ($this->getText_A() != "")$r .= '<p class="article_text">'.$this->getText_A().'</p>';
+        if ($this->getText_A() != "")$r .= '<p class="article_text">'.$this->getText_A().'</p></div>';
         return $r;
     }
 }

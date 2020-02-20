@@ -13,4 +13,16 @@ class CommentManager {
         return $articleData;
     }
 
+    public function add(Comment $comment) {
+        global $DB;
+        $req = $DB->prepare('INSERT INTO COMMENTAIRE SET Auteur_C = :Auteur_C,
+            Contenu_C = :Contenu_C, Num_A = :Num_A');
+
+        $req->bindValue(':Auteur_C' , $comment->getAuteur_C());
+        $req->bindValue(':Contenu_C', $comment->getContenu_C());
+        $req->bindValue(':Num_A'    , $comment->getNum_A());
+
+        $req->execute();
+
+    }
 }

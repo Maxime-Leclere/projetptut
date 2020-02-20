@@ -26,12 +26,23 @@
         ?>
 
         <div class="container" style="min-height: 770px">
-            <?php echo $article->show(); ?>
+            <?= $article->show() ?>
+            <h4 class="title_listcomment"><?= sizeof($listComment)?> Commentaire
+                <?php if(sizeof($listComment) > 1) echo "s" ?>
+            </h4>
             <?php if ($_SESSION["Status"] == 1){?>
                 <form action="" method="post">
                     <input type="text" name="comment" placeholder="Ajouter un
                         commentaire" required/>
+                    <input type="hidden" name="url" value="
+                    <?= intval($_GET['article']) ?>" />
+                    <input type="hidden" name="username" value="
+                    <?= $_SESSION['Nom'].' '.$_SESSION['Prenom'] ?>" />
+                    <button type="submit" name="send_comment">Envoyer</button>
                 </form>
+            <?php } ?>
+            <?php foreach ($listComment as $comment) { ?>
+                <?= $comment->show() ?>
             <?php } ?>
         </div>
 

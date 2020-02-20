@@ -8,7 +8,14 @@ class Comment {
               $Date_creation,
               $Num_A;
 
-    public function __construct() {
+    public function __construct($Num_C, $Auteur_C, $Contenu_C, $Date_creation,
+              $Num_A) {
+
+        $this->setNum_C($Num_C);
+        $this->setAuteur_C($Auteur_C);
+        $this->setContenu_C($Contenu_C);
+        $this->setDate_creation($Date_creation);
+        $this->setNum_A($Num_A);
 
     }
 
@@ -36,7 +43,7 @@ class Comment {
     }
 
     public function setNum_A($Num_A) {
-        if(is_string($Num_A) && !empty($Num_A))$this->$Num_A = $Num_A;
+        if(is_numeric($Num_A) && !empty($Num_A))$this->$Num_A = $Num_A;
     }
 
     public function show() {
