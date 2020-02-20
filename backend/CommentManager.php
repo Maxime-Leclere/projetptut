@@ -17,12 +17,11 @@ class CommentManager {
     public function add(Comment $comment) {
         global $DB;
         $req = $DB->prepare("insert INTO `COMMENTAIRE`(`Auteur_C`, `Contenu_C`,
-            `Num_A`) VALUES ('".$comment->getAuteur_C()."', '"
-            .$comment->getContenu_C()."', ".$comment->getNum_A().")");
+            `Num_A`) VALUES (':Auteur_C', ':Contenu_C', :Num_A)");
 
-        // $req->bindValue(':Auteur_C' , $comment->getAuteur_C());
-        // $req->bindValue(':Contenu_C', $comment->getContenu_C());
-        // $req->bindValue(':Num_A'    , $comment->getNum_A());
+        $req->bindValue(':Auteur_C' , $comment->getAuteur_C());
+        $req->bindValue(':Contenu_C', $comment->getContenu_C());
+        $req->bindValue(':Num_A'    , $comment->getNum_A());
 
         $req->execute();
 
