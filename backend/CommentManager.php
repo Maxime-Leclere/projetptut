@@ -17,7 +17,7 @@ class CommentManager {
     public function add(Comment $comment) {
         global $DB;
         $req = $DB->prepare("INSERT INTO `COMMENTAIRE`(`Auteur_C`, `Contenu_C`,
-            `Num_A`) VALUES (':Auteur_C', ':Contenu_C', :Num_A)");
+            `Num_A`) VALUES (\':Auteur_C\', \':Contenu_C\', :Num_A)");
 
         $req->bindValue(':Auteur_C' , $comment->getAuteur_C());
         $req->bindValue(':Contenu_C', $comment->getContenu_C());
