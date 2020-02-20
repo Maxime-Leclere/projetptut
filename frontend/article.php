@@ -31,7 +31,7 @@
                 <?php if(sizeof($listComment) > 1) echo "s" ?>
             </h4>
             <?php if ($_SESSION["Status"] != 0){?>
-                <form action="" method="post">
+                <form action="../backend/AddComment.php" method="post">
                     <input type="text" name="comment" placeholder="Ajouter un commentaire" required/>
                     <input type="hidden" name="url" value="
                     <?= intval($_GET['article']) ?>" />

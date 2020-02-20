@@ -1,10 +1,14 @@
 <?php
     include_once 'Config.php';
+    include_once 'Comment.php';
+    include_once 'CommentManager.php';
+    use Comment;
+    use CommentManager;
 
-    $commentToAdd = new Comment(, $_POST['username'], $_POST['comment'], ,
+    $commentToAdd = new Comment(null, $_POST['username'], $_POST['comment'], null,
         intval($_POST['url']));
 
     $managerAdd = new CommentManager();
     $managerAdd->add($commentToAdd);
 
-    header('Location: ./frontend/article.php?article='.$_POST['url']);
+    header('Location: ../frontend/article.php?article='.$_POST['url']);
