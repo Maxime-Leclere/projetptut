@@ -30,7 +30,7 @@
             <h4 class="title_listcomment"><?= sizeof($listComment)?> Commentaire
                 <?php if(sizeof($listComment) > 1) echo "s" ?>
             </h4>
-            <?php if ($_SESSION["Status"] == 1){?>
+            <?php if ($_SESSION["Status"] != 0){?>
                 <form action="" method="post">
                     <input type="text" name="comment" placeholder="Ajouter un
                         commentaire" required/>
