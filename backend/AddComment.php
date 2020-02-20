@@ -1,9 +1,10 @@
 <?php
+    namespace backend;
     include_once 'Config.php';
     include_once 'Comment.php';
     include_once 'CommentManager.php';
-    use Comment;
-    use CommentManager;
+    use \backend\Comment;
+    use \backend\CommentManager;
 
     $commentToAdd = new Comment(null, $_POST['username'], $_POST['comment'], null,
         intval($_POST['url']));

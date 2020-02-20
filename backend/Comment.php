@@ -43,13 +43,13 @@ class Comment {
     }
 
     public function setNum_A($Num_A) {
-        if(is_numeric($Num_A) && !empty($Num_A))$this->$Num_A = $Num_A;
+        if(is_numeric($Num_A) && !empty($Num_A))$this->Num_A = $Num_A;
     }
 
     public function show() {
-        $r = '<div class="comment"><h3 class="comment_autor">'.$this->getAuteur_C().
-        '</h3><p class="comment_text">'.$this->getDate_creation().'</p>';
-        $r .= '<p class="comment_text">'.$this->getText_A().'</p></div>';
+        $r = '<div class="comment"><p class="comment_autor">'.$this->getAuteur_C().
+        '</p><p class="comment_date">'.$this->getDate_creation().'</p>';
+        $r .= '<p class="comment_text">'.$this->getContenu_C().'</p></div>';
         return $r;
     }
 }
