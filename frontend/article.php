@@ -33,7 +33,7 @@
             <?php if ($_SESSION["Status"] != 0){?>
                 <form action="" method="post">
                     <input type="text" name="comment" placeholder="Ajouter un
-                        commentaire" required/>
+                    commentaire" required/>
                     <input type="hidden" name="url" value="
                     <?= intval($_GET['article']) ?>" />
                     <input type="hidden" name="username" value="
