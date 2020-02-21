@@ -41,7 +41,7 @@
                             <input id="input_comment_text" type="text" name="comment" placeholder="Ajouter un commentaire" required/>
                             <input type="hidden" name="url" value="<?= intval($_GET['article']) ?>" />
                             <input type="hidden" name="username" value="<?= $_SESSION['Nom'].' '.$_SESSION['Prenom'] ?>" />
-                            <button type="submit" name="send_comment" class="btn btn-warning">Envoyer</button>
+                            <button id="button_comment" type="submit" name="send_comment" class="btn btn-warning">Ajouter un commentaire</button>
                         </form>
                     </div>
                 <?php } ?>

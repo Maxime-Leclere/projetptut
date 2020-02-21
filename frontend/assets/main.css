@@ -170,9 +170,24 @@ a.article_title {
 }
 
 .form_comment {
-
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
 }
 
-.input_comment_text {
+#input_comment_text {
+    width: 60%;
+    margin-right: 5%;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 1px solid #343a40;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
 
+#button_comment {
+    vertical-align: middle;
+    width: 25%;
 }
