@@ -216,15 +216,15 @@ a.article_title {
 }
 
 .comment {
-    
+
 }
 
 .comment_autor {
-
+    font-weight: bold;
 }
 
 .comment_date {
-
+    color: #343a40;
 }
 
 .comment_text {
