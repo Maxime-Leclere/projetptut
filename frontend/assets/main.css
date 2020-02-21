@@ -191,6 +191,7 @@ a.article_title {
     outline: none;
     resize: none;
     overflow: hidden;
+    margin-top: 2%;
 }
 
 #textarea_comment_text:focus {
@@ -210,6 +211,18 @@ a.article_title {
     vertical-align: top;
 }
 
-.listComment {
+#list_comment {
     margin-left: 14%;
+}
+
+.comment_autor {
+
+}
+
+.comment_date {
+
+}
+
+.comment_text {
+    
 }
