@@ -221,10 +221,11 @@ a.article_title {
 
 .comment_autor {
     font-weight: bold;
+    font-size: 140.5%
 }
 
 .comment_date {
-    color: #343a40;
+    color: #a09778;
 }
 
 .comment_text {
