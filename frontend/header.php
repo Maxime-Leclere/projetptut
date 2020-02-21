@@ -66,5 +66,5 @@
             ?>
         </div>
     </nav>
-    <?php hearder_contenue()?>
+    <?php header_contenue()?>
 </header>

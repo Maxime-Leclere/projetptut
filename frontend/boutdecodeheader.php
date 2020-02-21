@@ -2,7 +2,7 @@
 
 session_start();
 
-function hearder_contenue()
+function header_contenue()
 {
     echo '<div class="modal fade" id="connexion">
     <div class="modal-dialog modal-lg">
@@ -135,7 +135,7 @@ else if ($_SESSION["Status"] == 2){
 
             <div class="modal-footer">';
     if($_SESSION['Status'] == 2 ) {
-        echo ' 
+        echo '
                     <form action = "adminEvent.php" method = "post" >
                     <button type = "submit"class="btn btn-warning" > Evènement </button >
                 </form >
@@ -155,4 +155,4 @@ else if ($_SESSION["Status"] == 2){
     </div>
 </div>';
 
-}?>
+}
