@@ -22,18 +22,6 @@
         }
 
         include_once 'head.php' ?>
-        <script>
-            (function () {
-                'use strict';
-                (() => {
-                    $('#textarea_comment_text').on('input', function () {
-                        this.style.height = 'auto';
-                          
-                        this.style.height = (this.scrollHeight) + 'px';
-                    });
-                });
-            })();
-        </script>
     </head>
 
     <body>
@@ -54,6 +42,15 @@
                             <textarea id="textarea_comment_text" type="text"
                                 name="comment" placeholder="Ajouter un commentaire"
                                 required></textarea>
+                                <script type="text/javascript">
+                                    textarea = document.querySelector("#area");
+                                    textarea.addEventListener('input', autoResize, false);
+
+                                    function autoResize() {
+                                        this.style.height = 'auto';
+                                        this.style.height = this.scrollHeight + 'px';
+                                    }
+                                </script>
                             <input type="hidden" name="url" value="<?= intval($_GET['article']) ?>" />
                             <input type="hidden" name="username" value="<?= $_SESSION['Nom'].' '.$_SESSION['Prenom'] ?>" />
                             <button id="button_comment" type="submit" name="send_comment" class="btn btn-warning">Ajouter un commentaire</button>
