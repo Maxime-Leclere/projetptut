@@ -57,7 +57,7 @@
                         </form>
                     </div>
                 <?php } ?>
-                <div id="list_comment">
+                <div class="list_comment">
                     <?php foreach ($listComment as $comment) { ?>
                         <?= $comment->show() ?>
                     <?php } ?>
