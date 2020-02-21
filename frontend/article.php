@@ -26,7 +26,9 @@
             (function () {
                 'use strict';
                 (() => {
-                    $('#textarea_comment_text').autoResize();
+                    $('#textarea_comment_text').on('input', function () {                           
+                        this.style.height = (this.scrollHeight) + 'px';
+                    });
                 });
             })();
         </script>
