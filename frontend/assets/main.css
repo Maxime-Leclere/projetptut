@@ -187,6 +187,11 @@ a.article_title {
     padding-bottom: 0.5%;
 }
 
+#input_comment_text:focus {
+    border: none;
+    border-bottom: 1px solid #343a40;
+}
+
 #button_comment {
     vertical-align: middle;
     width: 25%;
