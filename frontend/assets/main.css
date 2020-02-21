@@ -67,10 +67,12 @@ footer {
 
 .previous_month {
     margin-right: 10%;
+    color: #ffc107;
 }
 
 .next_month {
     margin-left: 10%;
+    color: #ffc107;
 }
 
 .table_calendar {
