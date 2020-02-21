@@ -179,6 +179,7 @@ a.article_title {
 
 #textarea_comment_text {
     width: 60%;
+    height: 35px;
     margin-right: 5%;
     vertical-align: middle;
     border: none;
@@ -208,6 +209,6 @@ a.article_title {
     vertical-align: middle;
 }
 
-.listComment {
+#listComment {
     margin-left: 14%;
 }

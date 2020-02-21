@@ -22,6 +22,13 @@
         }
 
         include_once 'head.php' ?>
+        <script>
+            function () {
+                (() => {
+                    $('#textarea_comment_text').autoResize();
+                });
+            };
+        </script>
     </head>
 
     <body>
@@ -39,14 +46,16 @@
                     <div class="form_comment">
                         <form action="../backend/AddComment.php" method="post">
                             <img id="image_comment" src="assets/bulle_perso.png"/>
-                            <textarea id="textarea_comment_text" type="text" name="comment" placeholder="Ajouter un commentaire" required></textarea>
+                            <textarea id="textarea_comment_text" type="text"
+                                name="comment" placeholder="Ajouter un commentaire"
+                                required></textarea>
                             <input type="hidden" name="url" value="<?= intval($_GET['article']) ?>" />
                             <input type="hidden" name="username" value="<?= $_SESSION['Nom'].' '.$_SESSION['Prenom'] ?>" />
                             <button id="button_comment" type="submit" name="send_comment" class="btn btn-warning">Ajouter un commentaire</button>
                         </form>
                     </div>
                 <?php } ?>
-                <div class="list_comment">
+                <div id="list_comment">
                     <?php foreach ($listComment as $comment) { ?>
                         <?= $comment->show() ?>
                     <?php } ?>
