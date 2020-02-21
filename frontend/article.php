@@ -23,11 +23,12 @@
 
         include_once 'head.php' ?>
         <script>
-            function () {
+            (function () {
+                'use strict';
                 (() => {
                     $('#textarea_comment_text').autoResize();
                 });
-            };
+            })();
         </script>
     </head>
 
