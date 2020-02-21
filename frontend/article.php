@@ -43,7 +43,7 @@
                                 name="comment" placeholder="Ajouter un commentaire"
                                 required></textarea>
                                 <script type="text/javascript">
-                                    textarea = document.querySelector("#area");
+                                    textarea = document.querySelector("#textarea_comment_text");
                                     textarea.addEventListener('input', autoResize, false);
 
                                     function autoResize() {
