@@ -38,7 +38,7 @@
                 <?php if ($_SESSION["Status"] != 0){?>
                     <div class="form_comment">
                         <form action="../backend/AddComment.php" method="post">
-                            <img src="assets/bulle_perso.png"/>
+                            <img id="image_comment" src="assets/bulle_perso.png"/>
                             <input id="input_comment_text" type="text" name="comment" placeholder="Ajouter un commentaire" required/>
                             <input type="hidden" name="url" value="<?= intval($_GET['article']) ?>" />
                             <input type="hidden" name="username" value="<?= $_SESSION['Nom'].' '.$_SESSION['Prenom'] ?>" />
