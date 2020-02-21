@@ -161,3 +161,18 @@ footer {
 a.article_title {
     color: black;
 }
+
+.space_comment {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+}
+
+.form_comment {
+
+}
+
+.input_comment_text {
+
+}

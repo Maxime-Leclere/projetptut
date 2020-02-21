@@ -36,12 +36,14 @@
                 <h4 class="title_listcomment"><?= sizeof($listComment)?> Commentaire<?php if(sizeof($listComment) > 1) echo "s" ?>
                 </h4>
                 <?php if ($_SESSION["Status"] != 0){?>
-                    <form action="../backend/AddComment.php" method="post">
-                        <input type="text" name="comment" placeholder="Ajouter un commentaire" required/>
-                        <input type="hidden" name="url" value="<?= intval($_GET['article']) ?>" />
-                        <input type="hidden" name="username" value="<?= $_SESSION['Nom'].' '.$_SESSION['Prenom'] ?>" />
-                        <button type="submit" name="send_comment">Envoyer</button>
-                    </form>
+                    <div class="form_comment">
+                        <form action="../backend/AddComment.php" method="post">
+                            <input id="input_comment_text" type="text" name="comment" placeholder="Ajouter un commentaire" required/>
+                            <input type="hidden" name="url" value="<?= intval($_GET['article']) ?>" />
+                            <input type="hidden" name="username" value="<?= $_SESSION['Nom'].' '.$_SESSION['Prenom'] ?>" />
+                            <button type="submit" name="send_comment" class="btn btn-warning">Envoyer</button>
+                        </form>
+                    </div>
                 <?php } ?>
                 <?php foreach ($listComment as $comment) { ?>
                     <?= $comment->show() ?>
