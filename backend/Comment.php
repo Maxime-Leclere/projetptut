@@ -48,7 +48,7 @@ class Comment {
 
     public function show() {
         $r = '<div class="comment"><p class="comment_autor">'.$this->getAuteur_C().
-        '</p><p class="comment_date">'.$this->getDate_creation().'</p>';
+        ' <span class="comment_date">'.$this->getDate_creation().'</span></p>';
         $r .= '<p class="comment_text">'.$this->getContenu_C().'</p></div>';
         return $r;
     }
