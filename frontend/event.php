@@ -7,7 +7,7 @@
     <body>
         <?php include_once 'header.php' ?>
         <?php
-        $listComment = $managerC->getFromArticle(intval($_GET['article']));
+
         ?>
 
         <div class="container" style="min-height: 770px">
