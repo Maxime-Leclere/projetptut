@@ -151,6 +151,10 @@ footer {
     color: #343a40;
 }
 
+.home_events_none {
+    color: #343a40;
+}
+
 .home_events_text, .home_events_title {
     font-family: 'Open Sans', sans-serif;
 }

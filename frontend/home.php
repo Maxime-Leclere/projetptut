@@ -78,7 +78,7 @@
                                     <?php }
                                     } else {?>
                                         <div class="card-body ">
-                                            <h4 class="home_events_title">
+                                            <h4 class="home_events_none">
                                                 Aucun évènement à domicile programmer
                                             </h4>
                                         </div>
