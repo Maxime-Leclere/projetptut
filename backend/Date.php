@@ -118,7 +118,8 @@ class Date {
 
         // on recupère tous les tournois
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = '<h4 class="home_events_title"><a href="#">'.$d->Nom_T.'</a></h4><p class="home_events_text">'
+            $r[$i] = '<h4 class="home_events_title"><a class"home_events_title" href="#">'
+                .$d->Nom_T.'</a></h4><p class="home_events_text">'
                 .$d->Date_deb.' au '.$d->Date_fin.'</p>';
             ++$i;
             // $r[$i] = '<h4 class="home_events_title">Fin du '.$d->Nom_T.'</h4><p class="home_events_text">'.$d->Date_fin.'</p>';

@@ -76,7 +76,13 @@
                                             <?php echo $hE; ?>
                                         </div>
                                     <?php }
-                                } else echo '<h4 class="home_events_title">Aucun évènement à domicile programmer</h4>' ?>
+                                } else {?>
+                                    <div class="card-body">
+                                        <h4 class="home_events_title">
+                                            Aucun évènement à domicile programmer
+                                        </h4>
+                                    </div>
+                                <?php } ?>
                                 <div class="card-header ">
                                     <a href="calendar.php">Voir tout les évènements</a>
                                 </div>
