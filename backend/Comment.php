@@ -1,6 +1,9 @@
 <?php
 namespace backend;
 
+/*
+* classe qui modelise un commentaire de la base de donnée et l'affiche.
+*/
 class Comment {
     protected $Num_C,
               $Auteur_C,
@@ -19,11 +22,15 @@ class Comment {
 
     }
 
+    /* getter */
+
     public function getNum_C() {return $this->Num_C;}
     public function getAuteur_C() {return $this->Auteur_C;}
     public function getContenu_C() {return $this->Contenu_C;}
     public function getDate_creation() {return $this->Date_creation;}
     public function getNum_A() {return $this->Num_A;}
+
+    /* setter */
 
     public function setNum_C($Num_C) {
         if(is_numeric($Num_C) && !empty($Num_C))$this->Num_C = $Num_C;
@@ -46,6 +53,9 @@ class Comment {
         if(is_numeric($Num_A) && !empty($Num_A))$this->Num_A = $Num_A;
     }
 
+    /*
+    * affiche le commentaire
+    */
     public function show() {
         $r = '<div class="comment"><div class="header_autor">
         <span class="comment_autor">'.$this->getAuteur_C().'</span>'.

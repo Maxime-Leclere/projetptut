@@ -1,5 +1,9 @@
 <?php
 namespace backend;
+
+/*
+* class qui modelise un match dans la base de donnée
+*/
 class Match {
     private $id;
     private $dateM;
@@ -17,6 +21,9 @@ class Match {
         $this->idT     = $idT;
     }
 
+    /*
+    * recupère tout les attributs d'un match
+    */
     public function getAttr() {
         $r = array($this->id, $this->dateM, $this->hour, $this->clubAdv,
             $this->lieu, $this->idT);

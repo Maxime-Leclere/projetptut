@@ -1,6 +1,9 @@
 <?php
 namespace backend;
 
+/*
+* class qui modelise un tournoi dans la base de donnée
+*/
 class Tournoi {
     private $id;
     private $nom;
@@ -16,6 +19,9 @@ class Tournoi {
         $this->lieu    = $lieu;
     }
 
+    /*
+    * recupère tout les attributs d'un match
+    */
     public function getAttr() {
         $r = array($this->id, $this->nom, $this->dateDeb, $this->dateFin, $this->lieu);
         return $r;

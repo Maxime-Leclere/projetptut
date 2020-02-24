@@ -1,7 +1,13 @@
 <?php
 namespace backend;
 
+/*
+* classe qui gère les donnée des commentaires
+*/
 class CommentManager {
+    /*
+    * recupère tout les commentaires d'un article
+    */
     public function getFromArticle($id) {
         global $DB;
         $r = array();
@@ -14,6 +20,9 @@ class CommentManager {
         return $r;
     }
 
+    /*
+    * ajoute un commentaire dans la base de donnée
+    */
     public function add(Comment $comment) {
         global $DB;
         $req = $DB->prepare('insert INTO `COMMENTAIRE`(`Auteur_C`, `Contenu_C`,

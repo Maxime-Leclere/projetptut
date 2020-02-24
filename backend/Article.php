@@ -1,6 +1,9 @@
 <?php
 namespace backend;
 
+/*
+* classe qui modelise un article de la base de donnée et l'affiche.
+*/
 class Article {
     private $Num_A,
             $Title_A,
@@ -19,6 +22,7 @@ class Article {
         $this->setImage_A($Image_A);
     }
 
+    /* getter */
 
     public function getNum_A() {return $this->Num_A;}
     public function getTitle_A() {return $this->Title_A;}
@@ -26,6 +30,8 @@ class Article {
     public function getDate_A() {return $this->Date_A;}
     public function getTime_A() {return $this->Time_A;}
     public function getImage_A() {return $this->Image_A;}
+
+    /* setter */
 
     public function setNum_A($Num_A) {
         if(is_numeric($Num_A) && !empty($Num_A))$this->Num_A = $Num_A;
@@ -51,6 +57,9 @@ class Article {
         if(is_string($Image_A) && !empty($Image_A))$this->Image_A = $Image_A;
     }
 
+    /*
+    * affiche l'article
+    */
     public function show() {
         $r = '<div class="article"><h3 class="article_title">'.$this->getTitle_A().
         '</h3><p class="article_text">'.$this->getDate_A().' '.$this->getTime_A().'</p>';

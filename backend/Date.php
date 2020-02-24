@@ -5,6 +5,10 @@ use DateInterval;
 use DateTime;
 use Exception;
 
+
+/*
+* class qui gère les données pour le calendrier
+*/
 class Date {
     var $days   = array('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche');
     var $months = array('Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin',
@@ -13,6 +17,9 @@ class Date {
     var $attrTournoi = array('Num Tournoi', 'Nom Tournoi', 'Date debut', 'Date fin', 'Lieu');
     var $attrMatch   = array('Num Match', 'Date Match', 'Heure', 'Club Adversaire', 'Lieu', 'Num Tournoi');
 
+    /*
+    * recupère tous les articles par date decroissante pour l'année
+    */
     public function getArticles($year) {
         global $DB;
         $r = array();
@@ -30,6 +37,9 @@ class Date {
         return $r;
     }
 
+    /*
+    * recupère tous les tournois par date decroissante pour l'année
+    */
     public function getTournoi($year) {
         global $DB;
         $r = array();
@@ -44,6 +54,9 @@ class Date {
         return $r;
     }
 
+    /*
+    * recupère tous les match par date et heure decroissante pour l'année
+    */
     public function getMatch($year) {
         global $DB;
         $r = array();
@@ -59,9 +72,13 @@ class Date {
         return $r;
     }
 
+    /*
+    * recupère tous les évènements l'année
+    */
     public function getEvents($year) {
         global $DB;
         $r = array();
+        // on recupère tous les tournois
         $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu
                                     FROM TOURNOI WHERE YEAR(Date_deb) ='.$year);
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
@@ -70,6 +87,7 @@ class Date {
             $r[strtotime($d->Date_fin)][$d->Num_T] = 'Fin du '.$d->Nom_T. ' à '.
                 $d->Lieu;
         }
+        // on recupère tous les matchs
         $reqM = $DB->query('SELECT Num_M, Date_M, Heure,
         Club_Adversaire, M.Lieu FROM MATCHS M, TOURNOI T WHERE M.Num_T = T.Num_T
         AND YEAR(Date_M) = '.$year);
@@ -79,6 +97,10 @@ class Date {
         }
         return $r;
     }
+
+    /*
+    * recupère tous les évènements à venir à aix en provence pour l'année
+    */
     public function getHomeEvents($year) {
         global $DB;
         $r = array();
@@ -93,12 +115,15 @@ class Date {
         $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu
                                     FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND Date_deb >='.$dateCurrent);
         $i = 0;
+
+        // on recupère tous les tournois
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
             $r[$i] = '<h4 class="home_events_title">Debut du '.$d->Nom_T.'</h4><p class="home_events_text">'.$d->Date_deb.'</p>';
             ++$i;
             $r[$i] = '<h4 class="home_events_title">Fin du '.$d->Nom_T.'</h4><p class="home_events_text">'.$d->Date_fin.'</p>';
             ++$i;
         }
+        // on recupère tous les matchs
         $reqM = $DB->query("SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu,
         Nom_Equipe FROM MATCHS M, Equipe E, Jouer J WHERE M.Num_M = J.Num_M AND
         J.Num_Equipe = E.Num_Equipe AND M.Lieu='Aix-en-Provence' AND Date_M >= $dateCurrent
@@ -112,6 +137,9 @@ class Date {
         return $r;
     }
 
+    /*
+    * creer le calendrier
+    */
     public function getAll($year) {
         $r = array();
         try {

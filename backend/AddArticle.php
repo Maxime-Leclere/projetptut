@@ -1,6 +1,10 @@
 <?php
+    // AddArticle.php ajoute un articles dans la base de donnée
     include_once 'Config.php';
 
+    /*
+    * teste si l'article peut être inserer dans la base de donnée
+    */
     function Transfert() {
         global $DB;
         $title = $_POST['title'];
@@ -23,7 +27,7 @@
             return true;
         }
     }
-
+    // si on peut inserer dans la base de donnée l'article alors on fait la requete
     if(!Transfert()) {
         global $DB;
         $title = $_POST['title'];
@@ -35,5 +39,5 @@
         $req = $DB->exec("INSERT INTO `ARTICLES`(`Title_A`, `Text_A`) VALUES ('".
             addslashes($title)."', '".addslashes($text)."')");
     }
+    // on redirige la page vers l'acceuil
     header('Location: ../frontend/home.php');
-
