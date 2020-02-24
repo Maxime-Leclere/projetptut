@@ -118,22 +118,23 @@ class Date {
 
         // on recupère tous les tournois
         while ($d = $req->fetch(\PDO::FETCH_OBJ)) {
-            $r[$i] = '<h4 class="home_events_title">Debut du '.$d->Nom_T.'</h4><p class="home_events_text">'.$d->Date_deb.'</p>';
+            $r[$i] = '<h4 class="home_events_title"><a href="#">'.$d->Nom_T.'</a></h4><p class="home_events_text">'
+                .$d->Date_deb.' au '.$d->Date_fin.'</p>';
             ++$i;
-            $r[$i] = '<h4 class="home_events_title">Fin du '.$d->Nom_T.'</h4><p class="home_events_text">'.$d->Date_fin.'</p>';
-            ++$i;
+            // $r[$i] = '<h4 class="home_events_title">Fin du '.$d->Nom_T.'</h4><p class="home_events_text">'.$d->Date_fin.'</p>';
+            // ++$i;
         }
         // on recupère tous les matchs
-        $reqM = $DB->query("SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu,
-        Nom_Equipe FROM MATCHS M, Equipe E, Jouer J WHERE M.Num_M = J.Num_M AND
-        J.Num_Equipe = E.Num_Equipe AND M.Lieu='Aix-en-Provence' AND Date_M >= $dateCurrent
-             ORDER BY Date_M DESC, Heure DESC");
-        while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
-            if ($d2->Heure < $timeCurrent && $d2->Date_M >= $dateCurrent)continue;
-            $r[$i] = '<h4 class="home_events_title">'.$d2->Nom_Equipe.' contre '. $d2->Club_Adversaire.'</h4><p class="home_events_text">'.$d2->Date_M.
-                ' '.$d2->Heure.'</p>';
-            ++$i;
-        }
+        // $reqM = $DB->query("SELECT M.Num_M, Date_M, Heure, Club_Adversaire, M.Lieu,
+        // Nom_Equipe FROM MATCHS M, Equipe E, Jouer J WHERE M.Num_M = J.Num_M AND
+        // J.Num_Equipe = E.Num_Equipe AND M.Lieu='Aix-en-Provence' AND Date_M >= $dateCurrent
+        //      ORDER BY Date_M DESC, Heure DESC");
+        // while($d2 = $reqM->fetch(\PDO::FETCH_OBJ)) {
+        //     if ($d2->Heure < $timeCurrent && $d2->Date_M >= $dateCurrent)continue;
+        //     $r[$i] = '<h4 class="home_events_title">'.$d2->Nom_Equipe.' contre '. $d2->Club_Adversaire.'</h4><p class="home_events_text">'.$d2->Date_M.
+        //         ' '.$d2->Heure.'</p>';
+        //     ++$i;
+        // }
         return $r;
     }
 

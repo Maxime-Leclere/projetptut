@@ -64,7 +64,7 @@
                 <div class="col-sm-4" style="background-color:white;">
                     <div id="accordion"><br>
                         <div class="card">
-                            <div class="card-header ">
+                            <div class="card-header">
                                 <a class="card-link" data-toggle="collapse" href="#collapseOne">
                                     PROCHAINS ÉVÉNEMENTS À DOMICILE
                                 </a>
@@ -76,7 +76,7 @@
                                             <?php echo $hE; ?>
                                         </div>
                                     <?php }
-                                }?>
+                                } else echo '<h4 class="home_events_title">Aucun évènement à domicile programmer</h4>' ?>
                                 <div class="card-header ">
                                     <a href="calendar.php">Voir tout les évènements</a>
                                 </div>
