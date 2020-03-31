@@ -13,29 +13,27 @@
 
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" href="club.php"> Le Club</a>
-
                 </li>
+
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="equipe.php">Les Equipes</a>
-
+                    <a class="nav-link" href="equipev2.php">Les Equipes</a>
                 </li>
+
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" href="administrative.php">Administratif</a>
-
                 </li>
+
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" href="contact.php">Contact</a>
-
                 </li>
+
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" href="ourpartners.php">Nos Partenaires</a>
-
                 </li>
+
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" href="shop.php">Notre Boutique</a>
-
                 </li>
-
             </ul>
         </ul>
         <div class="nav justify-content-end btnav">
@@ -66,5 +64,5 @@
             ?>
         </div>
     </nav>
-    <?php hearder_contenue()?>
+    <?php header_contenue()?>
 </header>

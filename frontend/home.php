@@ -64,19 +64,25 @@
                 <div class="col-sm-4" style="background-color:white;">
                     <div id="accordion"><br>
                         <div class="card">
-                            <div class="card-header ">
+                            <div class="card-header">
                                 <a class="card-link" data-toggle="collapse" href="#collapseOne">
                                     PROCHAINS ÉVÉNEMENTS À DOMICILE
                                 </a>
                             </div>
                             <div id="collapseOne" class="collapse show " data-parent="#accordion">
-                                <?php if(isset($homeEvents)) {
+                                <?php if(!is_null($homeEvents)) {
                                     foreach ($homeEvents as $hE) {?>
                                         <div class="card-body ">
                                             <?php echo $hE; ?>
                                         </div>
                                     <?php }
-                                }?>
+                                    } else {?>
+                                        <div class="card-body ">
+                                            <h4 class="home_events_none">
+                                                Aucun évènement à domicile programmer
+                                            </h4>
+                                        </div>
+                                    <?php } ?>
                                 <div class="card-header ">
                                     <a href="calendar.php">Voir tout les évènements</a>
                                 </div>

@@ -64,7 +64,7 @@
         </div>
 
         <button type="submit" class="btn btn-warning">S'inscrire</button>
-    </form>
+    </form><br>
 </div>
 
 
