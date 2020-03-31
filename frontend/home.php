@@ -70,7 +70,7 @@
                                 </a>
                             </div>
                             <div id="collapseOne" class="collapse show " data-parent="#accordion">
-                                <?php if(is_null($homeEvents)) {
+                                <?php if(!is_null($homeEvents)) {
                                     foreach ($homeEvents as $hE) {?>
                                         <div class="card-body ">
                                             <?php echo $hE; ?>

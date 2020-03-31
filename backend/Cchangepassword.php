@@ -16,3 +16,4 @@ if ($password == $secondpassword ){
         '\'' . 'WHERE Email ='
         . '\'' . $_SESSION["Email"] . '\'');
 }
+header('Location: ../frontend/home.php');
