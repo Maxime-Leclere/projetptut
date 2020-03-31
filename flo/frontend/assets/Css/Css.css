@@ -1,0 +1,130 @@
+.logo{
+    width: 100px;
+}
+
+h2, h3{
+    text-align: center;
+}
+#boutique{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+}
+
+body{
+    height: 100%;
+    background-color: #fbfbf4 ;
+    /*background-color: white;*/
+}
+#Pimg{
+    justify-content: space-between;
+}
+.carousel-item{
+    width: 100%;
+}
+
+/*Equipe*/
+
+#equipe1 {
+
+}
+
+#equipe2 {
+    /*background-color:blue;*/
+}
+
+#equipe3 {
+
+}
+
+#equipe4 {
+
+}
+
+#equipe16{
+}
+
+.equipe {
+    display:none;
+    visibility:hidden;
+    /*height:50%;*/
+    /*background-color:black;*/
+}
+
+.txt{
+    text-align: center;
+    color: black;
+}
+
+/*navbar*/
+.cf{
+    background-color: #fbfbf4;
+    height: 10%;
+}
+.btnav{
+    margin-left: 30%;
+}
+
+.btnsd{
+    height: 10%;
+}
+
+/**/
+.nav-link, .card-link{
+    color: #000000;
+}
+
+/*#ffc107*/
+/*admin */
+.contenue>p:first-child, .contenue>p:nth-of-type(2) {
+    width: 6%;
+}
+.contenue>p:nth-of-type(3){
+    width: 8%;
+}
+.contenue>p:nth-of-type(4), .contenue>p:nth-of-type(6),.contenue>p:nth-of-type(7)   {
+    width: 3%;
+}
+.contenue>p:nth-of-type(5) {
+    width: 12%;
+    padding-right: 3%;
+}
+.adminNote>strong:first-child, .adminNote>strong:nth-of-type(2) {
+    width: 6%;
+}
+.adminNote>strong:nth-of-type(3){
+    width: 14%;
+}
+.adminNote>strong:nth-of-type(4), .adminNote>strong:nth-of-type(6),.adminNote>strong:nth-of-type(7)   {
+    width: 3%;
+}
+.adminNote>strong:nth-of-type(5) {
+    width: 15%;
+}
+.contenue{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.adminNote{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 53%;
+}
+
+/*forgetpass*/
+#ForgetPassword{
+    margin-top: 5%;
+}
+
+/*partenaire*/
+.partenaire>a>img{
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
