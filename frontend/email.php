@@ -12,8 +12,8 @@
             header('Location: home.php');
         }?>
         <?php include_once 'header.php'?>
-
         <div class="container" style="min-height: 770px"><br >
+            <h3>Envoyer un email groupé</h3><br>
             <form action = "../backend/Cemail.php" method = "post" >
                 <label for="sele" class="col-md-4" > Sélectionner Equipe:</label >
                 <div style = "flex-direction: row; display: flex; " >
@@ -44,10 +44,27 @@
 
                 <div class="form-group" >
                     <label for="contenue" > Contenue du mail:</label >
-                    <input type = "text" class="form-control" placeholder = "Contenue du mail" id = "contenue" name = "contenue" style = "height: 75px" >
+                    <textarea type = "text" class="form-control" placeholder = "Contenue du mail" id = "contenue" name = "contenue" style = "height: 150px"></textarea>
                 </div >
                 <button type = "submit" class="btn btn-warning" >Envoyer</button >
-            </form >
+            </form ><br>
+<!--        </div >-->
+
+<!--        <div class="container" style="min-height: 770px"><br >-->
+            <h3>Envoyer un email général</h3><br>
+            <form action = "../backend/Cemailgeneral.php" method = "post" >
+                <div class="form-group" >
+                    <label for="tete" > Titre:</label >
+                    <input type = "text" class="form-control" placeholder = "Entrer titre du mail" id = "tete" name = "tete" >
+                </div >
+
+                <div class="form-group" >
+                    <label for="contenue" > Contenue du mail:</label >
+                    <textarea type = "text" class="form-control" placeholder = "Contenue du mail" id = "contenue" name = "contenue" style = "height: 150px"></textarea>
+<!--                    <input type = "text" class="form-control" placeholder = "Contenue du mail" id = "contenue" name = "contenue" style = "height: 150px" >-->
+                </div >
+                <button type = "submit" class="btn btn-warning" >Envoyer</button >
+            </form ><br>
         </div >
         <?php include_once 'footer.php' ?>
     </body>

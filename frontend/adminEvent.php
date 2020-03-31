@@ -113,8 +113,8 @@
                         <label for="numT">Numero du tournoi</label>
                         <input type="number" class="form-control" name="numT">
                     </div>
-                    <button type="submit" class="btn btn-warning">Insérer</button>
-                </form>
+                    <button type="submit" class="btn btn-warning">Insérer</button><br>
+                </form><br>
 
                 <form class="form_event_insert" action="../backend/AddTournoi.php" method="post">
                     <h1>Ajouter un tournoi</h1>

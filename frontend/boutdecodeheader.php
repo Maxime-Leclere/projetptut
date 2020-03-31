@@ -26,12 +26,15 @@ function header_contenue()
                         </div>
 
                         <button type="submit" name="formconnexion" class="btn btn-warning">Se connecter</button>
-                    </form>
+                    </form><br>
                 </div>
             </div>
 
             <!-- Modal footer -->
             <div class="modal-footer">
+                <form action="../frontend/forgetpassword.php" method="post">
+                    <button type="submit" name="forgetpass" class="btn btn-warning">Mot de passe oublié</button>
+                </form>
                 <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
             </div>
 
@@ -147,7 +150,11 @@ else if ($_SESSION["Status"] == 2){
                 </form >';
 
     }
-    echo'<button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
+    echo'
+        <form action = "changepassword.php" method = "post" >
+                    <button type = "submit"class="btn btn-warning" > Changer mot de passe </button >
+                </form >
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Fermer</button>
 
             </div>
 
