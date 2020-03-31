@@ -1,4 +1,8 @@
 <?php
+
+/*
+ * Les personnes ayant le Status 2 peuvent modifier certaines information des personnes inscrites
+ */
 define('HOST', 'mysql:host=mysql-projetptut.alwaysdata.net; dbname=projetptut_database;');
 define('USER', '195907');
 define('PASSWORD', 'Azertyuiop1999');

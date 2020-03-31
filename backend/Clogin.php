@@ -1,18 +1,26 @@
 <?php
 session_start();
-
+/*
+ * Permet de se connecter
+ * Il récupère le proil en fonction de du mail et du mdp rentrer et initialise la session de l'utilisateur correspondant
+ */
 include_once 'Config.php';
+
 global $DB;
 $email = $_POST['Email'];
 $password = $_POST['Mdp'] ;
 $password =sha1($password);
+setcookie('email',$email ,time() + 300);
+setcookie('password',$password,time() +300);
 
 $stmt = $DB->query("Select * from Utilisateur Where Email = '$email' AND Mdp = '$password'");
 $row = $stmt->fetch();
 
 if(empty ($row )) {
-    print_r("tu n'as pas de compte ");
-    header ("Refresh: 2;URL=/../frontend/register.php");
+    echo '<div class="alert alert-danger">
+            <strong>Vous n\'avez pas de compte!</strong> Merci de vérifiez votre mot de passe ou votre adresse e-mail.
+            </div>';
+    header ("Refresh: 4;URL=/../frontend/register.php");
 
 }
 else
@@ -46,7 +54,5 @@ foreach($vector as $row)
 
         $DB->exec("Update Utilisateur SET  Num_Equipe = " . $IdE . " Where IdUser = " . $_SESSION['IdUser']);
         $_SESSION['NomE']= $NomE;
-    }
+    }//Permet d'attribuer une équipe en fonction de l'age et du genre, Il faut obligatoirement avoir un STatus 1 ou 2 pour pouvoir une équipe
 }
-
-
