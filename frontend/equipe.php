@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <?php include_once 'head.php' ?>
+        <?php
+          include_once 'head.php';
+          include_once '../backend/getEquipe.php';
+          include_once '../backend/Config.php';
+          include_once '../backend/equipeTest.php';
+          ?>
     </head>
 
     <body>
@@ -11,8 +16,15 @@
                 <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
                     Choisissez vôtre équipe
                 </button>
+                <?php
+                      $Equipe= new Equipe();
+                      $data = $Equipe->getEquipe();
+                      ?>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" id="btn1">NATIONALE 2 MASCULINE</a>
+                  <?php foreach ($data as $element) {
+                    echo '<a class="dropdown-item" href="equipe.php?name='.$element['Nom_Equipe'].'" id="equip" > '.$element['Nom_Equipe'].' </a>';
+                   } ?>
+                    <!-- <a class="dropdown-item" id="btn1">NATIONALE 2 MASCULINE</a>
                     <a class="dropdown-item" id="btn2">PRÉ NATIONALE MASCULINE</a>
                     <a class="dropdown-item" id="rm">RÉGIONALE MASCULINE</a>
                     <a class="dropdown-item" href="#">RÉGIONALE FÉMININE</a>
@@ -25,8 +37,20 @@
                     <a class="dropdown-item" href="#">ÉCOLE DE VOLLEY</a>
                     <a class="dropdown-item" href="#">FSGT 1</a>
                     <a class="dropdown-item" href="#">FSGT 2</a>
-                    <a class="dropdown-item" href="#">LOISIRS</a>
+                    <a class="dropdown-item" href="#">LOISIRS</a> -->
                 </div>
+            </div>
+            <div>
+            <!-- va afficher la page de l'equipe par rapport a l'equipe selectionner plut haut -->
+            <!-- met n'est pas terminer pour cause de soucis technique  -->
+            <!-- nous avons la juste le test -->
+              <p > variable =<?php $nom=$_GET["name"]; echo $nom;?></p>
+              <?php $EquipeBody= new EquipeBody();
+                    $data2 = $EquipeBody->Show($nom);
+                    echo'<div >
+                        <h2>cdcdc'.$data2['Nom_Equipe'].'</h2>
+                        </div>'?>
+
             </div>
             <div class="equipe" id="equipe1">
                 <div class="container mt-4">

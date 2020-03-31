@@ -16,7 +16,7 @@
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="equipe.php">Les Equipes</a>
+                    <a class="nav-link" href="equipev2.php">Les Equipes</a>
                 </li>
 
                 <li class="nav-item" role="presentation">
