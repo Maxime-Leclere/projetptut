@@ -63,17 +63,20 @@ $date = $annee . '-' . $mois . '-' . $jour;
 
 
 if (checkEmailHost($email) && ($password == $secondpassword )){
-    $password = sha1($password);
-    print_r($password);
-    $pdo->exec("INSERT INTO Utilisateur (Nom, Prenom, DateN, Sexe, Mdp, Email) VALUES ('$nom','$prenom','$date','$idSexe','$password','$email')");
-    echo '<div class="alert alert-success">
-    <strong>Adresse email valide!</strong>
-  </div>';
+    if(strlen($password) > 9) {
+        $password = sha1($password);
+        $pdo->exec("INSERT INTO Utilisateur (Nom, Prenom, DateN, Sexe, Mdp, Email) VALUES ('$nom','$prenom','$date','$idSexe','$password','$email')");
+        header('Location: ../frontend/home.php');
+    }else{
+
+        $_SESSION['Pdwc'] = "court";
+        header('Location: ../frontend/register.php');
+
+    }
 }
 else{
-    echo '<div class="alert alert-danger">
-    <strong>Adresse email invalide!</strong> Veuillez rentrer une adresse correcte.
-  </div>';
+    $_SESSION['Adri']= "invalid";
+    header('Location: ../frontend/register.php');
 }
 
 // changer chemin apres

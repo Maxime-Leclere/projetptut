@@ -64,6 +64,21 @@
         </div>
 
         <button type="submit" class="btn btn-warning">S'inscrire</button>
+        <?php
+        if (isset($_SESSION['Pdwc']) && $_SESSION['Pdwc'] == 'court') {
+            echo '<div class="alert alert-danger">
+                    <strong>Mot de passe trop court!</strong> Veuillez rentrer un mot de passe plus grand d\'au moins 10 caractères.
+                   </div>';
+            unset($_SESSION['Pdwc']);
+        } elseif (isset($_SESSION['Adri']) && $_SESSION['Adri'] = "invalid"){
+            echo '<div class="alert alert-danger">
+                    <strong>Adresse email invalide!</strong> Veuillez rentrer une adresse correcte.
+                  </div>';
+            unset($_SESSION['Adri']);
+        }
+
+        ?>
+
     </form><br>
 </div>
 
@@ -71,4 +86,3 @@
 <?php include_once 'footer.php' ?>
 </body>
 </html>
-

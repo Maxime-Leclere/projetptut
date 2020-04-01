@@ -17,6 +17,20 @@
         </div>
 
         <button type="submit" class="btn btn-warning">Changer de mot de passe</button>
+        <?php
+        if (isset($_SESSION['CPdwc']) && $_SESSION['CPdwc'] == 'court') {
+            echo '<div class="alert alert-danger">
+                    <strong>Mot de passe trop court!</strong> Veuillez rentrer un mot de passe plus grand d\'au moins 10 caractères.
+                   </div>';
+            unset($_SESSION['CPdwc']);
+        } elseif (isset($_SESSION['CPdwc']) && $_SESSION['CPdwc'] = "long"){
+            echo '<div class="alert alert-success">
+                    <strong>Mot de passe changé</strong> Mot de passe changé avec succès.
+                  </div>';
+            unset($_SESSION['CPdwc']);
+        }
+
+        ?>
     </form>
 </div>
 <?php include_once 'footer.php' ?>

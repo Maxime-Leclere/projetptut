@@ -11,9 +11,17 @@ $secondpassword = $_POST['MdpS'];
 $pdo = new PDO(HOST, USER, PASSWORD );
 
 if ($password == $secondpassword ){
-    $newpass = sha1($password);
-    $pdo -> exec('Update Utilisateur SET Mdp = ' . '\'' . $newpass .
-        '\'' . 'WHERE Email ='
-        . '\'' . $_SESSION["Email"] . '\'');
+    if(strlen($password) > 9) {
+        $newpass = sha1($password);
+        $pdo->exec('Update Utilisateur SET Mdp = ' . '\'' . $newpass .
+            '\'' . 'WHERE Email ='
+            . '\'' . $_SESSION["Email"] . '\'');
+
+        $_SESSION['CPdwc'] = "long";
+        header('Location: ../frontend/changepassword.php');
+
+    }else{
+        $_SESSION['CPdwc'] = "court";
+        header('Location: ../frontend/changepassword.php');
+    }
 }
-header('Location: ../frontend/home.php');
