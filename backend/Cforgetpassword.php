@@ -1,5 +1,8 @@
 <?php
-
+/*
+ *Permet d'envoyer par mail un mot de passe aleatoire si on l'as oublié
+ *
+  */
 session_start();
 
 /**

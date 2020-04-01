@@ -1,5 +1,9 @@
-
 <?php
+/*
+ *Page qui permet de s'enregistrer avec les éléments rentrer dans le formulaire register.php
+ * checkEmailHost() est une fonction qui verifie si l'email rentrer est valide en fonction de celle que l'on souhaite pour eviter les emails temporaires
+ *
+  */
 session_start();
 $prenom = $_POST['Prenom'];
 $nom = $_POST['Nom'];
@@ -48,16 +52,6 @@ if($sexe == "homme")
 } else {
     $idSexe = '0';
 }
-//$stm = $pdo->prepare("SELECT * FROM Utilisateur");
-//$stm->execute();
-//
-//$row = $stm->fetch(PDO::FETCH_ASSOC);
-//foreach($row as $temp) {
-//
-//    printf("$temp[0] $temp[1] $temp[2]\n");
-//}
-//'\',\'' . 'DD/MM/YYYY')
-//$pdo->exec('INSERT INTO Utilisateur (Nom, Prenom, DateN) VALUES (\'' .$nom .'\',\'' . $prenom.'\',\'' . $temp .'\');');
 
 $date = $annee . '-' . $mois . '-' . $jour;
 

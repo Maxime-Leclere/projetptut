@@ -3,6 +3,7 @@ session_start();
 /*
  * Permet de se connecter
  * Il récupère le proil en fonction de du mail et du mdp rentrer et initialise la session de l'utilisateur correspondant
+ * Creation du cookie email et password
  */
 include_once 'Config.php';
 

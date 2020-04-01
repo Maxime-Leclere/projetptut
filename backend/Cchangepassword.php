@@ -1,4 +1,8 @@
 <?php
+/*
+ *Permet de changer le mot comme on le souhaite en fonction
+ * du mot de passe rentrer dans le formualire de changepassword.php
+  */
 session_start();
 
 define('HOST', 'mysql:host=mysql-projetptut.alwaysdata.net; dbname=projetptut_database;');

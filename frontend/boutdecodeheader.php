@@ -1,5 +1,9 @@
 <?php
-
+/*
+ * Affiche le contenue de la fenetre connexion si personne n'est connecté
+ * Affiche le contenue de profil quand un utilisateur est connecté
+ *
+ */
 session_start();
 
 function header_contenue()
