@@ -113,7 +113,7 @@ class Date {
         $dateCurrent = strtotime("$year-$m-$d");
         $timeCurrent = strtotime("$hour:$min:$sec");
         $req = $DB->query('SELECT Num_T, Nom_T, Date_deb, Date_fin, Lieu
-                                    FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND Date_deb >= CURDATE()');
+                                    FROM TOURNOI WHERE Lieu="Aix-en-Provence" AND Date_fin >= CURDATE()');
         $i = 0;
 
         // on recupère tous les tournois
