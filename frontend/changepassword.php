@@ -3,7 +3,15 @@
 </head>
 
 <body>
-<?php include_once 'header.php' ?>
+<?php
+if($_SESSION['Status'] == 0) {
+    try {
+        header('Location: home.php');
+
+    } catch (Exception $e){}
+}
+
+include_once 'header.php' ?>
 
 <div class="container" style="min-height: 81%"><br>
     <form action="../backend/Cchangepassword.php" method="post">
