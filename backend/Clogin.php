@@ -10,6 +10,9 @@ global $DB;
 $email = $_POST['Email'];
 $password = $_POST['Mdp'] ;
 $password =sha1($password);
+setcookie('email',$email ,time() + 300);
+setcookie('password',$password,time() +300);
+
 
 $stmt = $DB->query("Select * from Utilisateur Where Email = '$email' AND Mdp = '$password'");
 $row = $stmt->fetch();
@@ -54,5 +57,3 @@ foreach($vector as $row)
         $_SESSION['NomE']= $NomE;
     }//Permet d'attribuer une équipe en fonction de l'age et du genre, Il faut obligatoirement avoir un STatus 1 ou 2 pour pouvoir une équipe
 }
-
-
